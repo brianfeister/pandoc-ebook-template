@@ -1,8 +1,23 @@
+
+# Source files directory (input)
+SRCDIR = ./source
+# Template files directory (input)
+TPLDIR = ./templates
+# Raw LaTeX directory (output)
+TEXDIR = ./latex
+# PDF directory (output)
+PDFDIR = ./pdf
+# HTML directory (output)
+HTMDIR = ./html
+# EPUB directory (output)
+EBKDIR = ./epub
+
+TITLE = $(SRCDIR)/title.txt
+CHAPTERS = $(wildcard $(SRCDIR)/*.md)
+
 BUILD = build
 BOOKNAME = my-book
-TITLE = title.txt
 METADATA = metadata.xml
-CHAPTERS = ch01.md ch02.md
 TOC = --toc --toc-depth=2
 COVER_IMAGE = images/cover.jpg
 LATEX_CLASS = report
@@ -15,14 +30,31 @@ all: book
 
 book: epub html pdf
 
+# Delete intermediate files
 clean:
-	rm -rf $(BUILD)
+	rm -rf $(TEXDIR)
+
+# Delete all output files
+clobber:
+	make clean
+	rm -rf $(PDFDIR) $(HTMDIR) $(EBKDIR)
+
+pdf: pdf/$(BOOKNAME).pdf
+
+pdf/$(BOOKNAME).pdf: $(TITLE) $(CHAPTERS) $(TPLDIR)/template.tex
+	mkdir -p $(PDFDIR)
+	pandoc $(TITLE) $(CHAPTERS) \
+	  --output=$@ \
+	  --latex-engine=xelatex \
+	  --template=$(TPLDIR)/template.tex
+
+#pandoc $(TOC) -N --template=templatePdf.tex --variable mainfont=$(MAINFONT) --variable fontsize=$(FONT_SIZE) --variable sansfont=$(SANSFONT) --variable monofont=$(MONOFONT) --latex-engine=xelatex -V documentclass=$(LATEX_CLASS) -o $@ $^
+
+
 
 epub: $(BUILD)/epub/$(BOOKNAME).epub
 
 html: $(BUILD)/html/$(BOOKNAME).html
-
-pdf: $(BUILD)/pdf/$(BOOKNAME).pdf
 
 $(BUILD)/epub/$(BOOKNAME).epub: $(TITLE) $(CHAPTERS)
 	mkdir -p $(BUILD)/epub
@@ -32,8 +64,9 @@ $(BUILD)/html/$(BOOKNAME).html: $(CHAPTERS)
 	mkdir -p $(BUILD)/html
 	pandoc $(TOC) --standalone --to=html5 -o $@ $^
 
-$(BUILD)/pdf/$(BOOKNAME).pdf: $(TITLE) $(CHAPTERS)
-	mkdir -p $(BUILD)/pdf
-	pandoc $(TOC) -N --template=templatePdf.tex --variable mainfont=$(MAINFONT) --variable fontsize=$(FONT_SIZE) --variable sansfont=$(SANSFONT) --variable monofont=$(MONOFONT) --latex-engine=xelatex -V documentclass=$(LATEX_CLASS) -o $@ $^
 
-.PHONY: all book clean epub html pdf
+
+.PHONY: all book clean clobber epub html pdf
+
+
+

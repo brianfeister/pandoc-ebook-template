@@ -1,5 +1,7 @@
-\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+\documentclass[12pt]{report}
+
 \usepackage{eso-pic}
+
 \newcommand\BackgroundPic{%
 \put(0,0){%
 \parbox[b][\paperheight]{\paperwidth}{%
@@ -9,19 +11,25 @@
 keepaspectratio]{paper-bg.jpg}%
 \vfill
 }}}
+
 \usepackage[paperheight=11in,paperwidth=8.5in,margin=0.5in]{geometry}
+
 $if(fontfamily)$
 \usepackage{$fontfamily$}
 $else$
 \usepackage{lmodern}
 $endif$
+
 $if(linestretch)$
 \usepackage{setspace}
 \setstretch{$linestretch$}
 $endif$
+
 \usepackage{amssymb,amsmath}
+
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
+
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
@@ -50,6 +58,10 @@ $if(mathfont)$
     \setmathfont(Digits,Latin,Greek){$mathfont$}
 $endif$
 \fi
+
+
+
+
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 % use microtype if available
@@ -57,9 +69,7 @@ $endif$
 \usepackage{microtype}
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-$if(geometry)$
-\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
-$endif$
+
 \ifxetex
   \usepackage[setpagesize=false, % page size defined by xetex
               unicode=false, % unicode breaks when used with xetex
@@ -67,6 +77,7 @@ $endif$
 \else
   \usepackage[unicode=true]{hyperref}
 \fi
+
 \hypersetup{breaklinks=true,
             bookmarks=true,
             pdfauthor={$author-meta$},
@@ -76,7 +87,9 @@ $endif$
             urlcolor=$if(urlcolor)$$urlcolor$$else$blue$endif$,
             linkcolor=$if(linkcolor)$$linkcolor$$else$magenta$endif$,
             pdfborder={0 0 0}}
+
 \urlstyle{same}  % don't use monospace font for urls
+
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \pagenumbering{arabic}
@@ -86,6 +99,7 @@ $endif$
 \lfoot{v $version$}
 \cfoot{}
 \rfoot{\thepage}
+
 $if(lang)$
 \ifxetex
   \usepackage{polyglossia}
@@ -95,32 +109,40 @@ $if(lang)$
   \usepackage[shorthands=off,$lang$]{babel}
 \fi
 $endif$
+
 $if(natbib)$
 \usepackage{natbib}
 \bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
 $endif$
+
 $if(biblatex)$
 \usepackage{biblatex}
 $for(bibliography)$
 \addbibresource{$bibliography$}
 $endfor$
 $endif$
+
 $if(listings)$
 \usepackage{listings}
 $endif$
+
 $if(lhs)$
 \lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}
 $endif$
+
 $if(highlighting-macros)$
 $highlighting-macros$
 $endif$
+
 $if(verbatim-in-note)$
 \usepackage{fancyvrb}
 \VerbatimFootnotes
 $endif$
+
 $if(tables)$
 \usepackage{longtable,multicol,booktabs}
 $endif$
+
 $if(graphics)$
 \usepackage{graphicx,grffile}
 \newsavebox\ltmcbox
@@ -133,25 +155,30 @@ $if(graphics)$
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 $endif$
+
 $if(links-as-notes)$
 % Make links footnotes instead of hotlinks:
 \renewcommand{\href}[2]{#2\footnote{\url{#1}}}
 $endif$
+
 $if(strikeout)$
 \usepackage[normalem]{ulem}
 % avoid problems with \sout in headers with hyperref:
 \pdfstringdefDisableCommands{\renewcommand{\sout}{}}
 $endif$
+
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt plus 2pt minus 1pt}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
 $if(numbersections)$
 \setcounter{secnumdepth}{5}
 $else$
 \setcounter{secnumdepth}{0}
 $endif$
+
 $if(verbatim-in-note)$
 \VerbatimFootnotes % allows verbatim text in footnotes
 $endif$
@@ -176,9 +203,9 @@ $endfor$
 \let\oldsubparagraph\subparagraph
 \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
-
-\begin{muticols}{2}
 \AddToShipoutPicture{\BackgroundPic}
+\begin{document}
+%\begin{multicols}{2}
 $if(title)$
 \maketitle
 $endif$
@@ -228,4 +255,5 @@ $for(include-after)$
 $include-after$
 
 $endfor$
-\end{multicols}
+%\end{multicols}
+\end{document}
