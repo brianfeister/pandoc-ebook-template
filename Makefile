@@ -1,10 +1,9 @@
-
 # Source files directory (input)
 SRCDIR = ./source
 # Template files directory (input)
 TPLDIR = ./templates
 # Raw LaTeX directory (output)
-TEXDIR = ./latex
+TEXDIR = ./tex
 # PDF directory (output)
 PDFDIR = ./pdf
 # HTML directory (output)
@@ -12,45 +11,61 @@ HTMDIR = ./html
 # EPUB directory (output)
 EBKDIR = ./epub
 
+# Phony targets
+
+.PHONY: all book clean clobber epub html pdf
+
+# File lists and names
+
 TITLE = $(SRCDIR)/title.txt
 CHAPTERS = $(wildcard $(SRCDIR)/*.md)
-
-BUILD = build
 BOOKNAME = my-book
-METADATA = metadata.xml
-TOC = --toc --toc-depth=2
-COVER_IMAGE = images/cover.jpg
-LATEX_CLASS = report
-MAINFONT = "Droid Serif"
-FONT_SIZE = 1.2em
-SANSFONT = "Alegreya SC"
-MONOFONT = "Alegreya SC"
+
+# Shortcuts
 
 all: book
 
 book: epub html pdf
 
 # Delete intermediate files
+
 clean:
 	rm -rf $(TEXDIR)
 
 # Delete all output files
+
 clobber:
 	make clean
 	rm -rf $(PDFDIR) $(HTMDIR) $(EBKDIR)
 
-pdf: pdf/$(BOOKNAME).pdf
+# LaTeX sourcecode production
 
-pdf/$(BOOKNAME).pdf: $(TITLE) $(CHAPTERS) $(TPLDIR)/template.tex
-	mkdir -p $(PDFDIR)
+tex: $(TEXDIR)/$(BOOKNAME).tex
+
+$(TEXDIR)/$(BOOKNAME).tex: $(TITLE) $(CHAPTERS) $(TPLDIR)/template.tex
+	mkdir -p $(TEXDIR)
 	pandoc $(TITLE) $(CHAPTERS) \
 	  --output=$@ \
-	  --latex-engine=xelatex \
 	  --template=$(TPLDIR)/template.tex
 
-#pandoc $(TOC) -N --template=templatePdf.tex --variable mainfont=$(MAINFONT) --variable fontsize=$(FONT_SIZE) --variable sansfont=$(SANSFONT) --variable monofont=$(MONOFONT) --latex-engine=xelatex -V documentclass=$(LATEX_CLASS) -o $@ $^
+# PDF production (from LaTeX sourcecode)
 
+pdf: $(PDFDIR)/$(BOOKNAME).pdf
 
+$(PDFDIR)/$(BOOKNAME).pdf: $(TEXDIR)/$(BOOKNAME).tex
+	mkdir -p $(PDFDIR)
+	latexmk \
+	  $(TEXDIR)/$(BOOKNAME).tex \
+	  -output-directory=$(TEXDIR) \
+	  --xelatex
+	mv $(TEXDIR)/$(BOOKNAME).pdf $(PDFDIR)
+
+# OTHER DESTINATIONS
+
+BUILD = build
+METADATA = metadata.xml
+TOC = --toc --toc-depth=2
+COVER_IMAGE = images/cover.jpg
 
 epub: $(BUILD)/epub/$(BOOKNAME).epub
 
@@ -63,10 +78,4 @@ $(BUILD)/epub/$(BOOKNAME).epub: $(TITLE) $(CHAPTERS)
 $(BUILD)/html/$(BOOKNAME).html: $(CHAPTERS)
 	mkdir -p $(BUILD)/html
 	pandoc $(TOC) --standalone --to=html5 -o $@ $^
-
-
-
-.PHONY: all book clean clobber epub html pdf
-
-
 

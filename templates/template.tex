@@ -5,30 +5,51 @@
   margin=0.5in,
 ]{geometry}
 
-%\usepackage{setspace}
-%\setstretch{$linestretch$}
+% General spacing settings
 
-\usepackage{amssymb,amsmath}
+%\usepackage{setspace}
+%\setstretch{}
+
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{6pt plus 2pt minus 1pt}
+%\setlength{\emergencystretch}{3em}  % prevent overfull lines
+
+% IMPORTANT: remember to use this if lists are present
+%\providecommand{\tightlist}{%
+%  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Math extensions
+
+%\usepackage{amssymb,amsmath}
+
+% Font selection
 
 \usepackage{fontspec}
 \setmainfont{Droid Serif}
 \setsansfont{Alegreya SC}
 \setmonofont{Alegreya SC}
 
+% Hyperlinks
 
 \usepackage[unicode=true]{hyperref}
 
-\hypersetup{breaklinks=true,
-            bookmarks=true,
-            pdfauthor={$author-meta$},
-            pdftitle={$title-meta$},
-            colorlinks=true,
-            citecolor=$if(citecolor)$$citecolor$$else$blue$endif$,
-            urlcolor=$if(urlcolor)$$urlcolor$$else$blue$endif$,
-            linkcolor=$if(linkcolor)$$linkcolor$$else$magenta$endif$,
-            pdfborder={0 0 0}}
+\hypersetup{
+  % this will need a bit of cleanup
+  breaklinks=true,
+  bookmarks=true,
+  pdfauthor={$author-meta$},
+  pdftitle={$title-meta$},
+  colorlinks=true,
+  citecolor=$if(citecolor)$$citecolor$$else$blue$endif$,
+  urlcolor=$if(urlcolor)$$urlcolor$$else$blue$endif$,
+  linkcolor=$if(linkcolor)$$linkcolor$$else$magenta$endif$,
+  pdfborder={0 0 0},
+}
 
-\urlstyle{same}  % don't use monospace font for urls
+% don't use monospace font for urls
+\urlstyle{same}
+
+% Page headers/footers
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -40,44 +61,31 @@
 \cfoot{}
 \rfoot{\thepage}
 
+% Language selection
+
 \usepackage{polyglossia}
 \setmainlanguage{english}
 
-$if(listings)$
-\usepackage{listings}
-$endif$
+% Table packages
 
 \usepackage{longtable,multicol,booktabs}
 
-$if(graphics)$
-\usepackage{graphicx,grffile}
-\newsavebox\ltmcbox
-\makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-$endif$
+% Graphics
 
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+%$if(graphics)$
+%\usepackage{graphicx,grffile}
+%\newsavebox\ltmcbox
+%\makeatletter
+%\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+%\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+%\makeatother
+%% Scale images if necessary, so that they will not overflow the page
+%% margins by default, and it is still possible to overwrite the defaults
+%% using explicit options in \includegraphics[width, height, ...]{}
+%\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+%$endif$
 
-$if(title)$
-\title{$title$$if(subtitle)$\\\vspace{0.5em}{\large $subtitle$}$endif$}
-$endif$
-$if(author)$
-\author{$for(author)$$author$$sep$ \and $endfor$}
-$endif$
-\date{$date$}
-$for(header-includes)$
-$header-includes$
-$endfor$
+% Ugly paragraph hack
 
 %\ifx\paragraph\undefined\else
 %\let\oldparagraph\paragraph
@@ -95,7 +103,7 @@ $endfor$
 \usetikzlibrary{positioning}
 
 \AddToShipoutPicture{
-\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{example-image-a}};%{paper-bg.jpg}};
+\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{assets/paper-bg.jpg}};
 }
 
 % Microtype
@@ -103,6 +111,16 @@ $endfor$
 \usepackage{microtype}
 
 % Main document
+
+$if(title)$
+\title{$title$$if(subtitle)$\\\vspace{0.5em}{\large $subtitle$}$endif$}
+$endif$
+
+$if(author)$
+\author{$for(author)$$author$$sep$ \and $endfor$}
+$endif$
+
+\date{$date$}
 
 \begin{document}
 \maketitle
