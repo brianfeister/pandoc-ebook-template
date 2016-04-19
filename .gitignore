@@ -1,1 +1,6 @@
-build
+tex/
+pdf/
+html/
+epub/
+
+build/
