@@ -2,6 +2,8 @@
 SRCDIR = ./source
 # Template files directory (input)
 TPLDIR = ./templates
+# Filters directory (input)
+FILDIR = ./filters
 # Raw LaTeX directory (output)
 TEXDIR = ./tex
 # PDF directory (output)
@@ -45,6 +47,7 @@ tex: $(TEXDIR)/$(BOOKNAME).tex
 $(TEXDIR)/$(BOOKNAME).tex: $(TITLE) $(CHAPTERS) $(TPLDIR)/template.tex
 	mkdir -p $(TEXDIR)
 	pandoc $(TITLE) $(CHAPTERS) \
+	  --filter=$(FILDIR)/custom-tables.hs \
 	  --output=$@ \
 	  --template=$(TPLDIR)/template.tex
 
