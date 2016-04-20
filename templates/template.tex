@@ -3,7 +3,7 @@
 \usepackage[
   letterpaper,
   margin=0.5in,
-%  twocolumn,
+  twocolumn,
 ]{geometry}
 
 % General spacing settings
@@ -71,7 +71,8 @@
 
 % Table packages
 
-\usepackage{longtable,multicol,booktabs,xtab}
+\usepackage{multicol,booktabs,xtab}
+\let\endhead\relax
 
 % Graphics
 
@@ -124,6 +125,9 @@ $if(author)$
 $endif$
 
 \date{$date$}
+
+% TODO: sloppiness *must* be removed in production
+\sloppy
 
 \begin{document}
 \maketitle
