@@ -50,7 +50,7 @@ $(TEXDIR)/$(BOOKNAME).tex: $(TITLE) $(CHAPTERS) $(TPLDIR)/template.tex
 	  --filter=$(FILDIR)/custom-tables.hs \
 	  --output=$@ \
 	  --template=$(TPLDIR)/template.tex
-	perl -S -pi -e 's/\\begin{longtable}/\\begin{xtabular*}{\\linewidth}/g' $@
+	perl -S -pi -e 's/\\begin{longtable}.*/\\begin{xtabular*}{\\linewidth}{N}/g' $@
 	perl -S -pi -e 's/\\end{longtable}/\\end{xtabular*}/g' $@
 
 # PDF production (from LaTeX sourcecode)

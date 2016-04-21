@@ -74,6 +74,12 @@
 \usepackage{multicol,booktabs,xtab}
 \let\endhead\relax
 
+\usepackage{array}
+\newcolumntype{P}[1]{@{}p{#1\linewidth}@{}}
+%\newcolumntype{N}{P{.25}P{.75}}
+\NewDocumentCommand{\NextTableColumns}{m}{\newcolumntype{N}{#1}}
+
+
 % Graphics
 
 %$if(graphics)$
