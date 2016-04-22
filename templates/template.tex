@@ -84,7 +84,7 @@
 
 \newcolumntype{P}[1]{
 %@{\hspace{\tabcolsep}}
-!{\pgfsetfillopacity{.5}}
+!{\pgfsetfillopacity{.2}}
 >{\leavevmode\pgfsetfillopacity{1}}
 p{\dimexpr#1\linewidth-2\tabcolsep\relax}
 %@{}
@@ -112,8 +112,8 @@ p{\dimexpr#1\linewidth-2\tabcolsep\relax}
 
 % Temporary page background
 
-\usepackage{pagecolor}
-\pagecolor{yellow!50}
+%\usepackage{pagecolor}
+%\pagecolor{yellow!50}
 
 
 % Graphics
@@ -147,9 +147,11 @@ p{\dimexpr#1\linewidth-2\tabcolsep\relax}
 \usepackage{eso-pic}
 \usepackage{tikz}
 \usetikzlibrary{positioning}
+\usetikzlibrary{patterns}
 
 \AddToShipoutPicture{
 %\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{assets/paper-bg.jpg}};
+\tikz [overlay, remember picture] \draw [pattern=fivepointed stars,pattern color=orange!20] (current page.north west) rectangle (current page.south east);
 }
 
 % Microtype
