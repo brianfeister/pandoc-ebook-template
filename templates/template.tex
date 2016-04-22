@@ -71,13 +71,23 @@
 
 % Table packages
 
+\usepackage[table]{xcolor}
+
 \usepackage{multicol,booktabs,xtab}
 \let\endhead\relax
 
 \usepackage{array}
-\newcolumntype{P}[1]{@{}p{#1\linewidth}@{}}
+
+\rowcolors{1}{red}{blue}
+
+\newcolumntype{P}[1]{@{}!{\pgfsetfillopacity{.5}}>{\pgfsetfillopacity{1}}p{#1\linewidth}@{}}
 %\newcolumntype{N}{P{.25}P{.75}}
 \NewDocumentCommand{\NextTableColumns}{m}{\newcolumntype{N}{#1}}
+
+% Temporary page background
+
+\usepackage{pagecolor}
+\pagecolor{yellow!50}
 
 
 % Graphics
