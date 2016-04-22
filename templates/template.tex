@@ -80,9 +80,35 @@
 
 \rowcolors{1}{red}{blue}
 
-\newcolumntype{P}[1]{@{}!{\pgfsetfillopacity{.5}}>{\pgfsetfillopacity{1}}p{#1\linewidth}@{}}
+\renewcommand*{\arraystretch}{1.5}
+
+\newcolumntype{P}[1]{
+%@{\hspace{\tabcolsep}}
+!{\pgfsetfillopacity{.5}}
+>{\leavevmode\pgfsetfillopacity{1}}
+p{\dimexpr#1\linewidth-2\tabcolsep\relax}
+%@{}
+}
 %\newcolumntype{N}{P{.25}P{.75}}
 \NewDocumentCommand{\NextTableColumns}{m}{\newcolumntype{N}{#1}}
+
+\newif\ifVTIsWrapped
+
+\newenvironment{VariaTable}
+{
+\ifVTIsWrapped
+\begin{table}
+\fi
+\begin{xtabular*}{\linewidth}{N}
+}
+{
+\end{xtabular*}
+\ifVTIsWrapped
+\end{table}
+\fi
+}
+
+
 
 % Temporary page background
 
