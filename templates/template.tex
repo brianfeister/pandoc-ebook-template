@@ -78,6 +78,8 @@
 
 \usepackage{array}
 
+\usepackage{float}
+
 \rowcolors{1}{red}{blue}
 
 \renewcommand*{\arraystretch}{1.5}
@@ -93,18 +95,27 @@ p{\dimexpr#1\linewidth-2\tabcolsep\relax}
 \NewDocumentCommand{\NextTableColumns}{m}{\newcolumntype{N}{#1}}
 
 \newif\ifVTIsWrapped
+\newif\ifVTIsSpanning
 
 \newenvironment{VariaTable}
 {
 \ifVTIsWrapped
-\begin{table}
+\ifVTIsSpanning
+\begin{table*}
+\else
+\begin{table}[H]
+\fi
 \fi
 \begin{xtabular*}{\linewidth}{N}
 }
 {
 \end{xtabular*}
 \ifVTIsWrapped
+\ifVTIsSpanning
+\end{table*}
+\else
 \end{table}
+\fi
 \fi
 }
 
