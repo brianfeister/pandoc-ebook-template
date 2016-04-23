@@ -93,3 +93,27 @@
 
 \Blindtext\Blindtext\Blindtext
 
+
+\begin{figure*}[t]%\centering
+\hspace{\dimexpr\linewidth-1.1\linewidth\relax}
+\makebox[\linewidth][l]{\includegraphics[width=1.12\linewidth,height=1in,keepaspectratio=false]{example-image-a}}
+\caption{Lol}
+\end{figure*}
+
+\Blindtext\Blindtext\blindtext\blindtext\blindtext
+
+\begin{figure}
+\hspace{\dimexpr\linewidth-1.1\linewidth\relax}
+\makebox[\linewidth][l]{\includegraphics[width=1.1\linewidth]{example-image-a}}
+\caption{Lol}
+\end{figure}
+
+\Blindtext\Blindtext\blindtext\blindtext
+
+\begin{figure}
+%\hspace{\dimexpr\linewidth-1.1\linewidth\relax}
+\makebox[\linewidth][l]{\includegraphics[width=1.1\linewidth]{example-image-a}}
+\caption{Lol}
+\end{figure}
+
+\Blindtext\Blindtext\Blindtext
