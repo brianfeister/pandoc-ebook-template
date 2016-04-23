@@ -1,6 +1,13 @@
 \documentclass[12pt]{report}
 
+% some basic instruments
 \usepackage{blindtext}
+\usepackage{etoolbox}
+
+% TODO: sloppiness *must* be removed in production
+\sloppy
+
+% ============================================================= PAGE GEOMETRY ==
 
 \usepackage[
   letterpaper,
@@ -21,40 +28,43 @@
 %\providecommand{\tightlist}{%
 %  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-% Math extensions
+% ====================================================================== MATH ==
 
 %\usepackage{amssymb,amsmath}
 
-% Font selection
+% ===================================================================== FONTS ==
 
 \usepackage{fontspec}
+
 \setmainfont{Droid Serif}
 \setsansfont{Alegreya SC}
 \setmonofont{Alegreya SC}
 
-% Hyperlinks
+% ================================================================== LANGUAGE ==
+
+\usepackage{polyglossia}
+\setmainlanguage{english}
+
+% ================================================================ HYPERLINKS ==
 
 \usepackage[
-  unicode=true
+  unicode=true,
+%  breaklinks=true,
+%  bookmarks=true,
+%  pdfauthor={$author-meta$},
+%  pdftitle={$title-meta$},
+%  colorlinks=true,
+%  citecolor=$if(citecolor)$$citecolor$$else$blue$endif$,
+%  urlcolor=$if(urlcolor)$$urlcolor$$else$blue$endif$,
+%  linkcolor=$if(linkcolor)$$linkcolor$$else$magenta$endif$,
+%  pdfborder={0 0 0},
+  hidelinks,
 ]{hyperref}
-
-\hypersetup{
-  % this will need a bit of cleanup
-  breaklinks=true,
-  bookmarks=true,
-  pdfauthor={$author-meta$},
-  pdftitle={$title-meta$},
-  colorlinks=true,
-  citecolor=$if(citecolor)$$citecolor$$else$blue$endif$,
-  urlcolor=$if(urlcolor)$$urlcolor$$else$blue$endif$,
-  linkcolor=$if(linkcolor)$$linkcolor$$else$magenta$endif$,
-  pdfborder={0 0 0},
-}
 
 % don't use monospace font for urls
 \urlstyle{same}
 
-% Page headers/footers
+% =============================================================== PAGE LAYOUT ==
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -66,18 +76,25 @@
 \cfoot{}
 \rfoot{\thepage}
 
-% Language selection
-
-\usepackage{polyglossia}
-\setmainlanguage{english}
-
-% Table packages
+% ==================================================================== COLORS ==
 
 \usepackage[table]{xcolor}
 
-\usepackage{multicol}
+% ==================================================================== FLOATS ==
 
-\usepackage{xtab}
+% allow b and h for table* and figure*
+\usepackage{dblfloatfix}
+
+% preserve order among starred and unstarred tables/figures
+\usepackage{fixltx2e}
+
+\usepackage{float}
+
+% ==================================================================== TABLES ==
+
+% first we need to make pandoc output behave
+
+%\usepackage{multicol}
 
 %\usepackage{longtable}
 \let\endhead\relax
@@ -87,21 +104,14 @@
 \let\bottomrule\hline
 \let\midrule\hline
 
-% allow b and h for table* and figure*
-\usepackage{dblfloatfix}
+% and now the serious stuff
 
-% preserve order among starred and unstarred tables/figures
-\usepackage{fixltx2e}
-
-
-\usepackage{wrapfig}
+% breakable two-columns tables
+\usepackage{xtab}
 
 \usepackage{array}
 
-\usepackage{float}
-
 \rowcolors{1}{gray!50}{gray}
-
 \renewcommand*{\arraystretch}{1.5}
 
 % transparency trick: ! gets the fill while > gets the content
@@ -147,14 +157,11 @@
 \newenvironment{VariaTable}{}{}
 \BreakingTable
 
-\usepackage{etoolbox}
 
 % hook to reset table configuration after each use
 \AfterEndEnvironment{VariaTable}{\BreakingTable}
 
-
-
-
+% =================================================================== FIGURES ==
 
 \NewDocumentCommand{\FloatingFigure}{O{htb}}{
   \renewenvironment{VariaFigure}
@@ -174,7 +181,7 @@
 %% hook to reset figure configuration after each use
 \AfterEndEnvironment{VariaFigure}{\FloatingFigure}
 
-
+%\usepackage{wrapfig}
 
 %\begin{figure}[H]%\raggedleft
 %\hspace{\dimexpr\linewidth-1.1\linewidth\relax}%
@@ -182,16 +189,7 @@
 %{\includegraphics[width=1.1\linewidth]{example-image-a}}
 %\end{figure}
 
-
-% Temporary page background
-
-\usepackage{pagecolor}
-\pagecolor{yellow!30}
-
-
-% Graphics
-
-%$if(graphics)$
+% automagic picture resizing
 \usepackage{graphicx,grffile}
 \newsavebox\ltmcbox
 \makeatletter
@@ -202,21 +200,14 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-%$endif$
 
-% Ugly paragraph hack
+% ================================================================ BACKGROUND ==
 
-%\ifx\paragraph\undefined\else
-%\let\oldparagraph\paragraph
-%\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-%\fi
-%\ifx\subparagraph\undefined\else
-%\let\oldsubparagraph\subparagraph
-%\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-%\fi
+% temporary page color
+\usepackage{pagecolor}
+\pagecolor{yellow!30}
 
-% Background image
-
+% background image
 \usepackage{eso-pic}
 \usepackage{tikz}
 \usetikzlibrary{positioning}
@@ -228,11 +219,11 @@
 \tikz [overlay, remember picture] \draw [pattern=fivepointed stars,pattern color=orange!20] (current page.north west) rectangle (current page.south east);
 }
 
-% Microtype
+% ================================================================= MICROTYPE ==
 
 \usepackage{microtype}
 
-% Main document
+% ============================================================= MAIN DOCUMENT ==
 
 $if(title)$
 \title{$title$$if(subtitle)$\\\vspace{0.5em}{\large $subtitle$}$endif$}
@@ -244,16 +235,9 @@ $endif$
 
 \date{$date$}
 
-% TODO: sloppiness *must* be removed in production
-\sloppy
-
 \begin{document}
 \maketitle
-{
-\hypersetup{linkcolor=black}
-\setcounter{tocdepth}{2}
 \tableofcontents
-}
 %\listoftables
 %\listoffigures
 $body$
