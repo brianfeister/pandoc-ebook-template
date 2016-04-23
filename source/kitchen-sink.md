@@ -56,10 +56,36 @@
 | **Might** | Swing a maul, jump over a chasm, break down a door, wrestle a foe to submission |
 
 \Blindtext
-
+\Blindtext
+\Blindtext
+\Blindtext
+\Blindtext
 \Blindtext
 
-\Blindtext
+Here is text before
+
+\begin{wrapfigure}{l}[.1\linewidth]{1.1\linewidth}
+\includegraphics[width=\linewidth]{example-image-a}
+\end{wrapfigure}
+
+Here is text after
 
 \Blindtext
+\Blindtext
+\blindtext
+
+\begin{figure}[H]%\raggedleft
+\hspace{\dimexpr\linewidth-1.1\linewidth\relax}%
+%\makebox[\linewidth][l]
+{\includegraphics[width=1.1\linewidth]{example-image-a}}
+\end{figure}
+
+\Blindtext
+\Blindtext
+\Blindtext
+
+
+![image](example-image-a)
+
+
 
