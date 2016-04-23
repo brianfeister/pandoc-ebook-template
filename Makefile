@@ -52,6 +52,8 @@ $(TEXDIR)/$(BOOKNAME).tex: $(TITLE) $(CHAPTERS) $(TPLDIR)/template.tex
 	  --template=$(TPLDIR)/template.tex
 	perl -S -pi -e 's/\\begin{longtable}.*/\\begin{VariaTable}/g' $@
 	perl -S -pi -e 's/\\end{longtable}/\\end{VariaTable}/g' $@
+	perl -S -pi -e 's/\\begin{figure}.*/\\begin{VariaFigure}/g' $@
+	perl -S -pi -e 's/\\end{figure}/\\end{VariaFigure}/g' $@
 
 # PDF production (from LaTeX sourcecode)
 

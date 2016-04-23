@@ -74,18 +74,26 @@ Here is text after
 \Blindtext
 \blindtext
 
-\begin{figure}[H]%\raggedleft
-\hspace{\dimexpr\linewidth-1.1\linewidth\relax}%
-%\makebox[\linewidth][l]
-{\includegraphics[width=1.1\linewidth]{example-image-a}}
-\end{figure}
 
 \Blindtext
 \Blindtext
 \Blindtext
-
 
 ![image](example-image-a)
 
 
+\Blindtext
+\Blindtext
+\Blindtext
+
+\SpanningFigure
+
+![image](example-image-a)
+
+
+\Blindtext
+\Blindtext
+\Blindtext
+
+![image](example-image-a)
 

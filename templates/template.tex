@@ -156,11 +156,31 @@
 
 
 
+\NewDocumentCommand{\FloatingFigure}{O{htb}}{
+  \renewenvironment{VariaFigure}
+    {\figure[#1]}
+    {\endfigure}
+}
+
+\NewDocumentCommand{\SpanningFigure}{O{tbp}}{
+  \renewenvironment{VariaFigure}
+    {\begin{figure*}[#1]}
+    {\end{figure*}}
+}
+
+\newenvironment{VariaFigure}{}{}
+\FloatingFigure
+
+%% hook to reset figure configuration after each use
+\AfterEndEnvironment{VariaFigure}{\FloatingFigure}
 
 
 
-
-
+%\begin{figure}[H]%\raggedleft
+%\hspace{\dimexpr\linewidth-1.1\linewidth\relax}%
+%\makebox[\linewidth][l]
+%{\includegraphics[width=1.1\linewidth]{example-image-a}}
+%\end{figure}
 
 
 % Temporary page background
