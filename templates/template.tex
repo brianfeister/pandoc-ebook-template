@@ -1,5 +1,7 @@
 \documentclass[12pt]{report}
 
+\usepackage{blindtext}
+
 \usepackage[
   letterpaper,
   margin=0.5in,
@@ -73,14 +75,23 @@
 
 \usepackage[table]{xcolor}
 
-\usepackage{multicol,booktabs,xtab}
+\usepackage{multicol}
+
+\usepackage{xtab}
+
+%\usepackage{longtable}
 \let\endhead\relax
+
+%\usepackage{booktabs}
+\let\toprule\hline
+\let\bottomrule\hline
+\let\midrule\hline
 
 \usepackage{array}
 
 \usepackage{float}
 
-\rowcolors{1}{red}{blue}
+\rowcolors{1}{gray!50}{gray}
 
 \renewcommand*{\arraystretch}{1.5}
 
@@ -94,8 +105,18 @@ p{\dimexpr#1\linewidth-2\tabcolsep\relax}
 %\newcolumntype{N}{P{.25}P{.75}}
 \NewDocumentCommand{\NextTableColumns}{m}{\newcolumntype{N}{#1}}
 
+
 \newif\ifVTIsWrapped
 \newif\ifVTIsSpanning
+
+\NewDocumentCommand{\FloatingTable}{O{htb}}
+{
+\renewenvironment{VariaTable}
+  {\begin{table}[#1]\begin{xtabular*}{\linewidth}{N}}
+  {\end{xtabular*}\end{table}}
+}
+
+\NewDocumentCommand{\SpanningTable}{}{\VTIsWrappedtrue\VTIsSpanningtrue}
 
 \newenvironment{VariaTable}
 {
@@ -117,6 +138,14 @@ p{\dimexpr#1\linewidth-2\tabcolsep\relax}
 \end{table}
 \fi
 \fi
+}
+
+\usepackage{etoolbox}
+
+% hook to reset table configuration after each use
+\AfterEndEnvironment{VariaTable}{
+\VTIsWrappedfalse
+\VTIsSpanningfalse
 }
 
 
@@ -161,6 +190,7 @@ p{\dimexpr#1\linewidth-2\tabcolsep\relax}
 \usetikzlibrary{patterns}
 
 \AddToShipoutPicture{
+%\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{assets/paper-bg-small.jpg}};
 %\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{assets/paper-bg.jpg}};
 \tikz [overlay, remember picture] \draw [pattern=fivepointed stars,pattern color=orange!20] (current page.north west) rectangle (current page.south east);
 }
