@@ -1,6 +1,6 @@
 # Testing tables
 
-\blindtext
+\Blindtext
 
 \NextTableColumns{OCT{.25}OLT{.75}}
 
@@ -18,82 +18,78 @@
 | **Fortitude** | Wear heavy armor, resist poison, shrug off pain, exert yourself physically |
 | **Might** | Swing a maul, jump over a chasm, break down a door, wrestle a foe to submission |
 
-\Blindtext
+\Blindtext\Blindtext
 
 |||
 |---------|-----------------|
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
+| **Fortitude** | Wear heavy armor, resist poison, shrug off pain, exert yourself physically |
+| **Might** | Swing a maul, jump over a chasm, break down a door, wrestle a foe to submission |
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
+| **Fortitude** | Wear heavy armor, resist poison, shrug off pain, exert yourself physically |
+| **Might** | Swing a maul, jump over a chasm, break down a door, wrestle a foe to submission |
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
+| **Fortitude** | Wear heavy armor, resist poison, shrug off pain, exert yourself physically |
+| **Might** | Swing a maul, jump over a chasm, break down a door, wrestle a foe to submission |
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
+| **Fortitude** | Wear heavy armor, resist poison, shrug off pain, exert yourself physically |
+| **Might** | Swing a maul, jump over a chasm, break down a door, wrestle a foe to submission |
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
-| **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
-| **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
-| **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
-| **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
-| **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
-| **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
-| **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
-| **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
-| **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
-| **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
-| **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
-| **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
-| **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
+| **Fortitude** | Wear heavy armor, resist poison, shrug off pain, exert yourself physically |
+| **Might** | Swing a maul, jump over a chasm, break down a door, wrestle a foe to submission |
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
 | **Fortitude** | Wear heavy armor, resist poison, shrug off pain, exert yourself physically |
 | **Might** | Swing a maul, jump over a chasm, break down a door, wrestle a foe to submission |
 
-\Blindtext
+\Blindtext\Blindtext\Blindtext
 
 \SpanningTable
 
 |||
 |---------|-----------------|
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
-| **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
 | **Fortitude** | Wear heavy armor, resist poison, shrug off pain, exert yourself physically |
 | **Might** | Swing a maul, jump over a chasm, break down a door, wrestle a foe to submission |
 
-\Blindtext
-\Blindtext
-\Blindtext
-\Blindtext
-\Blindtext
-\Blindtext
+\Blindtext\Blindtext\Blindtext
 
-Here is text before
+![Floating figure (free)](example-image-a)
 
-\begin{wrapfigure}{l}[.1\linewidth]{1.1\linewidth}
-\includegraphics[width=\linewidth]{example-image-a}
-\end{wrapfigure}
+\Blindtext\Blindtext\Blindtext
 
-Here is text after
+\FloatingFigure[t]
 
-\Blindtext
-\Blindtext
-\blindtext
+![Floating figure on top of column](example-image-a)
 
+\Blindtext\Blindtext\Blindtext
 
-\Blindtext
-\Blindtext
-\Blindtext
+\FloatingFigure[h!]
 
-![image](example-image-a)
+![Floating figure in place (weak)](example-image-a)
 
+\Blindtext\Blindtext\Blindtext
 
-\Blindtext
-\Blindtext
-\Blindtext
+\FloatingFigure[H]
+
+![Floating figure in place (strong)](example-image-a)
+
+\Blindtext\Blindtext\Blindtext
 
 \SpanningFigure
 
-![image](example-image-a)
+![Spanning figure (free)](example-image-a)
 
+\Blindtext\Blindtext\Blindtext
 
-\Blindtext
-\Blindtext
-\Blindtext
+\SpanningFigure[t]
 
-![image](example-image-a)
+![Spanning figure on top](example-image-a)
+
+\Blindtext\Blindtext\Blindtext
+
+\SpanningFigure[b]
+
+![Spanning figure on bottom](example-image-a)
+
+\Blindtext\Blindtext\Blindtext
 
