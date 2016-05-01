@@ -21,7 +21,7 @@ EBKDIR = ./epub
 
 # File lists and names
 
-TITLE = $(SRCDIR)/title.txt
+META = $(SRCDIR)/book.yaml
 CHAPTERS = $(wildcard $(SRCDIR)/*.md)
 
 ALLSRC = $(wildcard $(SRCDIR)/*.md)
@@ -61,9 +61,9 @@ $(PREDIR)/%.md :
 
 tex: $(TEXDIR)/$(BOOKNAME).tex
 
-$(TEXDIR)/$(BOOKNAME).tex: $(TITLE) $(ALLPRE) $(TPLDIR)/template.tex
+$(TEXDIR)/$(BOOKNAME).tex: $(META) $(ALLPRE) $(TPLDIR)/template.tex
 	mkdir -p $(TEXDIR)
-	pandoc $(TITLE) $(ALLPRE) \
+	pandoc $(META) $(ALLPRE) \
 	  --filter=$(FILDIR)/callouts.hs \
 	  --filter=$(FILDIR)/tables.hs \
 	  --output=$@ \
@@ -96,7 +96,7 @@ epub: $(BUILD)/epub/$(BOOKNAME).epub
 
 html: $(BUILD)/html/$(BOOKNAME).html
 
-$(BUILD)/epub/$(BOOKNAME).epub: $(TITLE) $(CHAPTERS)
+$(BUILD)/epub/$(BOOKNAME).epub: $(META) $(CHAPTERS)
 	mkdir -p $(BUILD)/epub
 	pandoc $(TOC) -S --epub-metadata=$(METADATA) --epub-cover-image=$(COVER_IMAGE) -o $@ $^
 
