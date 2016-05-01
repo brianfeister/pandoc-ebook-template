@@ -27,7 +27,7 @@ CHAPTERS = $(wildcard $(SRCDIR)/*.md)
 ALLSRC = $(wildcard $(SRCDIR)/*.md)
 ALLPRE = $(patsubst $(SRCDIR)/%.md,$(PREDIR)/%.md,$(ALLSRC))
 
-BOOKNAME = my-book
+BOOKNAME = book
 
 # Shortcuts
 

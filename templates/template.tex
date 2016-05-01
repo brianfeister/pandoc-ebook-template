@@ -1,4 +1,6 @@
-\documentclass[12pt]{report}
+\documentclass[
+  fontsize=12pt,
+]{scrbook}
 
 % some basic instruments
 \usepackage{blindtext}
@@ -12,14 +14,21 @@
 \usetikzlibrary{patterns}
 
 % TODO: sloppiness *must* be removed in production
-%\sloppy
+\sloppy
 
 % ============================================================= PAGE GEOMETRY ==
 
 \usepackage[
-  letterpaper,
-  margin=0.5in,
+  paperwidth=8.5in,
+  paperheight=11in,
   twocolumn,
+  columnsep=.2in,
+  top=1in,
+  inner=1in,
+  outer=0.75in,
+  bottom=1in,
+  footskip=.5in,
+  headsep=.25in,
 ]{geometry}
 
 % General spacing settings
@@ -32,8 +41,8 @@
 %\setlength{\emergencystretch}{3em}  % prevent overfull lines
 
 % IMPORTANT: remember to use this if lists are present
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+%\providecommand{\tightlist}{%
+%  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 % ====================================================================== MATH ==
 
@@ -48,6 +57,8 @@
 \setmonofont{Alegreya SC}
 
 % ================================================================== LANGUAGE ==
+
+%\usepackage[english]{babel}
 
 \usepackage{polyglossia}
 \setmainlanguage{english}
@@ -73,15 +84,15 @@
 
 % =============================================================== PAGE LAYOUT ==
 
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\pagenumbering{arabic}
-\lhead{\itshape $title$}
-\chead{}
-\rhead{\itshape{\nouppercase{\leftmark}}}
-\lfoot{v $version$}
-\cfoot{}
-\rfoot{\thepage}
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\pagenumbering{arabic}
+%\lhead{\itshape $title$}
+%\chead{}
+%\rhead{\itshape{\nouppercase{\leftmark}}}
+%\lfoot{v $version$}
+%\cfoot{}
+%\rfoot{\thepage}
 
 % ==================================================================== FLOATS ==
 
@@ -91,13 +102,12 @@
 % preserve order among starred and unstarred tables/figures
 \usepackage{fixltx2e}
 
+% enable H positioning and other stuff
 \usepackage{float}
 
 % ==================================================================== TABLES ==
 
 % first we need to make pandoc output behave
-
-%\usepackage{multicol}
 
 %\usepackage{longtable}
 \let\endhead\relax
@@ -112,6 +122,7 @@
 % breakable two-columns tables
 \usepackage{xtab}
 
+% essential for styling
 \usepackage{array}
 
 \rowcolors{1}{gray!50}{gray}
@@ -160,7 +171,6 @@
 \newenvironment{VariaTable}{}{}
 \BreakingTable
 
-
 % hook to reset table configuration after each use
 \AfterEndEnvironment{VariaTable}{\BreakingTable}
 
@@ -200,29 +210,6 @@
 \NewDocumentCommand{\AbsoluteFigure}{O{}m}{
   \AddToShipoutPictureBG*{\tikz [overlay, remember picture] \node [center, #1, inner sep=0] {\includegraphics{#2}};}
 }
-
-
-
-
-
-
-
-
-%\newcommand{\OverflowLength}{0}
-%\newcommand{\OverflowSide}{r}
-%
-%\NewDocumentCommand{\OverflowFigure}{mm}{
-%\renewcommand{\OverflowFigureLeft}{#1}
-%\renewcommand{\OverflowFigureRight}{#2}
-%}
-
-%\usepackage{wrapfig}
-
-%\begin{figure}[H]%\raggedleft
-%\hspace{\dimexpr\linewidth-1.1\linewidth\relax}%
-%\makebox[\linewidth][l]
-%{\includegraphics[width=1.1\linewidth]{example-image-a}}
-%\end{figure}
 
 % automagic picture resizing
 \usepackage{graphicx,grffile}
@@ -268,11 +255,10 @@
 \usepackage{pagecolor}
 \pagecolor{yellow!30}
 
-% background image
 \usepackage{eso-pic}
 
+% background image
 \AddToShipoutPictureBG{
-%\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{assets/paper-bg-small.jpg}};
 %\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{assets/paper-bg.jpg}};
 \tikz [overlay, remember picture] \draw [pattern=fivepointed stars,pattern color=orange!20] (current page.north west) rectangle (current page.south east);
 }
@@ -283,20 +269,12 @@
 
 % ============================================================= MAIN DOCUMENT ==
 
-$if(title)$
-\title{$title$$if(subtitle)$\\\vspace{0.5em}{\large $subtitle$}$endif$}
-$endif$
-
-$if(author)$
-\author{$for(author)$$author$$sep$ \and $endfor$}
-$endif$
-
-\date{$date$}
+$if(title)$\title{$title$}$endif$
+$if(author)$\author{$author$}$endif$
+$if(date)$\date{$date$}$endif$
 
 \begin{document}
 \maketitle
 \tableofcontents
-%\listoftables
-%\listoffigures
 $body$
 \end{document}
