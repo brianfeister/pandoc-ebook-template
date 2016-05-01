@@ -1,5 +1,7 @@
 # Source files directory (input)
 SRCDIR = ./source
+# Preprocessed source files directory (input)
+PREDIR = ./preprocessed
 # Template files directory (input)
 TPLDIR = ./templates
 # Filters directory (input)
@@ -21,6 +23,10 @@ EBKDIR = ./epub
 
 TITLE = $(SRCDIR)/title.txt
 CHAPTERS = $(wildcard $(SRCDIR)/*.md)
+
+ALLSRC = $(wildcard $(SRCDIR)/*.md)
+ALLPRE = $(patsubst $(SRCDIR)/%.md,$(PREDIR)/%.md,$(ALLSRC))
+
 BOOKNAME = my-book
 
 # Shortcuts
@@ -32,7 +38,7 @@ book: epub html pdf
 # Delete intermediate files
 
 clean:
-	rm -rf $(TEXDIR)
+	rm -rf $(PREDIR) $(TEXDIR)
 
 # Delete all output files
 
@@ -40,14 +46,26 @@ clobber:
 	make clean
 	rm -rf $(PDFDIR) $(HTMDIR) $(EBKDIR)
 
+# Markdown sourcecode preprocessing
+
+pre: $(ALLPRE)
+
+$(PREDIR)/%.md :
+	mkdir -p $(PREDIR)
+	cp $(SRCDIR)/$*.md $(PREDIR)
+	perl -S -pi -e 's/\+\+\++\s*{\s*\.(.*?)( |}).*/<div class="\1">/' $@
+	perl -S -pi -e 's/\+\+\++.*/<\/div>/' $@
+
+
 # LaTeX sourcecode production
 
 tex: $(TEXDIR)/$(BOOKNAME).tex
 
-$(TEXDIR)/$(BOOKNAME).tex: $(TITLE) $(CHAPTERS) $(TPLDIR)/template.tex
+$(TEXDIR)/$(BOOKNAME).tex: $(TITLE) $(ALLPRE) $(TPLDIR)/template.tex
 	mkdir -p $(TEXDIR)
-	pandoc $(TITLE) $(CHAPTERS) \
-	  --filter=$(FILDIR)/custom-tables.hs \
+	pandoc $(TITLE) $(ALLPRE) \
+	  --filter=$(FILDIR)/callouts.hs \
+	  --filter=$(FILDIR)/tables.hs \
 	  --output=$@ \
 	  --template=$(TPLDIR)/template.tex
 	perl -S -pi -e 's/\\begin{longtable}.*/\\begin{VariaTable}/g' $@
