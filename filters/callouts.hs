@@ -1,7 +1,10 @@
 import Text.Pandoc
 import Text.Pandoc.JSON
 
-calloutNames = ["CalloutAlert"]
+calloutNames = [
+  "CalloutInformation",
+  "CalloutExample",
+  "CalloutWarning"]
 
 main = toJSONFilter callout
   where callout x@(Div (_, [oneClass], _) blocks)

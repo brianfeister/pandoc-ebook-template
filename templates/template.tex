@@ -238,9 +238,29 @@
 
 % ================================================================== CALLOUTS ==
 
-\usepackage{mdframed}
+\usepackage[framemethod=tikz]{mdframed}
 
-\newmdenv[linecolor=red,frametitle=Infobox]{CalloutAlert}
+\newmdenv[
+  middlelinecolor=red,
+  backgroundcolor=red!10,
+  middlelinewidth=2pt,
+  frametitle=Warning box,
+]{CalloutWarning}
+
+\newmdenv[
+  middlelinecolor=green,
+  backgroundcolor=green!10,
+  middlelinewidth=2pt,
+  roundcorner=10pt,
+  frametitle=Example box,
+]{CalloutExample}
+
+\newmdenv[
+  middlelinecolor=blue,
+  backgroundcolor=blue!10,
+  middlelinewidth=2pt,
+  frametitle=Information box,
+]{CalloutInformation}
 
 % ================================================================ BACKGROUND ==
 
