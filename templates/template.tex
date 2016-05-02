@@ -58,10 +58,15 @@
 
 % ================================================================== LANGUAGE ==
 
-%\usepackage[english]{babel}
+$if(language)$\usepackage[$language$]{babel}$endif$
+$if(hyphenation)$\hyphenation{
+$for(hyphenation)$
+  $hyphenation$
+$endfor$
+}$endif$
 
-\usepackage{polyglossia}
-\setmainlanguage{english}
+%\usepackage{polyglossia}
+%\setmainlanguage{english}
 
 % ================================================================ HYPERLINKS ==
 
