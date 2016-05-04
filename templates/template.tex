@@ -131,8 +131,24 @@ $endfor$
 % essential for styling
 \usepackage{array}
 
-\rowcolors{1}{gray!50}{gray}
-\renewcommand*{\arraystretch}{1.5}
+% this macro calls the VariaTable styles
+\NewDocumentCommand{\NextTableStyle}{m}{\csname VariaTableStyle#1\endcsname}
+
+% this is the default VariaTable style
+\NewDocumentCommand{\VariaTableStyleDefault}{}{
+  \rowcolors{1}{gray!50}{gray}
+  \arrayrulecolor{black}
+  \renewcommand*{\arraystretch}{1.5}
+}
+% and we make sure to set it as baseline
+\NextTableStyle{Default}
+
+% here is another style example
+\NewDocumentCommand{\VariaTableStyleBizarro}{}{
+  \rowcolors{1}{blue}{red}
+  \arrayrulecolor{magenta}
+  \renewcommand*{\arraystretch}{1}
+}
 
 % transparency trick: ! gets the fill while > gets the content
 \newcolumntype{O}{
@@ -182,7 +198,7 @@ $endfor$
 \BreakingTable
 
 % hook to reset table configuration after each use
-\AfterEndEnvironment{VariaTable}{\BreakingTable\EmptyTableCaption}
+\AfterEndEnvironment{VariaTable}{\BreakingTable\EmptyTableCaption\NextTableStyle{Default}}
 
 % =================================================================== FIGURES ==
 

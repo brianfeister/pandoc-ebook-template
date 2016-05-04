@@ -17,6 +17,8 @@
 
 \Blindtext\Blindtext
 
+\NextTableStyle{Bizarro}
+
 |||
 |---------|-----------------|
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
