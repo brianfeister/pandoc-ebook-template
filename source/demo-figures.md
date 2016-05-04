@@ -2,7 +2,7 @@
 
 \Blindtext
 
-![Floating figure (free)](comune-pv)
+![Floating figure (free)](paper-bg.jpg)
 
 ## Floating figures
 
