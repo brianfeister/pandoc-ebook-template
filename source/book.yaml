@@ -8,4 +8,10 @@ language: british
 hyphenation:
   - hy-phen-ated
   - nothyphenated
+cover: example-image-a
+abstract: |
+  Lorem ipsum dolor sit amet, novum bonorum epicurei cu vix. In nam possit
+  postulant efficiendi. Has te nulla iuvaret. Has facilisi recteque ut. Ne
+  quot quidam cotidieque mea, his odio porro id. Est ut postea saperet
+  sensibus, mea ea posse electram.
 ...

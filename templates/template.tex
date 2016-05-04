@@ -101,6 +101,10 @@ $endfor$
 %\cfoot{}
 %\rfoot{\thepage}
 
+% ================================================================ SECTIONING ==
+
+\setcounter{secnumdepth}{0}
+
 % ==================================================================== FLOATS ==
 
 % allow b and h for table* and figure*
@@ -293,6 +297,38 @@ $else$
 $endif$
 }
 
+% ==================================================== FIRST AND SECOND COVER ==
+
+\makeatletter
+\AtBeginDocument{
+\frontmatter
+\thispagestyle{empty}
+$if(cover)$
+\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{$cover$}};
+$endif$
+\null\clearpage\thispagestyle{empty}
+\null\clearpage\thispagestyle{empty}
+\onecolumn
+\null\vfill
+\begingroup
+\centering
+\Huge\@title\par
+\Large\@author\par
+\normalsize\@date\par
+\endgroup
+\vfill
+$if(abstract)$
+\hfill\begin{minipage}{0.8\linewidth}
+$abstract$
+\end{minipage}\hfill\null
+$endif$
+\vfill\vfill
+\twocolumn
+\tableofcontents
+\mainmatter
+}
+\makeatother
+
 % ================================================================= MICROTYPE ==
 
 \usepackage{microtype}
@@ -304,7 +340,5 @@ $if(author)$\author{$author$}$endif$
 $if(date)$\date{$date$}$endif$
 
 \begin{document}
-\maketitle
-\tableofcontents
 $body$
 \end{document}
