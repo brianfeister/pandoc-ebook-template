@@ -1,7 +1,9 @@
 ---
 title: A Star Once Fallen
 author: Ish Stabosz
-#background: paper-bg.jpg
+#background:
+#  odd: paper-bg
+#  even: paper-bg
 language: british
 hyphenation:
   - hy-phen-ated

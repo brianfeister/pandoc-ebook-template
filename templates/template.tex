@@ -1,6 +1,7 @@
 \documentclass[
   fontsize=12pt,
 ]{scrbook}
+\usepackage{scrextend}
 
 % some basic instruments
 \usepackage[onehalfspacing]{setspace}
@@ -278,17 +279,17 @@ $endfor$
 % ================================================================ BACKGROUND ==
 
 % temporary page color
-\usepackage{pagecolor}
-\pagecolor{yellow!30}
+%\usepackage{pagecolor}
+%\pagecolor{yellow!30}
 
 \usepackage{eso-pic}
 
 % background image
 \AddToShipoutPictureBG{
 $if(background)$
-\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{$background$}};
+\ifthispageodd{\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{$background.odd$}};}{\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{$background.even$}};}
 $else$
-\tikz [overlay, remember picture] \draw [pattern=fivepointed stars,pattern color=orange!20] (current page.north west) rectangle (current page.south east);
+%\tikz [overlay, remember picture] \draw [pattern=fivepointed stars,pattern color=orange!20] (current page.north west) rectangle (current page.south east);
 $endif$
 }
 
