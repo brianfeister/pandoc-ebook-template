@@ -1,4 +1,8 @@
 ---
 title: My awesome book
 author: Thomas McAuthor
+language: british
+hyphenation:
+  - hy-phen-ated
+  - nothyphenated
 ...

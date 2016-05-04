@@ -2,6 +2,8 @@
 
 \Blindtext
 
+![Floating figure (free)](comune-pv)
+
 ## Floating figures
 
 \Blindtext
