@@ -6,6 +6,8 @@
 
 \FloatingTable
 
+:lollero
+
 |||
 |---------|-----------------|
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |

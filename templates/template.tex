@@ -156,6 +156,10 @@ $endfor$
 
 \NewDocumentCommand{\NextTableColumns}{m}{\newcolumntype{N}{#1}}
 
+\NewDocumentCommand{\TheCaption}{}{}
+\NewDocumentCommand{\NextTableCaption}{m}{\RenewDocumentCommand{\TheCaption}{}{\caption{#1}}}
+\NewDocumentCommand{\EmptyTableCaption}{}{\RenewDocumentCommand{\TheCaption}{}{}}
+
 \NewDocumentCommand{\BreakingTable}{}{
   \renewenvironment{VariaTable}
     {\begin{xtabular*}{\linewidth}{N}}
@@ -164,13 +168,13 @@ $endfor$
 
 \NewDocumentCommand{\FloatingTable}{O{htb}}{
   \renewenvironment{VariaTable}
-    {\begin{table}[#1]\begin{xtabular*}{\linewidth}{N}}
+    {\begin{table}[#1]\TheCaption\begin{xtabular*}{\linewidth}{N}}
     {\end{xtabular*}\end{table}}
 }
 
 \NewDocumentCommand{\SpanningTable}{O{tbp}}{
   \renewenvironment{VariaTable}
-    {\begin{table*}[#1]\begin{xtabular*}{\linewidth}{N}}
+    {\begin{table*}[#1]\TheCaption\begin{xtabular*}{\linewidth}{N}}
     {\end{xtabular*}\end{table*}}
 }
 
@@ -178,7 +182,7 @@ $endfor$
 \BreakingTable
 
 % hook to reset table configuration after each use
-\AfterEndEnvironment{VariaTable}{\BreakingTable}
+\AfterEndEnvironment{VariaTable}{\BreakingTable\EmptyTableCaption}
 
 % =================================================================== FIGURES ==
 

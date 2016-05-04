@@ -72,6 +72,7 @@ $(TEXDIR)/$(BOOKNAME).tex: $(META) $(ALLPRE) $(TPLDIR)/template.tex
 	perl -S -pi -e 's/\\end{longtable}/\\end{VariaTable}/g' $@
 	perl -S -pi -e 's/\\begin{figure}.*/\\begin{VariaFigure}/g' $@
 	perl -S -pi -e 's/\\end{figure}/\\end{VariaFigure}/g' $@
+	perl -S -0pi -e 's/(\\begin{VariaTable})\n\\\w+{(.*)}\\\w+\n\\\w+\n\\\w+/\\NextTableCaption{\2}\n\1/g' $@
 	cp $(SRCDIR)/*.png $(TEXDIR)/ || :
 	cp $(SRCDIR)/*.jpg $(TEXDIR)/ || :
 
