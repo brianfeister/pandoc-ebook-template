@@ -72,10 +72,13 @@ $(TEXDIR)/$(BOOKNAME).tex: $(META) $(ALLPRE) $(TPLDIR)/template.tex
 	perl -S -pi -e 's/\\end{longtable}/\\end{VariaTable}/g' $@
 	perl -S -pi -e 's/\\begin{figure}.*/\\begin{VariaFigure}/g' $@
 	perl -S -pi -e 's/\\end{figure}/\\end{VariaFigure}/g' $@
-	perl -S -0pi -e 's/(\\begin{VariaTable})\n\\\w+{(.*)}\\\w+\n\\\w+\n\\\w+/\\NextTableCaption{\2}\n\1/g' $@
+	perl -S -0pi -e 's/(\\begin{VariaTable})\n\\caption{(.*)}/\\NextTableCaption{\2}\n\1\n/g' $@
+	perl -S -0pi -e 's/\\tabularnewline\n\\toprule\n.*?\\tabularnewline\n\\midrule\n\\endfirsthead\n//g' $@
+	perl -S -0pi -e 's/\\tabularnewline\n\\toprule\n\\endfirsthead\n//g' $@
 	cp $(SRCDIR)/*.png $(TEXDIR)/ || :
 	cp $(SRCDIR)/*.jpg $(TEXDIR)/ || :
 
+#perl -S -0pi -e 's/(\\begin{VariaTable})\n\\\w+{(.*)}\\\w+\n\\\w+\n\\\w+/\\NextTableCaption{\2}\n\1/g' $@
 # PDF production (from LaTeX sourcecode)
 
 pdf: $(PDFDIR)/$(BOOKNAME).pdf

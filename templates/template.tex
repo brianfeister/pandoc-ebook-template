@@ -121,6 +121,14 @@ $endfor$
 
 % ==================================================================== FLOATS ==
 
+% strip caption labels
+\renewcommand*{\captionformat}{}   
+\renewcommand*{\figureformat}{}
+\renewcommand*{\tableformat}{}
+
+% style caption content
+\setkomafont{caption}{\large\bfseries}
+
 % allow b and h for table* and figure*
 \usepackage{dblfloatfix}
 
@@ -281,10 +289,14 @@ $endfor$
 
 \newmdenv[
   middlelinecolor=green,
-  backgroundcolor=green!10,
   middlelinewidth=2pt,
   roundcorner=10pt,
-  frametitle=,
+  frametitle=This is a transparent frame,
+  tikzsetting={
+    draw=green,
+    fill=green,
+    fill opacity=0.1,},
+  backgroundcolor=none,
 ]{CalloutExample}
 
 \newmdenv[
