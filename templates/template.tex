@@ -1,6 +1,7 @@
 \documentclass[
   fontsize=12pt,
 ]{scrbook}
+\usepackage{scrextend}
 
 % some basic instruments
 \usepackage[onehalfspacing]{setspace}
@@ -114,6 +115,10 @@ $endfor$
 %\cfoot{}
 %\rfoot{\thepage}
 
+% ================================================================ SECTIONING ==
+
+\setcounter{secnumdepth}{0}
+
 % ==================================================================== FLOATS ==
 
 % allow b and h for table* and figure*
@@ -145,8 +150,24 @@ $endfor$
 % essential for styling
 \usepackage{array}
 
-\rowcolors{1}{gray!50}{gray}
-\renewcommand*{\arraystretch}{1.5}
+% this macro calls the VariaTable styles
+\NewDocumentCommand{\NextTableStyle}{m}{\csname VariaTableStyle#1\endcsname}
+
+% this is the default VariaTable style
+\NewDocumentCommand{\VariaTableStyleDefault}{}{
+  \rowcolors{1}{gray!50}{gray}
+  \arrayrulecolor{black}
+  \renewcommand*{\arraystretch}{1.5}
+}
+% and we make sure to set it as baseline
+\NextTableStyle{Default}
+
+% here is another style example
+\NewDocumentCommand{\VariaTableStyleBizarro}{}{
+  \rowcolors{1}{blue}{red}
+  \arrayrulecolor{magenta}
+  \renewcommand*{\arraystretch}{1}
+}
 
 % transparency trick: ! gets the fill while > gets the content
 \newcolumntype{O}{
@@ -170,6 +191,10 @@ $endfor$
 
 \NewDocumentCommand{\NextTableColumns}{m}{\newcolumntype{N}{#1}}
 
+\NewDocumentCommand{\TheCaption}{}{}
+\NewDocumentCommand{\NextTableCaption}{m}{\RenewDocumentCommand{\TheCaption}{}{\caption{#1}}}
+\NewDocumentCommand{\EmptyTableCaption}{}{\RenewDocumentCommand{\TheCaption}{}{}}
+
 \NewDocumentCommand{\BreakingTable}{}{
   \renewenvironment{VariaTable}
     {\begin{xtabular*}{\linewidth}{N}}
@@ -178,13 +203,13 @@ $endfor$
 
 \NewDocumentCommand{\FloatingTable}{O{htb}}{
   \renewenvironment{VariaTable}
-    {\begin{table}[#1]\begin{xtabular*}{\linewidth}{N}}
+    {\begin{table}[#1]\TheCaption\begin{xtabular*}{\linewidth}{N}}
     {\end{xtabular*}\end{table}}
 }
 
 \NewDocumentCommand{\SpanningTable}{O{tbp}}{
   \renewenvironment{VariaTable}
-    {\begin{table*}[#1]\begin{xtabular*}{\linewidth}{N}}
+    {\begin{table*}[#1]\TheCaption\begin{xtabular*}{\linewidth}{N}}
     {\end{xtabular*}\end{table*}}
 }
 
@@ -192,7 +217,7 @@ $endfor$
 \BreakingTable
 
 % hook to reset table configuration after each use
-\AfterEndEnvironment{VariaTable}{\BreakingTable}
+\AfterEndEnvironment{VariaTable}{\BreakingTable\EmptyTableCaption\NextTableStyle{Default}}
 
 % =================================================================== FIGURES ==
 
@@ -251,7 +276,7 @@ $endfor$
   middlelinecolor=red,
   backgroundcolor=red!10,
   middlelinewidth=2pt,
-  frametitle=Warning box,
+  frametitle=,
 ]{CalloutWarning}
 
 \newmdenv[
@@ -259,29 +284,64 @@ $endfor$
   backgroundcolor=green!10,
   middlelinewidth=2pt,
   roundcorner=10pt,
-  frametitle=Example box,
+  frametitle=,
 ]{CalloutExample}
 
 \newmdenv[
-  middlelinecolor=blue,
-  backgroundcolor=blue!10,
-  middlelinewidth=2pt,
-  frametitle=Information box,
+  middlelinecolor=purple,
+  backgroundcolor=purple!10,
+  middlelinewidth=0pt,
+  frametitle=,
 ]{CalloutInformation}
 
 % ================================================================ BACKGROUND ==
 
-% temporary page color
-\usepackage{pagecolor}
-\pagecolor{yellow!30}
+% temporary page color for debugging
+%\usepackage{pagecolor}
+%\pagecolor{yellow!30}
 
 \usepackage{eso-pic}
 
 % background image
 \AddToShipoutPictureBG{
-\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{paper-bg.jpg}};
-% \tikz [overlay, remember picture] \draw [pattern=fivepointed stars,pattern color=orange!20] (current page.north west) rectangle (current page.south east);
+$if(background)$
+\ifthispageodd{\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{$background.odd$}};}{\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{$background.even$}};}
+$else$
+%\tikz [overlay, remember picture] \draw [pattern=fivepointed stars,pattern color=orange!20] (current page.north west) rectangle (current page.south east);
+$endif$
 }
+
+% ==================================================== FIRST AND SECOND COVER ==
+
+\makeatletter
+\AtBeginDocument{
+\frontmatter
+\thispagestyle{empty}
+$if(cover)$
+\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{$cover$}};
+$endif$
+\null\clearpage\thispagestyle{empty}
+\null\clearpage\thispagestyle{empty}
+\onecolumn
+\null\vfill
+\begingroup
+\centering
+\Huge\@title\par
+\Large\@author\par
+\endgroup
+\vfill
+$if(abstract)$
+\hfill\begin{minipage}{0.8\linewidth}
+\centering
+$abstract$
+\end{minipage}\hfill\null
+$endif$
+\vfill\vfill
+\twocolumn
+\tableofcontents
+\mainmatter
+}
+\makeatother
 
 % ================================================================= MICROTYPE ==
 
@@ -294,7 +354,5 @@ $if(author)$\author{$author$}$endif$
 $if(date)$\date{$date$}$endif$
 
 \begin{document}
-\maketitle
-\tableofcontents
 $body$
 \end{document}

@@ -48,25 +48,36 @@ exciting world of fantasy with *Open Legend.*
 Before the adventure begins - even before the players create their
 characters, perhaps - read the following introductory text:
 
-+++
-*You thought the job would be easy. Hitch a ride on a trading vessel, protect it from pirates, and earn a few gold and a free trip to the City of Sails. All in a day’s work for an adventurer like yourself. But there’s not much your swords and arrows and spells can do against a typhoon. You don’t remember much - the flash of lightning, the howl of wind, the doomful crack of the mast as it split down the middle - but one memory stands out perfectly in your mind.
+++++ {.CalloutInformation}
+*You thought the job would be easy. Hitch a ride on a trading vessel, protect it from pirates, and earn a few gold and a free trip to the City of Sails. All in a day’s work for an adventurer like yourself. But there’s not much your swords and arrows and spells can do against a typhoon. You don’t remember much - the flash of lightning, the howl of wind, the doomful crack of the mast as it split down the middle - but one memory stands out perfectly in your mind.*
 
-Traveling aboard the ship was a fortune teller, an old hag that was great aunt to the captain or something like that. On the night before the typhoon struck, she told your fortune, and her words are emblazoned in your memory:
+*Traveling aboard the ship was a fortune teller, an old hag that was great aunt to the captain or something like that. On the night before the typhoon struck, she told your fortune, and her words are emblazoned in your memory:*
 
-A star once fallen upon the land,
-Brings sword and axe and spell at hand.
-For planted deep like evil seed
-It fills heart, soul, and mind with greed.
+*A star once fallen upon the land,*
 
-Shoulders broad and voices tiny
-Ceaseless war of clashing armies.
-In sleep, the beauty whispers well,
-But her wormtongue song is ever fell.
+*Brings sword and axe and spell at hand.*
 
-A royal staff in hands upright
-Shall end the long, eternal fight.
-But try you might, and try you may
-The star will rise another day.*
+*For planted deep like evil seed*
+
+*It fills heart, soul, and mind with greed.*
+
+
+*Shoulders broad and voices tiny*
+
+*Ceaseless war of clashing armies.*
+
+*In sleep, the beauty whispers well,*
+
+*But her wormtongue song is ever fell.*
+
+
+*A royal staff in hands upright*
+
+*Shall end the long, eternal fight.*
+
+*But try you might, and try you may*
+
+*The star will rise another day.*
 +++
 
 ## Character Creation
@@ -83,29 +94,24 @@ back lines, your attributes define the epic deeds that you can
 accomplish. The Attributes at a Glance tables provide summaries of the
 type of tasks that each attribute is used for.
 
-\NextTableColumns{OCT{1}}\SpanningTable
+\NextTableColumns{OCT{.25}OLT{.75}}
 
-||
-|-|
-| PHYSICAL ATTRIBUTES AT A GLANCE |
+\SpanningTable
 
-\NextTableColumns{OCT{.25}OLT{.75}}\SpanningTable
+: Physical Attributes at a Glance
 
-| | |
+|||
 | - | - |
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
 | **Fortitude** | Wear heavy armor, resist poison, shrug off pain, exert yourself physically |
 | **Might** | Swing a maul, jump over a chasm, break down a door, wrestle a foe to submission |
 
 
+\NextTableColumns{OCT{.25}OLT{.75}}
 
-\NextTableColumns{OCT{1}}\SpanningTable
+\SpanningTable
 
-||
-|-|
-| MENTAL ATTRIBUTES AT A GLANCE |
-
-\NextTableColumns{OCT{.25}OLT{.75}}\SpanningTable
+: Mental Attributes at a Glance
 
 | | |
 | - | - |
@@ -114,13 +120,12 @@ type of tasks that each attribute is used for.
 | **Perception** | Sense ulterior motives, track someone, catch a gut feeling, spot a hidden foe, find a secret door |
 | **Will** | Maintain your resolve, overcome adversity, resist torture, stay awake on watch, stave off insanity |
 
-\NextTableColumns{OCT{1}}\SpanningTable
 
-||
-|-|
-| SOCIAL ATTRIBUTES AT A GLANCE |
+\NextTableColumns{OCT{.25}OLT{.75}}
 
-\NextTableColumns{OCT{.25}OLT{.75}}\SpanningTable
+\SpanningTable
+
+: Social Attributes at a Glance
 
 | | |
 | - | - |
@@ -128,13 +133,12 @@ type of tasks that each attribute is used for.
 | **Persuasion** | Negotiate a deal, convince someone, haggle a good price, pry information |
 | **Presence** | Give a speech, sing a song, inspire an army, exert your force of personality, have luck smile upon you |
 
-\NextTableColumns{OCT{1}}\SpanningTable
 
-||
-|-|
-| SUPERNATURAL ATTRIBUTES AT A GLANCE |
+\NextTableColumns{OCT{.25}OLT{.75}}
 
-\NextTableColumns{OCT{.25}OLT{.75}}\SpanningTable
+\SpanningTable
+
+: Supernatural Attributes at a Glance
 
 | | |
 | - | - |
@@ -156,7 +160,9 @@ Table, based on the type of hero you would like to play. On your
 character sheet, assign each score to one of your attributes. Your
 remaining attributes start with a score of zero.
 
-\NextTableColumns{OCT{1}}\FloatingTable
+\NextTableColumns{OCT{1}}
+
+\FloatingTable
 
 | ATTRIBUTE QUICK BUILDS |
 | - |
@@ -174,13 +180,11 @@ chance of success. Consult the Attribute Dice table for each of your
 attributes and record the appropriate dice. (You’ll learn what to do
 with these dice later on.)
 
-\NextTableColumns{OCT{1}}\FloatingTable
+\NextTableColumns{OCT{.50}OCT{.50}}
 
-| Attribute Dice |
-| - |
-| |
+\FloatingTable
 
-\NextTableColumns{OCT{.50}OCT{.50}}\FloatingTable
+: Attribute Dice
 
 | Attribute Score | Attribute Dice |
 | - | - |
@@ -196,19 +200,25 @@ You have three defenses - fortitude, evasion, and resolve - which will
 protect you from different types of attacks. Calculate your defenses
 using the formulas below and record them on your character sheet.
 
-\NextTableColumns{OCT{1}}\FloatingTable
+\NextTableColumns{OCT{1}}
+
+\FloatingTable
 
 | Toughness = 10 + Fortitude |
 | - |
 | |
 
-\NextTableColumns{OCT{1}}\FloatingTable
+\NextTableColumns{OCT{1}}
+
+\FloatingTable
 
 | Evasion = 10 + Agility |
 | - |
 | |
 
-\NextTableColumns{OCT{1}}\FloatingTable
+\NextTableColumns{OCT{1}}
+
+\FloatingTable
 
 | Resolve = 10 + Presence + Will  |
 | - |
@@ -220,7 +230,9 @@ battlefield in spite of wounds or exhaustion. If they reach zero, you
 fall unconscious and are at risk of death. Calculate your maximum hit
 points using the formula below and record them on your character sheet.
 
-\NextTableColumns{OCT{1}}\FloatingTable
+\NextTableColumns{OCT{1}}
+
+\FloatingTable
 
 | Hit Points = 2 x (Fortitude + Presence + Will) + 10 |
 | - |

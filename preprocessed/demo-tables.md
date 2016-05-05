@@ -6,6 +6,8 @@
 
 \FloatingTable
 
+: This is a floating table
+
 |||
 |---------|-----------------|
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
@@ -14,6 +16,8 @@
 | **Might** | Swing a maul, jump over a chasm, break down a door, wrestle a foe to submission |
 
 \Blindtext\Blindtext
+
+\NextTableStyle{Bizarro}
 
 |||
 |---------|-----------------|
@@ -41,5 +45,7 @@
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
 | **Fortitude** | Wear heavy armor, resist poison, shrug off pain, exert yourself physically |
 | **Might** | Swing a maul, jump over a chasm, break down a door, wrestle a foe to submission |
+
+: This is a spanning table
 
 \Blindtext\Blindtext\Blindtext
