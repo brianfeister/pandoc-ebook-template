@@ -11,6 +11,11 @@ This is a new paragraph. This is a new paragraph. This is a new
 paragraph. This is a new paragraph. This is a new paragraph. This is a
 new paragraph. This is a new paragraph. This is a new paragraph.
 
+This paragraph contains a few \
+hard line breaks obtained \
+with escaped newline \
+characters.
+
 As you can see *all* the inline formatting is **actually** preserved.
 ++++
 
