@@ -1,4 +1,4 @@
-# A Star Once Fallen
+# Getting Started
 
 A Learn-by-Play Adventure by Ish Stabosz for the Open Legend RPG System
 
@@ -53,31 +53,23 @@ characters, perhaps - read the following introductory text:
 
 *Traveling aboard the ship was a fortune teller, an old hag that was great aunt to the captain or something like that. On the night before the typhoon struck, she told your fortune, and her words are emblazoned in your memory:*
 
-*A star once fallen upon the land,*
+```
+A star once fallen upon the land,
+Brings sword and axe and spell at hand.
+For planted deep like evil seed
+It fills heart, soul, and mind with greed.
 
-*Brings sword and axe and spell at hand.*
+Shoulders broad and voices tiny
+Ceaseless war of clashing armies.
+In sleep, the beauty whispers well,
+But her wormtongue song is ever fell.
 
-*For planted deep like evil seed*
+A royal staff in hands upright
+Shall end the long, eternal fight.
+But try you might, and try you may
+The star will rise another day.
+```
 
-*It fills heart, soul, and mind with greed.*
-
-
-*Shoulders broad and voices tiny*
-
-*Ceaseless war of clashing armies.*
-
-*In sleep, the beauty whispers well,*
-
-*But her wormtongue song is ever fell.*
-
-
-*A royal staff in hands upright*
-
-*Shall end the long, eternal fight.*
-
-*But try you might, and try you may*
-
-*The star will rise another day.*
 +++
 
 ## Character Creation
@@ -94,11 +86,10 @@ back lines, your attributes define the epic deeds that you can
 accomplish. The Attributes at a Glance tables provide summaries of the
 type of tasks that each attribute is used for.
 
-\NextTableColumns{OCT{.25}OLT{.75}}
 
-\SpanningTable
+### Physical Attributes at a Glance
 
-: Physical Attributes at a Glance
+\NextTableColumns{OCT{.50}OLT{.50}}
 
 |||
 | - | - |
@@ -107,11 +98,9 @@ type of tasks that each attribute is used for.
 | **Might** | Swing a maul, jump over a chasm, break down a door, wrestle a foe to submission |
 
 
-\NextTableColumns{OCT{.25}OLT{.75}}
+### Mental Attributes at a Glance
 
-\SpanningTable
-
-: Mental Attributes at a Glance
+\NextTableColumns{OCT{.50}OLT{.50}}
 
 | | |
 | - | - |
@@ -120,12 +109,9 @@ type of tasks that each attribute is used for.
 | **Perception** | Sense ulterior motives, track someone, catch a gut feeling, spot a hidden foe, find a secret door |
 | **Will** | Maintain your resolve, overcome adversity, resist torture, stay awake on watch, stave off insanity |
 
+### Social Attributes at a Glance
 
-\NextTableColumns{OCT{.25}OLT{.75}}
-
-\SpanningTable
-
-: Social Attributes at a Glance
+\NextTableColumns{OCT{.50}OLT{.50}}
 
 | | |
 | - | - |
@@ -134,11 +120,9 @@ type of tasks that each attribute is used for.
 | **Presence** | Give a speech, sing a song, inspire an army, exert your force of personality, have luck smile upon you |
 
 
-\NextTableColumns{OCT{.25}OLT{.75}}
+### Supernatural Attributes at a Glance
 
-\SpanningTable
-
-: Supernatural Attributes at a Glance
+\NextTableColumns{OCT{.50}OLT{.50}}
 
 | | |
 | - | - |
@@ -160,11 +144,12 @@ Table, based on the type of hero you would like to play. On your
 character sheet, assign each score to one of your attributes. Your
 remaining attributes start with a score of zero.
 
+\pagebreak
+
 \NextTableColumns{OCT{1}}
 
-\FloatingTable
 
-| ATTRIBUTE QUICK BUILDS |
+| Attribute Quick Builds |
 | - |
 | **Specialized Hero** |
 | 5, 4, 3, 2, 2, 2 |
@@ -180,11 +165,9 @@ chance of success. Consult the Attribute Dice table for each of your
 attributes and record the appropriate dice. (You’ll learn what to do
 with these dice later on.)
 
+### Attribute Dice
+
 \NextTableColumns{OCT{.50}OCT{.50}}
-
-\FloatingTable
-
-: Attribute Dice
 
 | Attribute Score | Attribute Dice |
 | - | - |
@@ -200,29 +183,15 @@ You have three defenses - fortitude, evasion, and resolve - which will
 protect you from different types of attacks. Calculate your defenses
 using the formulas below and record them on your character sheet.
 
-\NextTableColumns{OCT{1}}
-
-\FloatingTable
-
-| Toughness = 10 + Fortitude |
-| - |
-| |
+### Defenses
 
 \NextTableColumns{OCT{1}}
 
-\FloatingTable
-
-| Evasion = 10 + Agility |
-| - |
-| |
-
-\NextTableColumns{OCT{1}}
-
-\FloatingTable
-
-| Resolve = 10 + Presence + Will  |
-| - |
-| |
+|||
+| - | - |
+| **Toughness** = 10 + Fortitude |
+| **Evasion** = 10 + Agility |
+| **Resolve** = 10 + Presence + Will  |
 
 Your hit points (or HP) are an abstract measure of how well you can
 ignore pain, avoid deadly blows, and maintain a presence on the
@@ -230,13 +199,13 @@ battlefield in spite of wounds or exhaustion. If they reach zero, you
 fall unconscious and are at risk of death. Calculate your maximum hit
 points using the formula below and record them on your character sheet.
 
+### Hit Points
+
 \NextTableColumns{OCT{1}}
 
-\FloatingTable
-
-| Hit Points = 2 x (Fortitude + Presence + Will) + 10 |
-| - |
-| |
+|||
+| - | - |
+| **Hit Points** = 2 x (Fortitude + Presence + Will) + 10 |
 
 *That is, add your Fortitude, Presence, and Will scores. Multiply the
 total by 2. Finally, add 10.*

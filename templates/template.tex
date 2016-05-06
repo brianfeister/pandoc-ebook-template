@@ -1,6 +1,15 @@
 \documentclass[
-  fontsize=12pt,
+  fontsize=12pt
 ]{scrbook}
+
+% below we provide a bleed and draw crop marks
+% \usepackage[
+%   cross,
+%   center,
+%   width=154.3mm,
+%   height=216.3mm
+% ]{crop}
+
 \usepackage{scrextend}
 
 % some basic instruments
@@ -24,13 +33,16 @@
   paperwidth=8.5in,
   paperheight=11in,
   twocolumn,
-  columnsep=.2in,
+  columnsep=.3in,
   top=1in,
   inner=1in,
   outer=0.75in,
-  bottom=1in,
+  bottom=0.75in,
   footskip=.5in,
   headsep=.25in,
+  % bindingoffset=1mm,
+  % evensidemargin=0,
+  % oddsidemargin=0
 ]{geometry}
 
 % General spacing settings
@@ -122,7 +134,7 @@ $endfor$
 % ==================================================================== FLOATS ==
 
 % strip caption labels
-\renewcommand*{\captionformat}{}   
+\renewcommand*{\captionformat}{}
 \renewcommand*{\figureformat}{}
 \renewcommand*{\tableformat}{}
 
