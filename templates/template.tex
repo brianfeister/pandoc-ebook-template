@@ -183,22 +183,22 @@ $endfor$
 %  }{%
 \begin{tikzpicture}[
   label/.style={
-    draw,
-    inner sep=5pt,
-    line width=1pt,
-    text width=\linewidth-2*5pt-1pt,
+%    draw,
+    inner sep=2pt,
+%    line width=1pt,
+    text width=\linewidth-2*2pt,%-1pt,
     node contents={#4},
   },
 ]
 \node (n) [label];
+\draw [
+  draw,
+  ultra thick,
+] (n.south west) -- (n.south east);
 \clip (n.south west) rectangle (n.north east);
-\node {\includegraphics{example-image-a}};
+\node {\includegraphics{marble}};
 \node [label];
-\end{tikzpicture}%
-%    \@hangfrom{\hskip #2#3}{#4}%
-%}% 
-}
-\makeatother
+\end{tikzpicture}}
 
 
 % ==================================================================== FLOATS ==
