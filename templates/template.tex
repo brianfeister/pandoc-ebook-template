@@ -1,5 +1,5 @@
 \documentclass[
-  fontsize=12pt
+  fontsize=9.5pt
 ]{scrbook}
 
 % below we provide a bleed and draw crop marks
@@ -13,7 +13,7 @@
 \usepackage{scrextend}
 
 % some basic instruments
-\usepackage[onehalfspacing]{setspace}
+% \usepackage[onehalfspacing]{setspace}
 \usepackage{blindtext}
 \usepackage{etoolbox}
 
@@ -40,7 +40,7 @@
   bottom=0.75in,
   footskip=.5in,
   headsep=.25in,
-  % bindingoffset=1mm,
+  bindingoffset=0in,
   % evensidemargin=0,
   % oddsidemargin=0
 ]{geometry}
@@ -75,13 +75,33 @@
 %    BoldItalicFont={* Bold Italic}]
 %   {Merriweather}
 % \setsansfont{Yana B}
+% \setsansfont
+%   [Ligatures=TeX, % recommended
+%    Scale=1.5,
+%    Color={983D0E},
+%    UprightFont={*},
+%    ItalicFont={*},
+%    BoldFont={*-Bold},
+%    BoldItalicFont={*-Bold}]
+%   {Cinzel}
 \setsansfont
   [Ligatures=TeX, % recommended
+   Scale=1.2,
+   Color={983D0E},
    UprightFont={*},
-   ItalicFont={*},
-   BoldFont={*-Bold},
-   BoldItalicFont={*-Bold}]
-  {Cinzel}
+   ItalicFont={* Italic},
+   BoldFont={*},
+   BoldItalicFont={* Italic}]
+  {Alegreya SC}
+% \setsansfont
+%   [Ligatures=TeX, % recommended
+%    Scale=1.5,
+%    Color={983D0E},
+%    UprightFont={*-Regular},
+%    ItalicFont={*-Regular},
+%    BoldFont={*-Regular},
+%    BoldItalicFont={*-Regular}]
+%   {AlmendraSC}
 \setmonofont{PT Sans}
 
 % ================================================================== LANGUAGE ==
@@ -290,6 +310,8 @@ $endfor$
 
 % ================================================================== CALLOUTS ==
 
+% color reference: http://latexcolor.com/
+
 \usepackage[framemethod=tikz]{mdframed}
 
 \newmdenv[
@@ -312,10 +334,12 @@ $endfor$
 ]{CalloutExample}
 
 \newmdenv[
-  middlelinecolor=purple,
-  backgroundcolor=purple!10,
-  middlelinewidth=0pt,
+  middlelinecolor=violet!30,
+  backgroundcolor=violet!10,
+  middlelinewidth=3pt,
   frametitle=,
+  leftline=false,
+  rightline=false
 ]{CalloutInformation}
 
 % ================================================================ BACKGROUND ==

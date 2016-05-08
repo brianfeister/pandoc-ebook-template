@@ -1,7 +1,5 @@
 # Getting Started
 
-A Learn-by-Play Adventure by Ish Stabosz for the Open Legend RPG System
-
 *Marooned on an uncharted island, caught between two warring tribes, and
 threatened at all hours by a dormant volcano prophesied to awaken again.
 Can our brave heroes discover the legend of Starfall Island before they
@@ -48,7 +46,12 @@ exciting world of fantasy with *Open Legend.*
 Before the adventure begins - even before the players create their
 characters, perhaps - read the following introductory text:
 
+\newpage
+
 ++++ {.CalloutInformation}
+\
+\
+
 *You thought the job would be easy. Hitch a ride on a trading vessel, protect it from pirates, and earn a few gold and a free trip to the City of Sails. All in a day’s work for an adventurer like yourself. But there’s not much your swords and arrows and spells can do against a typhoon. You don’t remember much - the flash of lightning, the howl of wind, the doomful crack of the mast as it split down the middle - but one memory stands out perfectly in your mind.*
 
 *Traveling aboard the ship was a fortune teller, an old hag that was great aunt to the captain or something like that. On the night before the typhoon struck, she told your fortune, and her words are emblazoned in your memory:*
@@ -86,10 +89,11 @@ back lines, your attributes define the epic deeds that you can
 accomplish. The Attributes at a Glance tables provide summaries of the
 type of tasks that each attribute is used for.
 
+\newpage
 
 ### Physical Attributes at a Glance
 
-\NextTableColumns{OCT{.50}OLT{.50}}
+\NextTableColumns{OCT{.33}OLT{.67}}
 
 |||
 | - | - |
@@ -100,7 +104,7 @@ type of tasks that each attribute is used for.
 
 ### Mental Attributes at a Glance
 
-\NextTableColumns{OCT{.50}OLT{.50}}
+\NextTableColumns{OCT{.33}OLT{.67}}
 
 | | |
 | - | - |
@@ -111,7 +115,7 @@ type of tasks that each attribute is used for.
 
 ### Social Attributes at a Glance
 
-\NextTableColumns{OCT{.50}OLT{.50}}
+\NextTableColumns{OCT{.33}OLT{.67}}
 
 | | |
 | - | - |
@@ -122,7 +126,7 @@ type of tasks that each attribute is used for.
 
 ### Supernatural Attributes at a Glance
 
-\NextTableColumns{OCT{.50}OLT{.50}}
+\NextTableColumns{OCT{.33}OLT{.67}}
 
 | | |
 | - | - |
@@ -144,10 +148,7 @@ Table, based on the type of hero you would like to play. On your
 character sheet, assign each score to one of your attributes. Your
 remaining attributes start with a score of zero.
 
-\pagebreak
-
 \NextTableColumns{OCT{1}}
-
 
 | Attribute Quick Builds |
 | - |
@@ -165,7 +166,7 @@ chance of success. Consult the Attribute Dice table for each of your
 attributes and record the appropriate dice. (You’ll learn what to do
 with these dice later on.)
 
-### Attribute Dice
+#### Attribute Dice
 
 \NextTableColumns{OCT{.50}OCT{.50}}
 
