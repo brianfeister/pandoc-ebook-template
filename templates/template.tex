@@ -172,6 +172,35 @@ $endfor$
 % italic: \itshape
 % CAVEAT: your font *must* have the styles to use these!
 
+
+\makeatletter
+\renewcommand{\sectionlinesformat}[4]{%
+%\ifstr{#1}{section}{%
+%    \parbox[t]{\linewidth}{%
+%      \raggedsection\@hangfrom{\hskip #2#3}{#4}\par%
+%      \vspace*{-.75\ht\strutbox}\rule{\linewidth}{.8pt}%
+%    }%
+%  }{%
+\begin{tikzpicture}[
+  label/.style={
+    draw,
+    inner sep=5pt,
+    line width=1pt,
+    text width=\linewidth-2*5pt-1pt,
+    node contents={#4},
+  },
+]
+\node (n) [label];
+\clip (n.south west) rectangle (n.north east);
+\node {\includegraphics{example-image-a}};
+\node [label];
+\end{tikzpicture}%
+%    \@hangfrom{\hskip #2#3}{#4}%
+%}% 
+}
+\makeatother
+
+
 % ==================================================================== FLOATS ==
 
 % strip caption labels
@@ -207,6 +236,8 @@ $endfor$
 
 % breakable two-columns tables
 \usepackage{xtab}
+% avoid overestimation so columns breaks are tighter
+\xentrystretch{0}
 
 % essential for styling
 \usepackage{array}
