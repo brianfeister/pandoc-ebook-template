@@ -155,11 +155,22 @@ $endfor$
 \setcounter{secnumdepth}{0}
 
 % global style for all sectioning
-\setkomafont{disposition}  {\sffamily\color{SectioningColor}}
+% we use sans family and the same nice color for all levels
+\setkomafont{disposition}{\sffamily\color{SectioningColor}}
+
 % specific additional styles
-%\setkomafont{section}      {}
-%\setkomafont{subsection}   {}
-%\setkomafont{subsubsection}{}
+\setkomafont{section}{\Large}
+\setkomafont{subsection}{\large}
+\setkomafont{subsubsection}{\normalsize\itshape}
+
+% additional size macros you may need (I recomend using default sizes, not specific ones)
+% default sizes: \tiny \scriptsize \normalsize \large \Large \Huge \HUGE
+% specific size/lineheight: \fontsize{10pt}{12pt}\selectfont
+
+% styling macros:
+% bold: \bfseries
+% italic: \itshape
+% CAVEAT: your font *must* have the styles to use these!
 
 % ==================================================================== FLOATS ==
 
