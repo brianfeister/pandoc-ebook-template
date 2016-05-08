@@ -166,6 +166,8 @@ chance of success. Consult the Attribute Dice table for each of your
 attributes and record the appropriate dice. (You’ll learn what to do
 with these dice later on.)
 
+\newpage
+
 #### Attribute Dice
 
 \NextTableColumns{OCT{.50}OCT{.50}}

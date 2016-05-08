@@ -87,7 +87,6 @@
 \setsansfont
   [Ligatures=TeX, % recommended
    Scale=1.2,
-   Color={983D0E},
    UprightFont={*},
    ItalicFont={* Italic},
    BoldFont={*},
@@ -147,9 +146,20 @@ $endfor$
 %\cfoot{}
 %\rfoot{\thepage}
 
+% ============================================================== COLOR SCHEME ==
+
+\definecolor{SectioningColor}{HTML}{983D0E}
+
 % ================================================================ SECTIONING ==
 
 \setcounter{secnumdepth}{0}
+
+% global style for all sectioning
+\setkomafont{disposition}  {\sffamily\color{SectioningColor}}
+% specific additional styles
+%\setkomafont{section}      {}
+%\setkomafont{subsection}   {}
+%\setkomafont{subsubsection}{}
 
 % ==================================================================== FLOATS ==
 
