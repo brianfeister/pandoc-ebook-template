@@ -93,7 +93,7 @@ type of tasks that each attribute is used for.
 
 ### Physical Attributes at a Glance
 
-\NextTableColumns{OCT{.33}OLT{.67}}
+\NextTableColumns{OLT{.33}OLT{.67}}
 
 |||
 | - | - |
@@ -104,7 +104,7 @@ type of tasks that each attribute is used for.
 
 ### Mental Attributes at a Glance
 
-\NextTableColumns{OCT{.33}OLT{.67}}
+\NextTableColumns{OLT{.33}OLT{.67}}
 
 | | |
 | - | - |
@@ -115,7 +115,7 @@ type of tasks that each attribute is used for.
 
 ### Social Attributes at a Glance
 
-\NextTableColumns{OCT{.33}OLT{.67}}
+\NextTableColumns{OLT{.33}OLT{.67}}
 
 | | |
 | - | - |
@@ -126,7 +126,7 @@ type of tasks that each attribute is used for.
 
 ### Supernatural Attributes at a Glance
 
-\NextTableColumns{OCT{.33}OLT{.67}}
+\NextTableColumns{OLT{.33}OLT{.67}}
 
 | | |
 | - | - |
@@ -194,7 +194,7 @@ using the formulas below and record them on your character sheet.
 | - | - |
 | **Toughness** = 10 + Fortitude |
 | **Evasion** = 10 + Agility |
-| **Resolve** = 10 + Presence + Will  |
+| **Resolve** = 10 + Presence + Will |
 
 Your hit points (or HP) are an abstract measure of how well you can
 ignore pain, avoid deadly blows, and maintain a presence on the
@@ -212,3 +212,75 @@ points using the formula below and record them on your character sheet.
 
 *That is, add your Fortitude, Presence, and Will scores. Multiply the
 total by 2. Finally, add 10.*
+
+## Choose Starting Equipment
+
+From the tables below choose up to one suit of armor and either three
+weapons or a two weapons and a shield. Note that armor may require a
+certain Fortitude score to use and may also reduce your movement speed.
+Adjust your defenses according to any armor or shields you choose.
+Record your equipment and their properties on your character sheet.
+
+\newpage
+
+#### Melee Weapons
+
+\NextTableColumns{OLT{.35}OLT{.65}}
+
+| Name | Properties |
+| - | - |
+| **Dagger** | one-handed, precise, range 25’, swift |
+| **Longsword** | versatile, forceful, precise |
+| **Spear** | two-handed, reach, range 35’, forceful, precise |
+| **Quarterstaff** | two-handed, reach, forceful, precise |
+| **Greataxe** | two-handed, forceful |
+| **Battle** Axe | versatile, forceful |
+| **Greatsword** | two-handed, forceful, precise |
+| **Hatchet** | one-handed, forceful, range 25’, swift |
+
+
+#### Ranged Weapons
+
+\NextTableColumns{OLT{.35}OLT{.65}}
+
+| Name | Properties |
+| - | - |
+| **Crossbow** | two-handed, range 50’, precise |
+| **Hand Crossbow** | one-handed, range 35’, precise, swift |
+| **Longbow** | two-handed, range 100’, precise |
+| **Shortbow** | two-handed, range 50’ precise, swift |
+
+#### Armor & Shields
+
+\NextTableColumns{OLT{.35}OLT{.65}}
+
+| Name | Properties |
+| - | - |
+| **Small Shield** | requires fortitude 1, +1 to evasion and toughness |
+| **Large Shield** | requires fortitude 3, +2 to evasion and toughness |
+| **Leather Armor** | +2 to evasion and toughness |
+| **Scale Shirt** | requires fortitude 2, +4 to evasion and toughness |
+| **Chain Mail** | requires fortitude 3, +5 to evasion and toughness, -5’ speed |
+| **Scale Mail** | requires fortitude 4, +6 to evasion and toughness, -5’ speed |
+
+\newpage
+
+## Describe Your Character
+
+Once everyone has a character, go around the table and tell the group
+about who you’ll be playing. Are you a noble dwarven warrior displaced
+from your delve by an evil dragon? A high elven enchanter travelling the
+realm in search of magic to free your love from an ancient curse? A
+half-angelic priest, fallen from grace and living amongst mortals in
+hope of atoning for past transgressions?
+
+Whatever your attributes say about your character, give yourself a
+legendary story worthy of the heroic quest you are about to undertake.
+
++++ {.CalloutWarning}
+## GM’S EYES ONLY BEYOND THIS POINT
+
+The rest of this rule book is only meant for the GM, who will share the rules with the PCs when the time comes. Players who read on risk spoiling the mystery and ruining the fun.
+
+May a curse fall upon the dice of all PCs who read on. May they land ever on 1s and never explode!
++++
