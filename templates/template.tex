@@ -1,5 +1,6 @@
 \documentclass[
-  fontsize=9.5pt
+  fontsize=9.5pt,
+  openany % prevents page buffering between chapters
 ]{scrbook}
 
 % below we provide a bleed and draw crop marks
@@ -186,7 +187,7 @@ $endfor$
   label/.style={
 %    draw,
     inner sep=2pt,
-%    line width=1pt,
+%   line width=1pt,
     text width=\linewidth-2*2pt,%-1pt,
     node contents={#4},
   },
@@ -349,6 +350,10 @@ $endfor$
   \AddToShipoutPictureBG*{\tikz [overlay, remember picture] \node [center, #1, inner sep=0] {\includegraphics{#2}};}
 }
 
+\NewDocumentCommand{\AbsoluteFullPage}{O{}m}{
+  \AddToShipoutPictureBG*{\tikz [overlay, remember picture] \node [center, #1, inner sep=0] {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{#2}};}
+}
+
 % automagic picture resizing
 \usepackage{graphicx,grffile}
 \newsavebox\ltmcbox
@@ -368,22 +373,43 @@ $endfor$
 \usepackage[framemethod=tikz]{mdframed}
 
 \newmdenv[
-  middlelinecolor=red,
+  middlelinecolor=red!30,
   backgroundcolor=red!10,
-  middlelinewidth=2pt,
+  middlelinewidth=3pt,
   frametitle=,
+  % leftline=false,
+  topline=false,
+  rightline=false,
+  bottomline=false,
+  innertopmargin=13,
+  innerbottommargin=13,
 ]{CalloutWarning}
 
+% \newmdenv[
+%   middlelinecolor=yellow!30,
+%   backgroundcolor=yellow!10,
+%   middlelinewidth=3pt,
+%   frametitle=,
+%   leftline=false,
+%   rightline=false,
+%   tikzsetting={
+%     draw=yellow!30,
+%     fill=yellow!30,
+%     fill opacity=0.5,},
+% ]{CalloutExample}
+
+
 \newmdenv[
-  middlelinecolor=green,
-  middlelinewidth=2pt,
-  roundcorner=10pt,
+  middlelinecolor=yellow!30,
+  backgroundcolor=yellow!10,
+  middlelinewidth=3pt,
   frametitle=,
-  tikzsetting={
-    draw=green,
-    fill=green,
-    fill opacity=0.1,},
-  backgroundcolor=none,
+  % leftline=false,
+  topline=false,
+  rightline=false,
+  bottomline=false,
+  innertopmargin=13,
+  innerbottommargin=13,
 ]{CalloutExample}
 
 \newmdenv[
@@ -391,8 +417,12 @@ $endfor$
   backgroundcolor=violet!10,
   middlelinewidth=3pt,
   frametitle=,
-  leftline=false,
-  rightline=false
+  % leftline=false,
+  topline=false,
+  rightline=false,
+  bottomline=false,
+  innertopmargin=13,
+  innerbottommargin=13,
 ]{CalloutInformation}
 
 % ================================================================ BACKGROUND ==

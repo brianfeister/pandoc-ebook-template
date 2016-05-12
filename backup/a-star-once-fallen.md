@@ -295,16 +295,20 @@ legendary story worthy of the heroic quest you are about to undertake.
 >
 > May a curse fall upon the dice of all PCs who read on. May they land ever on 1s and never explode!
 
-<<<< Starfall Island Map >>>>
+\clearpage
 
-## Game Master’s Overview
+\AbsoluteFullPage{starfall-island-map.jpg}
+
+***
+
+# Game Master’s Overview
 
 The paragraphs below provide you a look at the main plot of this
 adventure and some of their historical origins. Becoming familiar with
 these events will help you steer the narrative of the adventure based on
 the actions of the PCs.
 
-### The Unending Feud
+## The Unending Feud
 
 Nearly a century ago, a great meteor fell from the sky and carved a deep
 chasm into the center of the island. Following this cataclysmic
@@ -322,7 +326,7 @@ massive meteorite made of an alien pink gem. As soon as the star fell,
 the natives began mining the precious ore, and not long after they began
 fighting for it.
 
-### The Secret Prison
+## The Secret Prison
 
 Unknown to the natives, the meteor is actually a prison for the Demon
 Lord Asgaroth, who was banished from a far distant plane eons ago. The
@@ -334,7 +338,7 @@ closer to freedom. For a hundred years, the war between the Wapugnos and
 the Wapunies has allowed neither of the tribes much freedom to mine the
 star crystals, but a new arrival to the scene promises to change that.
 
-### The Broken Heart
+## The Broken Heart
 
 About five years ago, a ship crashed upon the shores of Starfall Island.
 The lone survivor was a merchant named Eric Thorn, who had been
@@ -354,7 +358,7 @@ her from the shackles of death. Since then, he has worked tirelessly on
 a scheme to free the Demon Lord, and has grown in wickedness and
 insanity in the process.
 
-### The Dream Speaker
+## The Dream Speaker
 
 The necromancer’s plan involves eliminating the Wapunies so that the
 Wapungos can be free to mine the star crystals, and thus release
@@ -367,7 +371,7 @@ Wapunies. Thorn’s hope is that by focusing on defense, the Wapungo can
 bide their time and grow in strength while also catching the Wapuny off
 guard once the final stage of his scheme unfolds.
 
-### The Undying Army
+## The Undying Army
 
 Once the Wapungo are strong enough and the Wapuny have sufficiently let
 down their guard, the necromancer will then bolster the native forces
@@ -378,7 +382,7 @@ to complete a ritual to summon the forces of the undead en masse and
 then wipe out the Wapunies - allowing the Wapungo free reign to mine the
 star crystals and thereby free the Demon Lord Asgaroth.
 
-### The Prophecy
+## The Prophecy
 
 Five centuries ago, an evil and sorcerous race of snake men called the
 Izzaru ruled the island before destroying themselves with their own
@@ -507,6 +511,8 @@ predict the tides well enough even to overcome Asgaroth's trap. Earning
 the Wapuny trust, however, comes at a great cost, and their chief will
 not permit the shamans’ assistance for any prize less than the Scepter
 of Kings.
+
+# Encounters
 
 ## Opening Scene: Mud & Monkeys
 
