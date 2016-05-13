@@ -151,6 +151,8 @@ $endfor$
 % ============================================================== COLOR SCHEME ==
 
 \definecolor{SectioningColor}{HTML}{983D0E}
+% \definecolor{CalloutInfoColor}{HTML}{F4E2B24}
+% \definecolor{CalloutInfoBorder}{HTML}{C58E48}
 
 % ================================================================ SECTIONING ==
 
@@ -399,18 +401,36 @@ $endfor$
 % ]{CalloutExample}
 
 
+% \newmdenv[
+%   tikzsetting={fill=red,},
+%   settings={\tikzset{every picture/.style={opacity=0.6}}}
+% ]{myenvironment}
+
 \newmdenv[
-  middlelinecolor=yellow!30,
-  backgroundcolor=yellow!10,
-  middlelinewidth=3pt,
-  frametitle=,
-  % leftline=false,
-  topline=false,
-  rightline=false,
-  bottomline=false,
-  innertopmargin=13,
-  innerbottommargin=13,
+  % middlelinewidth=3pt,
+  % middlelinecolor=brown!50,
+  % % leftline=false,
+  % topline=false,
+  % rightline=false,
+  % bottomline=false,
+  % innertopmargin=13,
+  % innerbottommargin=13,
+  backgroundcolor=none,
+  tikzsetting={fill=brown,fill opacity=0.3},
 ]{CalloutExample}
+
+% \newmdenv[
+%   middlelinecolor=yellow!10,
+%   backgroundcolor=yellow!10,
+%   middlelinewidth=3pt,
+%   frametitle=,
+%   % leftline=false,
+%   topline=false,
+%   rightline=false,
+%   bottomline=false,
+%   innertopmargin=13,
+%   innerbottommargin=13,
+% ]{CalloutExample}
 
 \newmdenv[
   middlelinecolor=violet!30,
