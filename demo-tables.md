@@ -8,7 +8,7 @@
 
 : This is a floating table
 
-|||
+| | |
 |---------|-----------------|
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
 | **Fortitude** | Wear heavy armor, resist poison, shrug off pain, exert yourself physically |
@@ -19,7 +19,7 @@
 
 \NextTableStyle{Bizarro}
 
-|||
+| | |
 |---------|-----------------|
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
 | **Fortitude** | Wear heavy armor, resist poison, shrug off pain, exert yourself physically |
@@ -40,7 +40,7 @@
 
 \SpanningTable
 
-|||
+| | |
 |---------|-----------------|
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
 | **Fortitude** | Wear heavy armor, resist poison, shrug off pain, exert yourself physically |
