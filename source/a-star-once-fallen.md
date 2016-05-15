@@ -56,22 +56,21 @@ characters, perhaps - read the following introductory text:
 
 *Traveling aboard the ship was a fortune teller, an old hag that was great aunt to the captain or something like that. On the night before the typhoon struck, she told your fortune, and her words are emblazoned in your memory:*
 
-```
-A star once fallen upon the land,
-Brings sword and axe and spell at hand.
-For planted deep like evil seed
-It fills heart, soul, and mind with greed.
-
-Shoulders broad and voices tiny
-Ceaseless war of clashing armies.
-In sleep, the beauty whispers well,
-But her wormtongue song is ever fell.
-
-A royal staff in hands upright
-Shall end the long, eternal fight.
-But try you might, and try you may
-The star will rise another day.
-```
+ \ \
+A star once fallen upon the land, \
+Brings sword and axe and spell at hand. \
+For planted deep like evil seed \
+It fills heart, soul, and mind with greed. \
+ \ \
+Shoulders broad and voices tiny \
+Ceaseless war of clashing armies. \
+In sleep, the beauty whispers well, \
+But her wormtongue song is ever fell. \
+ \ \
+A royal staff in hands upright \
+Shall end the long, eternal fight. \
+But try you might, and try you may \
+The star will rise another day. \
 
 +++
 
@@ -1957,6 +1956,7 @@ the heroes’ quest:
 
 *With the dark power of the fallen star buried far beneath the land, its spell of greed is broken. In the days that come, the natives of this land make peace, and prosper for a good long while. One day, however - centuries from now perhaps - another brave band of heroes will be called upon when the fortune that started this quest comes to its fulfillment.*
 
+ \ \
 A star once fallen upon the land, \
 Brings sword and axe and spell at hand. \
 For planted deep like evil seed \
@@ -2228,6 +2228,20 @@ If you had fun with these basic rules for the *Open Legend Roleplaying
 System*, download the complete ruleset for free. More weapons, more
 feats, multi-level banes and boons, and more await your gaming table at
 [*openlegendrpg.com*](http://www.openlegendrpg.com/).
+
+### Credits & Thanks
+
+- Written by **Ish Stabosz**
+
+- Cover art by [**Randy Vargas**](http://www.vargasni.com/)
+
+- Starfall Island map by [**Glynn Seal**](http://monkeyblooddesign.co.uk/)
+
+- Edited by **Ish Stabosz** & **Brian Feister**
+
+- Layout & Design by **Brian Feister**
+
+- Thanks to our alpha playtest group, the team at [**Encounter Roleplay**](http://encounterroleplay.com): **Will Jones**, **Mitch Brown**, **Syndney Shields**, **Finbar Deane-Stott**, and **Gareth Sandy**
 
 
 # Feats
