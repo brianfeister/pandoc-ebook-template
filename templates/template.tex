@@ -154,7 +154,7 @@ $endfor$
 
 \definecolor{CalloutInfoColor}{HTML}{C8A348}
 % \definecolor{CalloutInfoColor}{HTML}{F4E2B24}
-% \definecolor{CalloutInfoBorder}{HTML}{C58E48}
+\definecolor{CalloutInfoBorder}{HTML}{C58E48}
 
 % ================================================================ SECTIONING ==
 
@@ -456,16 +456,19 @@ $endfor$
 % ]{CalloutExample}
 
 \newmdenv[
-  % innertopmargin=13,
-  innerbottommargin=13,
-  middlelinecolor=yellow!30,
-  backgroundcolor=yellow!10,
+%  skipabove=30,
+  innertopmargin=10,
+  innerbottommargin=10,
+  middlelinecolor=CalloutInfoBorder,
   middlelinewidth=3pt,
-  frametitle=,
-  % leftline=false,
   topline=false,
-  rightline=false,
   bottomline=false,
+  leftline=false,
+  apptotikzsetting={\tikzset{mdfbackground/.append style={
+    fill=CalloutInfoColor,
+    fill opacity=.2,
+  },}},
+  backgroundcolor=none,
 ]{CalloutExample}
 
 \newmdenv[
