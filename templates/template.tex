@@ -330,8 +330,8 @@ $endfor$
 
 \NewDocumentCommand{\BreakingTable}{}{
   \renewenvironment{VariaTable}
-    {\begin{xtabular*}{\linewidth}{N}}
-    {\end{xtabular*}}
+    {\medskip\begin{xtabular*}{\linewidth}{N}}
+    {\end{xtabular*}\medskip}
 }
 
 \NewDocumentCommand{\FloatingTable}{O{htb}}{
