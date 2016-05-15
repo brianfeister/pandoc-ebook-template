@@ -167,7 +167,7 @@ $endfor$
 % specific additional styles
 \setkomafont{section}{\Large}
 \setkomafont{subsection}{\large}
-\setkomafont{subsubsection}{\normalsize\itshape}
+\setkomafont{subsubsection}{\color{black}\small}
 
 % additional size macros you may need (I recomend using default sizes, not specific ones)
 % default sizes: \tiny \scriptsize \normalsize \large \Large \Huge \HUGE
@@ -178,33 +178,68 @@ $endfor$
 % italic: \itshape
 % CAVEAT: your font *must* have the styles to use these!
 
-
 \makeatletter
-\renewcommand{\sectionlinesformat}[4]{%
-%\ifstr{#1}{section}{%
-%    \parbox[t]{\linewidth}{%
-%      \raggedsection\@hangfrom{\hskip #2#3}{#4}\par%
-%      \vspace*{-.75\ht\strutbox}\rule{\linewidth}{.8pt}%
-%    }%
-%  }{%
+\renewcommand\chapterlinesformat[3]{% ------------------------------------ H1 --
 \begin{tikzpicture}[
   label/.style={
-%    draw,
+    inner sep=3pt,
+    text width=\linewidth-2*3pt,
+    node contents={\@hangfrom{#2}{#3}},
+  },
+]
+\node (n) [label];
+\begin{scope}
+\clip (n.south west) rectangle (n.north east);
+\node {\includegraphics{marble}};
+\end{scope}
+\draw [
+  draw,
+  ultra thick,
+] (n.south west) -- (n.south east);
+\node [label];
+\end{tikzpicture}%
+}
+\renewcommand{\sectionlinesformat}[4]{%
+\ifstr{#1}{section}{% ---------------------------------------------------- H2 --
+\begin{tikzpicture}[
+  label/.style={
     inner sep=2pt,
-%   line width=1pt,
-    text width=\linewidth-2*2pt,%-1pt,
+    text width=\linewidth-2*2pt,
     node contents={#4},
   },
 ]
 \node (n) [label];
 \draw [
   draw,
-  ultra thick,
+  thick,
 ] (n.south west) -- (n.south east);
-\clip (n.south west) rectangle (n.north east);
-\node {\includegraphics{blank}};
-\node [label];
-\end{tikzpicture}}
+\end{tikzpicture}}{}%
+\ifstr{#1}{subsection}{% ------------------------------------------------- H3 --
+\begin{tikzpicture}[
+  label/.style={
+    fill,
+    font=\color{white}\bfseries,
+    inner sep=3pt,
+    text width=\linewidth-2*3pt,
+    node contents={#4},
+  },
+]
+\node (n) [label];
+\end{tikzpicture}}{}%
+\ifstr{#1}{subsubsection}{% ---------------------------------------------- H4 --
+\begin{tikzpicture}[
+  label/.style={
+    inner sep=2pt,
+    text width=\linewidth-2*2pt,
+    node contents={#4},
+  },
+]
+\node (n) [label];
+\draw [
+  thick,
+] (n.south west) -- (n.south east) (n.north west) -- (n.north east);
+\end{tikzpicture}}{}%
+}
 
 
 % ==================================================================== FLOATS ==
