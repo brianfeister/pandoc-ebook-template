@@ -278,7 +278,9 @@ $endfor$
 % breakable two-columns tables
 \usepackage{xtab}
 % avoid overestimation so columns breaks are tighter
-\xentrystretch{0}
+%\xentrystretch{0}
+% underestimate so columns breaks are even tighter
+\xentrystretch{-10}
 
 % essential for styling
 \usepackage{array}
