@@ -730,7 +730,7 @@ between the PCs and the Wapuny.
 | | Presence 4 (1d10) |
 | | **FAVORED ATTACKS** |
 | | **Blowgun** (range 30’): Agility vs. Evasion, damaging attack \ If target takes at least one damage, also inflicts slow. |
-| | **Wooden spear**: Might vs. Toughness, damaging attack | \ \
+| | **Wooden spear**: Might vs. Toughness, damaging attack |
 
 The Wapuny chief is a tall(er) warrior named Bik’Bik (or Big Big, so
 named for his massive 2’3” stature). He wears a fancy hat crafted from
