@@ -165,9 +165,7 @@ chance of success. Consult the Attribute Dice table for each of your
 attributes and record the appropriate dice. (You’ll learn what to do
 with these dice later on.)
 
-\newpage
-
-#### Attribute Dice
+### Attribute Dice
 
 \NextTableColumns{OCT{.50}OCT{.50}}
 
@@ -222,7 +220,7 @@ Record your equipment and their properties on your character sheet.
 
 \newpage
 
-#### Melee Weapons
+### Melee Weapons
 
 \NextTableColumns{OLT{.35}OLT{.65}}
 
@@ -238,7 +236,7 @@ Record your equipment and their properties on your character sheet.
 | **Hatchet** | one-handed, forceful, range 25’, swift |
 
 
-#### Ranged Weapons
+### Ranged Weapons
 
 \NextTableColumns{OLT{.35}OLT{.65}}
 
@@ -249,7 +247,7 @@ Record your equipment and their properties on your character sheet.
 | **Longbow** | two-handed, range 100’, precise |
 | **Shortbow** | two-handed, range 50’ precise, swift |
 
-#### Armor & Shields
+### Armor & Shields
 
 \NextTableColumns{OLT{.35}OLT{.65}}
 
@@ -275,6 +273,8 @@ hope of atoning for past transgressions?
 
 Whatever your attributes say about your character, give yourself a
 legendary story worthy of the heroic quest you are about to undertake.
+
+## GM Info
 
 +++ {.CalloutWarning}
 **GM’S EYES ONLY BEYOND THIS POINT**
@@ -510,7 +510,7 @@ of Kings.
 
 # Starting the Adventure
 
-## Opening Scene: Mud & \ Monkeys
+## Opening Scene: Mud & <br /> Monkeys
 
 To begin the adventure, read or summarize the following flavor text:
 
@@ -591,9 +591,13 @@ Your normal action can be used to make a damaging attack, inflict a bane, or inv
 To damage a target, make an action roll. If you are using a weapon with the *precise* property, use your Agility for the roll. If your weapon is *forceful*, use your Might. Supernatural attacks use the relevant supernatural attribute (e.g., Energy to shoot a ray of fire).
 
 Your attack roll is resisted by a specific defense of your target, as explained below:
+
 - Precise weapons target Evasion
+
 - Forceful weapons target Toughness
+
 - Supernatural melee attacks target Toughness
+
 - Supernatural projectile attacks target Evasion
 
 Your total **damage dealt** equals your **attack roll** minus the **target’s defense**.
@@ -621,7 +625,7 @@ Boons typically remain in effect until you cease sustaining them. You may only s
 You can use your **move action** to move up to your maximum speed (30 feet for most PCs). Alternatively you can use your move action to **resist any banes** from which you are suffering. Roll 1d20 for each bane affecting you. On a 10 or higher, the bane is removed.
 +++
 
-\NextTableColumns{OLT{.33}OLT{.67}}
+\NextTableColumns{OLT{.37}OLT{.63}}
 
 | **Monkey Bats** (6) | 35’ speed, flying, climbing |
 | - | - |
@@ -1150,12 +1154,11 @@ through the door to attack the party.
 | Toughness: 16 | Perception 3 (1d8) |
 | Evasion: 17 | Will 4 (1d10) |
 | Resolve: 16 | Presence 2 (1d6) |
-| | |
 | | **FAVORED ATTACKS** |
 | | Enchantment 5 (2d6) |
 | | Divination 4 (1d10) |
 | | **Mind Dredge** (minor action): Divination vs. Resolve, inflicts mind dredge bane |
-| | **Fang Strike**: Agility vs. Evasion (targets 2 foes), damaging attack \ A target suffering at least 1 damage also suffers the *persistent damage* bane |
+| | **Fang Strike**: Agility vs. Evasion (targets 2 foes), damaging attack \ A target suffering at least 1 damage suffers the *persistent damage* bane |
 | | **Petrification Gaze**: Enchantment vs. Resolve, inflicts *incapacitated* bane. **Note**: Unlike the standard *incapacitated* bane, the basilisk’s gaze has a duration of resist ends (fail x 3 = permanent). |
 | | **Special**: At any point in combat, the basilisk can use its gaze attack against any character that is not averting its eyes. This attack is free and does not require the basilisk to spend an action. A combatant can not be targeted by a gaze more than once in any round. Characters who are averting their eyes incur the *blinded* bane. |
 
@@ -1176,7 +1179,7 @@ enemies beyond the bottom step.
 For groups smaller than 5, the basilisk does not receive any boss
 actions. For groups larger than 5, the basilisk receives 10 extra hit
 points per extra PC. If the group consists of 8 or more PCs, the
-basilisk receives 2 boss actions instead of 1.
+basilisk has 2 boss actions instead of 1.
 
 +++ {.CalloutExample}
 ##### *Betrayal* (dagger)
@@ -1325,7 +1328,7 @@ discover the following note:
 
 *I leave you now with a heavy heart, but hopeful. When I discovered you amidst the wreckage, I was crestfallen, and oft considered abandoning this earthly coil to be with you again - better than rotting with whatever savage beasts infest this vile island. But I will not forsake my vow to you. When I knelt before you and slipped this ring upon your finger, I promised you a new life in a new land - and you shall have it.*
 
-*My nights have been sleepless since losing you, and in the dark hours of the night, I have discovered that great power lies within this damnable island, waiting to be tapped. I leave you now in search of this power. Already some of it flows in my veins and eases my heart. It gives me hope.*
+*My nights have been sleepless since losing you, and in the dark hours of the night, I have discovered that great power lies within this damnable island, waiting to be tapped. I leave you now in search of this power.*
 
 *I leave your ring here, lest you lose it in your sleep. One day, I shall return to kneel before you once again and place it upon your finger, and we shall have our new life.*
 
@@ -1744,13 +1747,13 @@ evade the PCs.
 | | **Howl** (targets 15’ square): Presence vs. Resolve - disadvantage 2, inflicts stun |
 
 
-#### Adjusting Difficulty
+### Adjusting Difficulty
 
 For parties smaller than 5 PCs, reduce the number of troglodytes so that
 there is one more monster than PCs. For large groups, add 3 hit points
 to the troglodytes’ maximum for each PC beyond the fifth.
 
-#### Aftermath
+### Aftermath
 
 If the party is defeated, you do not have to kill them outright.
 Instead, consider them to have been captured by the cannibal troglodytes
@@ -1832,28 +1835,24 @@ when things come to blows.
 | - | - |
 | Hit Points: 40 | Agility 3 (1d8) |
 | | Fortitude 3 (1d8) |
-| **DEFENSES** | Might 2 (1d6) |
-| Toughness: 16 | Learning 3 (1d8) |
-| Evasion: 16 | Logic 3 (1d8) |
-| Resolve: 19 | Perception 3 (1d8) |
-| | Will 4 (1d10) |
-| **Boss** | Entropy 6 (2d8) |
-| Thorn receives 1 boss action each round | Energy 5(2d6) |
-| | Divination 5 (2d6) |
+| **DEFENSES** | Learning 3 (1d8) |
+| Toughness: 16 | Logic 3 (1d8)  |
+| Evasion: 16 | Perception 3 (1d8) |
+| Resolve: 19 | Will 4 (1d10) |
+| | Entropy 6 (2d8) |
+| **Boss** | Energy 5(2d6) |
+| Thorn receives 1 boss action each round | Divination 5 (2d6) |
 | | Enchantment 5 (2d6) |
 | | Deception 5 (2d6) |
 | | Persuasion 5 (2d6) |
 | | Presence 5 (2d6) |
-| |  |
 | | **FAVORED ATTACKS** |
 | | **Lava Blast** (minor action) - Thorn summons lava to spew on one target within 10’ of a ledge: Energy vs. Evasion \ If attack deals 5+ damage, target suffers persistent damage |
 | | **Lava Control** - In his volcanic lair, Thorn can cause lava in a 5’ square to congeal and cool long enough for him to cross it without taking damage. This does not require an action.|
 | | **Deathly Siphon** - Damaging life drain attack: Entropy vs. Toughness, Advantage 2 |
 | | **Flame & Shadow** - Ranged damaging attack, targets 2: Energy vs. Evasion \ If attack deals 5+ damage, targets are also stunned |
-| | **Dark Shroud** - 15’ square, inflicts blinded: Entropy vs. Toughness, Advantage 1 |
+| | **Dark Shroud** - 15’ area, inflicts blinded: Entropy vs. Toughness, Advantage 1 |
 
- \ \
- \ \
 
 \NextTableColumns{OLT{.33}OLT{.67}}
 
@@ -1866,8 +1865,7 @@ when things come to blows.
 | **DEFENSES** | Might 4 (1d10) |
 | Toughness: 12 | Perception 1 (1d4) |
 | Evasion: 11 | Presence 4 (1d10) |
-| Resolve: 10 | |
-| | **FAVORED ATTACKS - reach 10'** |
+| Resolve: 10 | **FAVORED ATTACKS - reach 10'** |
 | | **Slam**: Might vs. Toughness \ If attack deals 5+ damage, it also inflicts forced move 10’ or knockdown |
 | | **Special**: A skeletal brute can use its normal action to move Thorn to any space within its reach without provoking opportunity attacks. |
 
@@ -1923,7 +1921,7 @@ of the journal for anyone who spends time reading it:
 
 *Now he writes of dark deals with unseen shadows - of skeletal guardians, dark rituals, and voices calling to him from deep within the island. He plots the destruction of the natives and the raising of an undead army. Every entry, though, still reveals a mad love for his precious Asha, whom he regularly writes to directly, hinting that soon he will bring her back.*
 
-*His writings refer frequently to some great power with whom he has been communing named Asgaroth. For a few years after the shipwreck, Thorn seems to speak of this power as a partner, but eventually he refers to him as master. It isn't clear who or what this Asgaroth is, but you can make out two things: he is imprisoned somewhere on this island and Thorn is working to free him.*
+*His writings refer frequently to some great power with whom he has been communing named Asgaroth. For a few years after the shipwreck, Thorn seems to speak of this power as a partner, but eventually he refers to him as master. It isn't clear who or what this Asgaroth is, but you can make out two things: he is imprisoned on this island and Thorn is working to free him.*
 
 +++
 
@@ -1946,8 +1944,7 @@ molten lava, which will eventually cool and entomb Asgaroth under such
 depth that the spell of greed will be broken on the Wapuny and the
 Wapungo.
 
-Read or summarize the following passage to narrate the successful end of
-the heroes’ quest:
+Read or summarize this as a way of wrapping things up:
 
 +++ {.CalloutInformation}
 *Wielding the Scepter of Kings, you can feel the power of a great bloodline of royal sorcerers flowing through you. At your command, the magma churns, bubbles, and rises. You feel a malignant force from deep within the bowels of the island fighting against you with all its will, but its power is weakened by the shackles which keep it imprisoned.*
@@ -1970,7 +1967,7 @@ But her wormtongue song is ever fell. \
 A royal staff in hands upright \
 Shall end the long, eternal fight. \
 But try you might, and try you may \
-**The star will rise another day**. \
+**The star will rise another day**.
 
 +++
 

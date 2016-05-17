@@ -151,8 +151,12 @@ $endfor$
 % ============================================================== COLOR SCHEME ==
 
 \definecolor{SectioningColor}{HTML}{983D0E}
-
+\definecolor{SectionUnderlineColor}{HTML}{CF9377}
 \definecolor{CalloutInfoColor}{HTML}{C8A348}
+\definecolor{TableStripeOdd}{HTML}{FFEFDC}
+\definecolor{TableStripeEven}{HTML}{FFFDF6}
+\definecolor{TableBorder}{HTML}{CF9377}
+
 % \definecolor{CalloutInfoColor}{HTML}{F4E2B24}
 %\definecolor{CalloutInfoBorder}{HTML}{C58E48}
 
@@ -190,9 +194,11 @@ $endfor$
 \node (n) [label];
 \begin{scope}
 \clip (n.south west) rectangle (n.north east);
-\node {\includegraphics{marble}};
+\node {};
+% \node {\includegraphics{marble}};
 \end{scope}
 \draw [
+  SectionUnderlineColor,
   draw,
   ultra thick,
 ] (n.south west) -- (n.south east);
@@ -290,14 +296,20 @@ $endfor$
 
 % this is the default VariaTable style
 \NewDocumentCommand{\VariaTableStyleDefault}{}{
-  \rowcolors{1}{gray!50}{gray}
-  \arrayrulecolor{black}
+  \rowcolors{1}{TableStripeOdd}{TableStripeEven}
+  \arrayrulecolor{TableBorder}
   \renewcommand*{\arraystretch}{1.5}
 }
 % and we make sure to set it as baseline
 \NextTableStyle{Default}
 
 % here is another style example
+\NewDocumentCommand{\VariaTableStyleStatBlock}{}{
+  \rowcolors{1}{white}{white}
+  \arrayrulecolor{white}
+  \renewcommand*{\arraystretch}{1}
+}
+
 \NewDocumentCommand{\VariaTableStyleBizarro}{}{
   \rowcolors{1}{blue}{red}
   \arrayrulecolor{magenta}
@@ -306,7 +318,7 @@ $endfor$
 
 % transparency trick: ! gets the fill while > gets the content
 \newcolumntype{O}{
-  !{\pgfsetfillopacity{.2}}
+  !{\pgfsetfillopacity{0.6}}
   >{\leavevmode\pgfsetfillopacity{1}}
 }
 
@@ -463,10 +475,10 @@ $endfor$
   middlelinewidth=3pt,
   topline=false,
   bottomline=false,
-  leftline=false,
+  rightline=false,
   apptotikzsetting={\tikzset{mdfbackground/.append style={
-    fill=CalloutInfoColor,
-    fill opacity=.2,
+    fill=TableStripeEven,
+    fill opacity=.7,
   },}},
   backgroundcolor=none,
 ]{CalloutExample}
