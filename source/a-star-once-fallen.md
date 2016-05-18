@@ -147,7 +147,7 @@ Table, based on the type of hero you would like to play. On your
 character sheet, assign each score to one of your attributes. Your
 remaining attributes start with a score of zero.
 
-\NextTableColumns{OCT{1}}
+\NextTableColumns*{OCT{1}}
 
 | Attribute Quick Builds |
 | - |
@@ -167,7 +167,7 @@ with these dice later on.)
 
 ### Attribute Dice
 
-\NextTableColumns{OCT{.50}OCT{.50}}
+\NextTableColumns*{OCT{.50}OCT{.50}}
 
 | Attribute Score | Attribute Dice |
 | - | - |

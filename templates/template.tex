@@ -274,6 +274,11 @@ $endfor$
 %\usepackage{longtable}
 \let\endhead\relax
 
+% table header (and generally row-wise, if used correctly) styling
+\newcommand\setrowfont[1]{\noalign{\gdef\rowfont{#1}}}
+\gdef\rowfont{}
+\def\endhead{\setrowfont{}}
+
 %\usepackage{booktabs}
 \let\toprule\hline
 \let\bottomrule\hline
@@ -291,6 +296,11 @@ $endfor$
 % essential for styling
 \usepackage{array}
 
+% holds header styles
+\NewDocumentCommand{\thetableheaderstyle}{}{}
+\NewDocumentCommand{\tableheaderstyle}{m}
+  {\RenewDocumentCommand{\thetableheaderstyle}{}{#1}}
+
 % this macro calls the VariaTable styles
 \NewDocumentCommand{\NextTableStyle}{m}{\csname VariaTableStyle#1\endcsname}
 
@@ -299,6 +309,9 @@ $endfor$
   \rowcolors{1}{TableStripeOdd}{TableStripeEven}
   \arrayrulecolor{TableBorder}
   \renewcommand*{\arraystretch}{1.5}
+  % If you use \cellcolor then you need \leavevmode before that;
+  % that's needed to preserve the correct row height
+  \tableheaderstyle{\leavevmode\cellcolor{black}\color{white}\bfseries}
 }
 % and we make sure to set it as baseline
 \NextTableStyle{Default}
@@ -308,12 +321,14 @@ $endfor$
   \rowcolors{1}{white}{white}
   \arrayrulecolor{white}
   \renewcommand*{\arraystretch}{1}
+  \tableheaderstyle{}
 }
 
 \NewDocumentCommand{\VariaTableStyleBizarro}{}{
   \rowcolors{1}{blue}{red}
   \arrayrulecolor{magenta}
   \renewcommand*{\arraystretch}{1}
+  \tableheaderstyle{\leavevmode\cellcolor{black}\color{white}\bfseries}
 }
 
 % transparency trick: ! gets the fill while > gets the content
@@ -323,20 +338,27 @@ $endfor$
 }
 
 % content alignment
-\newcolumntype{J}{>{}}
-\newcolumntype{L}{>{\raggedright\arraybackslash}}
-\newcolumntype{C}{>{\centering\arraybackslash}}
-\newcolumntype{R}{>{\raggedleft\arraybackslash}}
+\newcolumntype{J}{>{\bgroup\rowfont}}
+\newcolumntype{L}{>{\bgroup\rowfont\raggedright\arraybackslash}}
+\newcolumntype{C}{>{\bgroup\rowfont\centering\arraybackslash}}
+\newcolumntype{R}{>{\bgroup\rowfont\raggedleft\arraybackslash}}
 
 % instead of erasing separators with @{} just compensate for them
 \newcolumntype{S}[2]{#1{\dimexpr#2\linewidth-2\tabcolsep\relax}}
 
 % cell alignment
-\newcolumntype{T}[1]{S{p}{#1}}
-\newcolumntype{M}[1]{S{m}{#1}}
-\newcolumntype{B}[1]{S{b}{#1}}
+\newcolumntype{T}[1]{S{p}{#1}<{\egroup}}
+\newcolumntype{M}[1]{S{m}{#1}<{\egroup}}
+\newcolumntype{B}[1]{S{b}{#1}<{\egroup}}
 
-\NewDocumentCommand{\NextTableColumns}{m}{\newcolumntype{N}{#1}}
+\newif\ifnexttablehasheader
+\NewDocumentCommand{\NextTableColumns}{sm}{%
+\newcolumntype{N}{#2}%
+\IfBooleanTF{#1}{\nexttablehasheadertrue}{\nexttablehasheaderfalse}%
+}
+
+\newcommand{\maybethetableheader}
+  {\ifnexttablehasheader\setrowfont{\thetableheaderstyle}\fi}
 
 \NewDocumentCommand{\TheCaption}{}{}
 \NewDocumentCommand{\NextTableCaption}{m}{\RenewDocumentCommand{\TheCaption}{}{\caption{#1}}}
@@ -344,19 +366,19 @@ $endfor$
 
 \NewDocumentCommand{\BreakingTable}{}{
   \renewenvironment{VariaTable}
-    {\medskip\begin{xtabular*}{\linewidth}{N}}
+    {\medskip\begin{xtabular*}{\linewidth}{N}\maybethetableheader}
     {\end{xtabular*}\medskip}
 }
 
 \NewDocumentCommand{\FloatingTable}{O{htb}}{
   \renewenvironment{VariaTable}
-    {\begin{table}[#1]\TheCaption\begin{xtabular*}{\linewidth}{N}}
+    {\begin{table}[#1]\TheCaption\begin{xtabular*}{\linewidth}{N}\maybethetableheader}
     {\end{xtabular*}\end{table}}
 }
 
 \NewDocumentCommand{\SpanningTable}{O{tbp}}{
   \renewenvironment{VariaTable}
-    {\begin{table*}[#1]\TheCaption\begin{xtabular*}{\linewidth}{N}}
+    {\begin{table*}[#1]\TheCaption\begin{xtabular*}{\linewidth}{N}\maybethetableheader}
     {\end{xtabular*}\end{table*}}
 }
 
