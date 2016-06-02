@@ -426,6 +426,7 @@ $endfor$
 }
 
 \NewDocumentCommand{\AbsoluteFullPage}{O{}m}{
+  \thispagestyle{empty}
   \AddToShipoutPictureBG*{\tikz [overlay, remember picture] \node [center, #1, inner sep=0] {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{#2}};}
 }
 
