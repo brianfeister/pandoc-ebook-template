@@ -218,8 +218,6 @@ certain Fortitude score to use and may also reduce your movement speed.
 Adjust your defenses according to any armor or shields you choose.
 Record your equipment and their properties on your character sheet.
 
-\newpage
-
 ### Melee Weapons
 
 \NextTableColumns{OLT{.35}OLT{.65}}
@@ -260,8 +258,6 @@ Record your equipment and their properties on your character sheet.
 | **Chain Mail** | requires fortitude 3, +5 to evasion and toughness, -5’ speed |
 | **Scale Mail** | requires fortitude 4, +6 to evasion and toughness, -5’ speed |
 
-\newpage
-
 ## Describe Your Character
 
 Once everyone has a character, go around the table and tell the group
@@ -286,9 +282,10 @@ May a curse fall upon the dice of all PCs who read on. May they land ever on 1s 
 
 \clearpage
 
-\AbsoluteFullPage{starfall-island-map.jpg}
+\AbsoluteFullPage{starfall-island-map-925x1175.jpg}
 
-***
+ \ \
+ \ \
 
 
 # Game Master’s Overview
@@ -510,7 +507,8 @@ of Kings.
 
 # Starting the Adventure
 
-## Opening Scene: Mud & <br /> Monkeys
+## Opening: Mud &
+Monkeys
 
 To begin the adventure, read or summarize the following flavor text:
 
@@ -2236,7 +2234,7 @@ feats, multi-level banes and boons, and more await your gaming table at
 
 - Edited by **Ish Stabosz** & **Brian Feister**
 
-- Layout & Design by **Brian Feister**
+- Layout & Design by **Brian Feister** & **Paolo Brasolin**
 
 - Thanks to our alpha playtest group, the team at [**Encounter Roleplay**](http://encounterroleplay.com): **Will Jones**, **Mitch Brown**, **Syndney Shields**, **Finbar Deane-Stott**, and **Gareth Sandy**
 

@@ -31,21 +31,42 @@
 % ============================================================= PAGE GEOMETRY ==
 
 \usepackage[
-  paperwidth=8.5in,
-  paperheight=11in,
+  paperwidth=9.25in,
+  paperheight=11.75in,
   twocolumn,
   columnsep=.3in,
-  top=1in,
+  top=1.375in,
   inner=1in,
-  outer=0.75in,
-  bottom=0.75in,
-  footskip=.5in,
+  outer=1.125in,
+  bottom=1.125in,
+  footskip=0.4in,
   headsep=.25in,
   bindingoffset=0in,
-  innermargin=0.72in
+  innermargin=1.095in,
+  includefoot
   % evensidemargin=0,
   % oddsidemargin=0
 ]{geometry}
+
+% below are amazon createspace specs
+
+% \usepackage[
+%   paperwidth=9.25in,
+%   paperheight=11.75in,
+%   twocolumn,
+%   columnsep=.3in,
+%   top=1.375in,
+%   inner=1in,
+%   outer=1.125in,
+%   bottom=1.125in,
+%   footskip=0.35in,
+%   headsep=.25in,
+%   bindingoffset=0in,
+%   innermargin=1.095in,
+%   includefoot
+%   % evensidemargin=0,
+%   % oddsidemargin=0
+% ]{geometry}
 
 % General spacing settings
 
@@ -518,10 +539,10 @@ $endif$
 \makeatletter
 \AtBeginDocument{
 \frontmatter
-\thispagestyle{empty}
-$if(cover)$
-\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{$cover$}};
-$endif$
+% \thispagestyle{empty}
+% $if(cover)$
+% \tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{$cover$}};
+% $endif$
 \null\clearpage\thispagestyle{empty}
 \null\clearpage\thispagestyle{empty}
 \onecolumn
