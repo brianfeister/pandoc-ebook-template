@@ -2,13 +2,13 @@
 
 \Blindtext
 
-\NextTableColumns*{OCT{.25}OLT{.75}}
+\NextTableColumns{OCT{.25}OLT{.75}}
 
 \FloatingTable
 
 : This is a floating table
 
-| asda | asdas |
+| | |
 |---------|-----------------|
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
 | **Fortitude** | Wear heavy armor, resist poison, shrug off pain, exert yourself physically |
@@ -19,7 +19,7 @@
 
 \NextTableStyle{Bizarro}
 
-| something cool | somehting cooler |
+| | |
 |---------|-----------------|
 | **Agility** | Dodge attacks, move with stealth, perform acrobatics, shoot a bow, pick a pocket |
 | **Fortitude** | Wear heavy armor, resist poison, shrug off pain, exert yourself physically |
