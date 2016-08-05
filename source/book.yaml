@@ -2,6 +2,8 @@
 title: A Star Once Fallen
 author: by Ish Stabosz
 background:
+# odd: paper-bg
+# even: paper-bg
  odd: paper-bg-925x1175
  even: paper-bg-925x1175
 language: british
@@ -9,6 +11,7 @@ hyphenation:
   - hy-phen-ated
   - nothyphenated
 # cover: a-star-once-fallen-cover.jpg
+ebook: false
 abstract: |
   A Learn-by-Play Adventure for the Open Legend RPG System \
   Copyright 2016 Seventh Sphere Publishing

@@ -563,11 +563,13 @@ $endif$
 \AtBeginDocument{
 \frontmatter
 % \thispagestyle{empty}
-% $if(cover)$
-% \tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{$cover$}};
-% $endif$
+$if(cover)$
+\tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{$cover$}};
+$endif$
+$if(ebook)$
 \null\clearpage\thispagestyle{empty}
 \null\clearpage\thispagestyle{empty}
+$endif$
 \onecolumn
 \null\vfill
 \begingroup
@@ -584,6 +586,10 @@ $abstract$
 $endif$
 \vfill\vfill
 \twocolumn
+$if(ebook)$
+$else$
+\null\clearpage\thispagestyle{empty}
+$endif$
 \tableofcontents
 \mainmatter
 }

@@ -132,13 +132,12 @@ type of tasks that each attribute is used for.
 | **Abjuration** | Protect from damage, break enchantments, dispel magic, bind demons |
 | **Alteration** | Change shape, alter molecular structures, transmute one material into another |
 | **Creation** | Channeling higher powers for healing, creation, resurrection, divine might, etc. |
-| **Divination** | See the future, detect magic, detect evil, scry, communicate with extraplanar entities|
+| **Divination** | Speak telepathically, see the future, detect magic and auras, scry|
 | **Energy** | Create and control the elements - fire, cold, electricity, etc. |
-| **Entropy** | Disintegrate matter, kill with a word, create undead, sicken others
-| **Enchantment** | Control the minds of others, dominate wills, speak telepathically, instill supernatural fear
+| **Entropy** | Disintegrate matter, kill with a word, create undead, sicken others |
+| **Enchantment** | Control the minds of others, dominate wills, manipulate emotions |
 | **Illusion** | Create illusory figments, deceive the senses, cloak with invisibility |
 | **Movement** | Teleport, fly, hasten, slow |
-| **Psychic** | Psychokinesis, telekinesis, mind over matter, extrasensory perception |
 
 ## Choose Attributes
 
@@ -147,7 +146,7 @@ Table, based on the type of hero you would like to play. On your
 character sheet, assign each score to one of your attributes. Your
 remaining attributes start with a score of zero.
 
-\NextTableColumns*{OCT{1}}
+\NextTableColumns{OCT{1}}
 
 | Attribute Quick Builds |
 | - |
@@ -167,10 +166,10 @@ with these dice later on.)
 
 ### Attribute Dice
 
-\NextTableColumns*{OCT{.50}OCT{.50}}
+\NextTableColumns{OCT{.50}OCT{.50}}
 
 | Attribute Score | Attribute Dice |
-| - | - |
+| :-: | :-: |
 | 1 | 1d4 |
 | 2 | 1d6 |
 | 3 | 1d8 |
@@ -1023,7 +1022,7 @@ make a Perception roll, CR 15, to notice that above the door is a secret
 compartment which is meant to spill something upon intruders when the
 door is opened. With this knowledge, PCs can attempt opening the door
 from a distance, perhaps with a fastened rope or telekinesis if anyone
-is trained in the Psychic attribute.
+is trained in the Movement attribute.
 
 Upon opening the door, a mass of rocks pours down upon anyone under or
 adjacent to the door. Make an attack roll for the door as if it had a
@@ -2250,7 +2249,7 @@ Additionally, any movement speed penalty is reduced by 5 feet.
 ## Attack Specialization
 
 Choose one weapon or energy type. Energy types include fire, cold,
-lightning, acid, poison, psychic, and force. When making a damaging
+lightning, acid, poison, and force. When making a damaging
 attack with the chosen specialization, you gain advantage 1.
 
 ## Bane Focus
@@ -2571,7 +2570,7 @@ impressions, or a single word such as “favorable” or “unfavorable”. \
 **Duration:** Instantaneous
 
 ## Blindsight
-**Power Level 5** (Divination, Psychic, Alteration) \
+**Power Level 5** (Alteration, Divination, Entropy, Perception) \
 **Invocation Time:** normal action \
  \ \
 The target can see in complete darkness, even if affected by the
@@ -2610,7 +2609,7 @@ you can even heal lethal damage with this boon. \
 **Duration:** Instantaneous
 
 ## Levitation
-**Power Level 5** (Movement, Psychic) \
+**Power Level 5** (Movement) \
 **Invocation Time:** normal action \
  \ \
 The target gains a flight speed of 10’. \
@@ -2627,7 +2626,7 @@ score. \
 **Duration:** Sustain persists
 
 ## Regeneration
-**Power Level 3** (Alteration, Creation, Psychic) \
+**Power Level 3** (Alteration, Creation) \
 **Invocation Time:** normal action \
  \ \
 At the beginning of each of its turns, the target heals 1d6 hit points.
@@ -2640,7 +2639,7 @@ This does not heal lethal damage. \
 **Invocation Time:** normal action \
  \ \
 Choose one damage source: finesse, forceful, fire, cold, lightning,
-acid, psychic, entropy. The target ignores the first 5 points of damage
+acid, entropy. The target ignores the first 5 points of damage
 each round from the indicated source. \
  \ \
 **Duration:** Sustain persists
@@ -2692,7 +2691,7 @@ You can communicate telepathically with one creature. \
 **Duration:** Sustain persists
 
 ## Teleport
-**Power Level 3** (Movement, Psychic) \
+**Power Level 3** (Movement) \
 **Invocation Time:** move action \
  \ \
 You can teleport to any space that you can see within a range of 5’ per
