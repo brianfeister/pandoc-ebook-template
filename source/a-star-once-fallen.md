@@ -157,6 +157,9 @@ remaining attributes start with a score of zero.
 | **Jack of All Trades** |
 | 3, 3, 3, 3, 2, 2, 2, 2, 1 |
 
+
+\newpage
+
 ## Record Attribute Dice
 
 Every attribute score above 0 grants you bonus dice to increase your
@@ -216,6 +219,8 @@ weapons or a two weapons and a shield. Note that armor may require a
 certain Fortitude score to use and may also reduce your movement speed.
 Adjust your defenses according to any armor or shields you choose.
 Record your equipment and their properties on your character sheet.
+
+\newpage
 
 ### Melee Weapons
 
@@ -979,6 +984,8 @@ For parties smaller than five, adjust the number of arachnids so that
 there is one less than the number of PCs. For very large parties, do not
 use more than 6 arachnids, instead increasing their maximum hit points
 by 3 for each additional PC beyond the 7th.
+
+ \ \
 
 +++ {.CalloutExample}
 ##### New Rules Unlocked: Multi-targeting and Complete Advantage/Disadvantage
@@ -2368,8 +2375,8 @@ control, like puppets. **Duration:** Resist ends (fail x 3 = 1 hour)
 **Defense:** Toughness \
  \ \
 This bane has multiple stages. Each time it is inflicted, the target’s
-current stage increases by 1. Effects are cumulative. \
- \ \
+current stage increases by 1. Effects are cumulative.
+
 - **Stage 1:** Disadvantage 1 on all non-attack rolls.
 
 - **Stage 2:** Lose attribute bonus to defense scores
