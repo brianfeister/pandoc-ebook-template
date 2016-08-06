@@ -12,6 +12,7 @@ hyphenation:
   - nothyphenated
 # cover: a-star-once-fallen-cover.jpg
 ebook: false
+# ebook: true
 abstract: |
   A Learn-by-Play Adventure for the Open Legend RPG System \
   Copyright 2016 Seventh Sphere Publishing

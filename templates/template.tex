@@ -27,19 +27,38 @@
 
 % TODO: sloppiness *must* be removed in production
 \sloppy
-
 % ============================================================= PAGE GEOMETRY ==
+% \usepackage[
+%   paperwidth=8.5in,
+%   paperheight=11in,
+%   twocolumn,
+%   columnsep=.3in,
+%   top=1in,
+%   inner=1in,
+%   outer=0.75in,
+%   bottom=0.75in,
+%   footskip=.5in,
+%   headsep=.25in,
+%   bindingoffset=0in,
+%   innermargin=0.72in
+%   % evensidemargin=0,
+%   % oddsidemargin=0
+% ]{geometry}
+
+% below are amazon createspace specs
 
 \usepackage[
   paperwidth=9.25in,
   paperheight=11.75in,
   twocolumn,
   columnsep=.3in,
-  top=1.375in,
+  top=1.25in,
+  % top=1in,
   inner=1in,
   outer=1.125in,
-  bottom=1.125in,
-  footskip=0.4in,
+  %bottom=1.125in,
+  bottom=.75in,
+  footskip=0.5in,
   headsep=.25in,
   bindingoffset=0in,
   innermargin=1.095in,
@@ -47,26 +66,6 @@
   % evensidemargin=0,
   % oddsidemargin=0
 ]{geometry}
-
-% below are amazon createspace specs
-
-% \usepackage[
-%   paperwidth=9.25in,
-%   paperheight=11.75in,
-%   twocolumn,
-%   columnsep=.3in,
-%   top=1.375in,
-%   inner=1in,
-%   outer=1.125in,
-%   bottom=1.125in,
-%   footskip=0.35in,
-%   headsep=.25in,
-%   bindingoffset=0in,
-%   innermargin=1.095in,
-%   includefoot
-%   % evensidemargin=0,
-%   % oddsidemargin=0
-% ]{geometry}
 
 % General spacing settings
 
@@ -173,7 +172,10 @@ $endfor$
 
 \definecolor{SectioningColor}{HTML}{983D0E}
 \definecolor{SectionUnderlineColor}{HTML}{CF9377}
-\definecolor{CalloutInfoColor}{HTML}{E2C783}
+\definecolor{CalloutExampleColor}{HTML}{A1CEE8}
+\definecolor{CalloutExampleBackground}{HTML}{F1F7FB}
+\definecolor{CalloutInfoColor}{HTML}{C8B7EC}
+\definecolor{CalloutInfoBackground}{HTML}{EEEAF7}
 \definecolor{TableStripeOdd}{HTML}{FFEFDC}
 \definecolor{TableStripeEven}{HTML}{FFFDF6}
 \definecolor{TableBorder}{HTML}{CF9377}
@@ -491,23 +493,23 @@ $endfor$
 
 \newmdenv[
 %  skipabove=30,
-  innertopmargin=10,
-  innerbottommargin=10,
-  middlelinecolor=CalloutInfoColor,
+  middlelinecolor=CalloutExampleColor,
   middlelinewidth=3pt,
+  frametitle=,
   topline=false,
   bottomline=false,
   rightline=false,
+  innertopmargin=10,
+  innerbottommargin=10,
   apptotikzsetting={\tikzset{mdfbackground/.append style={
-    fill=TableStripeEven,
+    fill=CalloutExampleBackground,
     fill opacity=.7,
   },}},
   backgroundcolor=none,
 ]{CalloutExample}
 
 \newmdenv[
-  middlelinecolor=violet!30,
-  backgroundcolor=violet!10,
+  middlelinecolor=CalloutInfoColor,
   middlelinewidth=3pt,
   frametitle=,
   % leftline=false,
@@ -516,6 +518,11 @@ $endfor$
   bottomline=false,
   innertopmargin=13,
   innerbottommargin=13,
+  apptotikzsetting={\tikzset{mdfbackground/.append style={
+    fill=CalloutInfoBackground,
+    fill opacity=.7,
+  },}},
+  backgroundcolor=none,
 ]{CalloutInformation}
 
 % ================================================================ BACKGROUND ==
@@ -545,8 +552,11 @@ $if(cover)$
 \tikz [overlay, remember picture] \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{$cover$}};
 $endif$
 $if(ebook)$
-\null\clearpage\thispagestyle{empty}
-\null\clearpage\thispagestyle{empty}
+$else$
+\null\newpage\thispagestyle{empty}
+\null\newpage\thispagestyle{empty}
+\null\newpage\thispagestyle{empty}
+\null\newpage\thispagestyle{empty}
 $endif$
 \onecolumn
 \null\vfill

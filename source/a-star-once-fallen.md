@@ -220,8 +220,6 @@ certain Fortitude score to use and may also reduce your movement speed.
 Adjust your defenses according to any armor or shields you choose.
 Record your equipment and their properties on your character sheet.
 
-\newpage
-
 ### Melee Weapons
 
 \NextTableColumns{OLT{.35}OLT{.65}}
@@ -962,6 +960,14 @@ Izzaru for defense of this plateau. The creatures are spider-like, but
 have bony protrusions extending from their front legs which serve as
 blades in combat.
 
+Whether this fight happens on the cliffs or the bridge, make it epic by
+capitalizing on the arachnids’ adept climbing ability. They crawl
+beneath the bridge or along the cliff face to outmaneuver foes. You can
+also make use of the knockdown bane in order to create moments of
+tension. If a spider succeeds at a knockdown attack, the targeted player
+is now hanging from the cliff or rope bridge. A subsequent knockdown
+attack would send them hurtling to their doom (so use with restraint).
+
 \NextTableColumns{OLT{.33}OLT{.67}}
 
 | **Twisted Arachnids** (4) | 30’ speed, climbing |
@@ -977,22 +983,12 @@ blades in combat.
 | | **Poison**: If the fang attack deals at least 5 damage, the target also suffers the stun bane. |
 | | **Trip**: Might vs. Toughness, inflict knockdown. |
 
-Whether this fight happens on the cliffs or the bridge, make it epic by
-capitalizing on the arachnids’ adept climbing ability. They crawl
-beneath the bridge or along the cliff face to outmaneuver foes. You can
-also make use of the knockdown bane in order to create moments of
-tension. If a spider succeeds at a knockdown attack, the targeted player
-is now hanging from the cliff or rope bridge. A subsequent knockdown
-attack would send them hurtling to their doom (so use with restraint).
-
 ### Adjusting Difficulty
 
 For parties smaller than five, adjust the number of arachnids so that
 there is one less than the number of PCs. For very large parties, do not
 use more than 6 arachnids, instead increasing their maximum hit points
 by 3 for each additional PC beyond the 7th.
-
- \ \
 
 +++ {.CalloutExample}
 ##### New Rules Unlocked: Multi-targeting and Complete Advantage/Disadvantage
@@ -1004,7 +1000,11 @@ These rules are best introduced to your players during their second combat invol
 If multiple circumstances are affecting a character trying to make an action roll, or if the situation is exceptionally modified by outside forces, an action can accrue multiple levels of advantage or disadvantage. This is expressed by a number, such as advantage 2 or disadvantage 3.
 
 When making a roll with advantage or disadvantage, you roll an extra number of attribute dice equal to the advantage or disadvantage level. **If the action has advantage**, you then remove the *lowest* X dice, in which X is the advantage level. **If the action has disadvantage**, you remove the *highest* X dice.
++++
 
+\newpage
+
++++ {.CalloutExample}
 ##### Multi-targeting
 \ \
 When you make a damaging attack, inflict a bane, or invoke a boon, you may choose to target more than one foe at the cost of suffering disadvantage, as explained below.
@@ -1024,11 +1024,7 @@ Note also that area attacks target your foe’s Toughness.
 As the party approaches the Ziggurat of Kings read the following:
 
 +++ {.CalloutInformation}
-*The structure standing before you is formed in three levels, each reaching about 20’ in height and composed of countless blocks of stone. A long staircase extends up one side of the ziggurat to the highest level, which appears to form a small building.*
-+++
-
-+++ {.CalloutInformation}
-*Decorating the staircase and the surrounding levels of the temple are dozens upon dozens of lifelike statues. They all take the form of some type of humanoid creature: some are short pygmy lizards, others tall and strong humans, and still others are snakefolk, with the top form of a human and long snake bodies from the waist down. All of the statues share a common trait: they are posed with looks and postures of terror.*
+*The structure standing before you is formed in three levels, each reaching about 20’ in height and composed of countless blocks of stone. A long staircase extends up one side of the ziggurat to the highest level, which appears to form a small building. Decorating the staircase and the surrounding levels of the temple are dozens upon dozens of lifelike statues. They all take the form of some type of humanoid creature: some are short pygmy lizards, others tall and strong humans, and still others are snakefolk, with the top form of a human and long snake bodies from the waist down. All of the statues share a common trait: they are posed with looks and postures of terror.*
 
 *A single stone door bars entrance to the building at the top of the stairs. Engraved upon it are more pictograms like those on the city wall. In these scenes, however, you see the serpentine staff being held before a tall mountain spewing with smoke and fire.*
 +++
@@ -1053,11 +1049,7 @@ Whenever you roll a natural 20 on the d20 used in a damaging attack roll, your a
 
 A creature’s maximum hit points are reduced by the amount of lethal damage it suffers.
 
-Lethal damage is more difficult to heal then regular damage, healing at a rate of 1 hit point per day per Fortitude attribute point (minimum of 1 hit point).  With the full-time attendance of a capable healer, any number of characters who are located in the same area and avoid strenuous activity heal at an additional rate equal to their attendant’s Creation, Presence, or Learning score.  Multiple attendants do not cumulatively improve this accelerated healing rate (the bonus is simply equal to the highest score among attendants).
-+++
-
-+++ {.CalloutExample}
-For example, a warrior with Fortitude 4 heals 4 lethal damage per day on his own. With the assistance of a physician with a learning score of 8, the same warrior would heal at a rate of 12 lethal damage per day.
+Lethal damage is more difficult to heal then regular damage, healing at a rate of 1 hit point per day per Fortitude attribute point (minimum of 1 hit point).  With the full-time attendance of a capable healer, any number of characters who are located in the same area and avoid strenuous activity heal at an additional rate equal to their attendant’s Creation, Presence, or Learning score.  Multiple attendants do not cumulatively improve this accelerated healing rate (the bonus is simply equal to the highest score among attendants). For example, a warrior with Fortitude 4 heals 4 lethal damage per day on his own. With the assistance of a physician with a learning score of 8, the same warrior would heal at a rate of 12 lethal damage per day.
 +++
 
 Upon entering the Ziggurat chamber, read the following.
@@ -1130,20 +1122,19 @@ his curse, the origin of the Wapuny and Wapungo.
 ##### New Rules Unlocked: Minor Actions, Boss Actions, and Exceptional Success
 
 ##### Minor Actions
+\ \
 In addition to one normal action and one movement action, combatants are also allowed any number of minor actions, which include tasks such as drawing a weapon, sheathing a weapon, sustaining a boon, making a Learning roll to recall useful information, and making an opportunity attack. **You may not take the same type of minor action more than once in any round**.
 
 ##### Sustain a Boon
+\ \
 If you have a boon in effect and do not sustain it, the boon ends when your turn is over. Because sustaining a boon is a minor action, you can normally only sustain one boon at a time.
 
 ##### Opportunity Attacks
-An opportunity attack is a special kind of minor action because it does not take place during your turn. If you are wielding a
-+++
-
-+++ {.CalloutExample}
-
-melee weapon, and an enemy moves from a space within your reach to a space that is not within your reach, you may make a free attack against the enemy. (Note that, as a minor action, you may only make one opportunity attack per round).
+\ \
+An opportunity attack is a special kind of minor action because it does not take place during your turn. If you are wielding a melee weapon, and an enemy moves from a space within your reach to a space that is not within your reach, you may make a free attack against the enemy. (Note that, as a minor action, you may only make one opportunity attack per round).
 
 ##### Boss Actions
+\ \
 Some monsters or villains are so formidable in combat that they are able to take multiple actions throughout the round, thereby proving challenging enough to take on an entire party alone. These “boss monsters” gain access to a certain number of boss actions.
 
 If a monster has boss actions, make an extra number of initiative rolls for each boss action. When arranging the initiative order, there must be at least one PC between each of the boss’s turns. If necessary, move the “boss action” turns lower in the order to accommodate this requirement.
@@ -1151,6 +1142,7 @@ If a monster has boss actions, make an extra number of initiative rolls for each
 During combat, the highest initiative count indicates the boss’s normal turn, during which it gets the usual allotment of normal, move, and minor actions. Each of the boss’s lower counts in the initiative are boss actions, which allow the boss to make one normal action.
 
 ##### Exceptional Success
+\ \
 When you make a damaging attack and roll exceptionally well, you may also be able to inflict a bane for free.
 
 If your attack roll exceeds the target’s defense by 10 or more, you may apply one bane of a Power Level less than or equal to the attribute you used for the attack. In order to apply a bane, your attack roll must equal or exceed the appropriate defense for that bane. If your attack targeted multiple foes, you may apply the bane to each qualifying target.
@@ -1178,6 +1170,26 @@ accordingly.
 The basilisk is magically bound to the ziggurat, and it will not pursue
 enemies beyond the bottom step.
 
+### Adjusting Difficulty
+
+For groups smaller than 5, the basilisk does not receive any boss
+actions. For groups larger than 5, the basilisk receives 10 extra hit
+points per extra PC. If the group consists of 8 or more PCs, the
+basilisk has 2 boss actions instead of 1.
+
+\NextTableColumns{OLT{.33}OLT{.67}}
+
+### Aftermath
+
+If the characters are successful in retrieving the Scepter of Kings, the
+next step for them is to decide what to do with it. The necromancer,
+Thorn, has kept close watch on the ruined city using divination, and he
+will soon learn of the party’s exploits. If you have not used it yet,
+during the next time the PCs make camp, you can run the event encounter
+*The Dream Speaker*, in which Asha appears to one of the party members.
+
+\newpage
+
 \NextTableColumns{OLT{.33}OLT{.67}}
 
 | **Basilisk** | 30’ speed, climbing |
@@ -1189,23 +1201,13 @@ enemies beyond the bottom step.
 | Evasion: 17 | Will 4 (1d10) |
 | Resolve: 16 | Presence 2 (1d6) |
 | | **FAVORED ATTACKS** |
-| | Enchantment 5 (2d6) |
-| | Divination 4 (1d10) |
+| **BOSS**| Enchantment 5 (2d6) |
+| The basilisk gets one extra boss action each round. | Divination 4 (1d10) |
 | | **Mind Dredge** (minor action): Divination vs. Resolve, inflicts mind dredge bane |
 | | **Fang Strike**: Agility vs. Evasion (targets 2 foes), damaging attack \ A target suffering at least 1 damage suffers the *persistent damage* bane |
 | | **Petrification Gaze**: Enchantment vs. Resolve, inflicts *incapacitated* bane. **Note**: Unlike the standard *incapacitated* bane, the basilisk’s gaze has a duration of resist ends (fail x 3 = permanent). |
 | | **Special**: At any point in combat, the basilisk can use its gaze attack against any character that is not averting its eyes. This attack is free and does not require the basilisk to spend an action. A combatant can not be targeted by a gaze more than once in any round. Characters who are averting their eyes incur the *blinded* bane. |
 
-### Adjusting Difficulty
-
-For groups smaller than 5, the basilisk does not receive any boss
-actions. For groups larger than 5, the basilisk receives 10 extra hit
-points per extra PC. If the group consists of 8 or more PCs, the
-basilisk has 2 boss actions instead of 1.
-
-\newpage
-
-+++ {.CalloutExample}
 ##### *Betrayal* (dagger)
 \ \
 The dagger which the high priest used to murder his king has become imbued with magical power as a result of the twisted nature of its history. It is named *Betrayal* and possesses the following traits:
@@ -1228,16 +1230,6 @@ The scepter’s power to inspire allies is why it will turn the tide of the war 
 The Scepter of Kings is also the answer to an ancient prophecy passed down from the days of the ruin of the city - a prophecy that Wapungo and Wapuny alike still repeat: “When a king lays claim to Starfall Island, the Dragon will spit flame once again.”
 
 This scepter possesses the power to summon lava from the Dragon’s Maw, though the wielder does not know this. However, after owning the staff for a few hours, the wielder will begin to feel an unending urge to visit the volcano. For more on the role of the Scepter of Kings in awakening the volcano, see *Location H: The Dragon’s Maw*.
-+++
-
-### Aftermath
-
-If the characters are successful in retrieving the Scepter of Kings, the
-next step for them is to decide what to do with it. The necromancer,
-Thorn, has kept close watch on the ruined city using divination, and he
-will soon learn of the party’s exploits. If you have not used it yet,
-during the next time the PCs make camp, you can run the event encounter
-*The Dream Speaker*, in which Asha appears to one of the party members.
 
 +++ {.CalloutExample}
 ##### New Rules Unlocked: Leveling Up
@@ -1246,7 +1238,10 @@ After the party’s first major success, you can allow them to level up and gain
 ##### New Attribute Points
 Upon leveling up, you gain 9 new attribute points to spend. You can use these to increase your current attributes or buy completely new ones. The maximum attribute score you can reach in this adventure is 5. You do not have to use all of your attribute points at once, and any remaining attribute points can be saved for use at future levels.
 
-The cost to increase an attribute is equal to the new score. So, for example, to raise your Might from 3 to 4 would cost 4 attribute points. You must make these increases one step at a time, so to raise a score from 0 to 2 would cost 3 attribute points total.
+The cost to increase an attribute is equal to the new score. So, for example, to raise your Might from 3 to 4 would cost 4 attribute points. You must make these increases one step at a time, so to raise a score from
+\ \
+\ \
+0 to 2 would cost 3 attribute points total.
 
 ##### New Hit Points
 In *Open Legend*, attributes are the means by which your hit points increase. If you want your character to be able to take more hits, increase your Fortitude, Presence, or Will attributes. As outlined in the default hit point formula, you’ll gain 2 hit points each time you raise one of those attributes by one.
@@ -1299,11 +1294,7 @@ As the party travels through the narrowest region of the peninsula, read
 the following:
 
 +++ {.CalloutInformation}
-*The peninsula narrows here to about 300 feet wide. The sound of flanking waves slowly crashing on the shore combines with the light breeze whispering*
-+++
-
-+++ {.CalloutInformation}
-*across your face to almost soothe the nerves that are still on edge from the sight of that ghastly demonic statue. The breeze picks up though, at first just a strong wind and then a gale of hurricane strength. The squall is brief but powerful, kicking sand into the air like a child shaking a snow globe. For a moment, you are completely blinded, and then the wind calms. When you regain your sight, the landscape has transformed. The surface level of the sand having been disturbed,you can see the ground littered in all directions with bones. And they move.*
+*The peninsula narrows here to about 300 feet wide. The sound of flanking waves slowly crashing on the shore combines with the light breeze whispering across your face to almost soothe the nerves that are still on edge from the sight of that ghastly demonic statue. The breeze picks up though, at first just a strong wind and then a gale of hurricane strength. The squall is brief but powerful, kicking sand into the air like a child shaking a snow globe. For a moment, you are completely blinded, and then the wind calms. When you regain your sight, the landscape has transformed. The surface level of the sand having been disturbed,you can see the ground littered in all directions with bones. And they move.*
 +++
 
 For about 150 feet in all directions, the party is surrounded by animal
@@ -1330,7 +1321,7 @@ cease to form.
 | Evasion: 11 | Entropy: 3 (1d8) |
 | Resolve: 10 | **FAVORED ATTACKS** |
 | | **Claws, bite, etc**: Might vs. Toughness, damaging attack |
-| | **Horde Intimidation**: Entropy vs. Resolve, inflict demoralized bane |
+| | **Horde Intimidation**: Entropy vs. Resolve = demoralized bane |
 
 
 ### The Burial Site
@@ -1339,11 +1330,7 @@ With the skeletons taken care of or evaded, the party can access the end
 of the peninsula:
 
 +++ {.CalloutInformation}
-*Upon reaching the tip of the peninsula you immediately learn that you are not the first unfortunate souls to have been marooned on this accursed island. Scattered*
-+++
-
-+++ {.CalloutInformation}
-*about a small patch of shore is the evidence of another shipwreck. Broken crates and barrels litter the sand, and one large chunk of the ship’s helm reveals that it was a vessel of moderate size.*
+*Upon reaching the tip of the peninsula you immediately learn that you are not the first unfortunate souls to have been marooned on this accursed island. Scattered about a small patch of shore is the evidence of another shipwreck. Broken crates and barrels litter the sand, and one large chunk of the ship’s helm reveals that it was a vessel of moderate size.*
 
 *Of particular note is what appears to be a small burial mound erected far from the water. A mound of stones, piled low in the shape of a grave, is ornamented with a small bunch of jungle flowers, relatively fresh. Carved on a piece of flotsam used as a grave marker is a single name: Asha. According to the dating, Asha died at the young age of 23 sometime five years ago.*
 
@@ -1367,14 +1354,13 @@ discover the following note:
 *Eric*
 +++
 
-+++ {.CalloutExample}
+
 ##### Asha’s Ring
 Anyone attempting to put Asha’s wedding band on will discover that it resizes to fit their finger. However, it cannot be removed unless the wearer or Eric Thorn is killed. The ring grants some power but also bears a curse.
 
 - A character wearing Asha’s ring is shielded by powerful magics, gaining +1 to all defenses.
 
 - The wearer, however, also falls under the gaze of the necromancer. Thorn can scry upon the wearer at any time, seeing and hearing his surroundings.
-+++
 
 ### Development
 
@@ -1401,7 +1387,7 @@ the chance to one day bring her back.
 ## Location E: The Great Chasm
 
 At the center of Starfall Island is a massive crater left by Asgaroth’s
-prison-meteor which struck the earth some hundred years ago. As the
+meteor which struck the earth some hundred years ago. As the
 party approaches, read the following:
 
 +++ {.CalloutInformation}
@@ -1453,11 +1439,7 @@ Once you've chosen the dominated characters, read the following text.
 +++ {.CalloutInformation}
 *Upon reaching the floor of the great chasm, the dreams of wealth that danced in your head during the long descent are enflamed by the sight of the largest gem you have ever seen. The size of a small cottage and glowing with an arcane light, this pink jewel could purchase a small kingdom.*
 
-*Your eyes dart among your companions, and you can see the malice in their eyes. They want the wealth for themselves, and they will stop at nothing to get it. You thought they were your allies, but no. See, now, they draw blade and weave spell against you. It is a hard*
-+++
-
-+++ {.CalloutInformation}
-*choice, but the only one you have - you must defend yourself.*
+*Your eyes dart among your companions, and you can see the malice in their eyes. They want the wealth for themselves, and they will stop at nothing to get it. You thought they were your allies, but no. See, now, they draw blade and weave spell against you. It is a hard choice, but the only one you have - you must defend yourself.*
 +++
 
 Have the party roll initiative and fight one another. The dominated
@@ -1941,7 +1923,7 @@ In one alcove is a cistern of water that gently rises with steam caused
 by the ambient heat. If the party looks into it, they see the image of a
 cool spring somewhere in the jungle. This cistern is Thorn’s means of
 scrying, and he keeps it ever focused on the spring where Bloodfist
-dreams of Asha. If fitting to the plot, players may experience the
+dreams of Asha. If appropriate, players may experience the
 Spring of Dreams encounter (Event 5) while gazing into this pool.
 
 ### Thorn’s Journal
@@ -1954,11 +1936,7 @@ of the journal for anyone who spends time reading it:
 +++ {.CalloutInformation}
 *This worn leather bound journal looks like it has seen years of abuse. It is water damaged in spots and the pages curl from years of residing in volcanic heat. Reading through the log, you learn the sad tale of its keeper, a man named Eric Thorn. In another life, some ten years ago when the first entry is dated, he was a successful merchant - though from what you can tell, a ruthless and at times dishonest one. The journal tells also of the love between Eric and a woman named Asha, who seems to have tempered his merciless pursuit of coin.*
 
-*About five years ago, the two were married, and struck out on the seas to make a new life in a new town.*
-+++
-
-+++ {.CalloutInformation}
-*Eric writes of his excitement of being free of the shackles of old acquaintances and business partners - of the chance to do things the right way from the start. But then his ship is wrecked on this island, and Asha is killed, along with all the other passengers.*
+*About five years ago, the two were married, and struck out on the seas to make a new life in a new town. Eric writes of his excitement of being free of the shackles of old acquaintances and business partners - of the chance to do things the right way from the start. But then his ship is wrecked on this island, and Asha is killed, along with all the other passengers.*
 
 *After the death of his wife, the journal skips several days, which is odd because up until this point Thorn has kept to his nightly journaling almost religiously. When it picks back up, the man has changed. He writes hastily and in fragmented thoughts, and it is clear that the ruthlessness that fueled his life for so long has returned.*
 
@@ -1990,13 +1968,9 @@ Wapungo.
 Read or summarize this as a way of wrapping things up:
 
 +++ {.CalloutInformation}
-*Wielding the Scepter of Kings, you can feel the power of a great bloodline of royal sorcerers flowing through you. At your command, the magma churns, bubbles,*
-+++
+*Wielding the Scepter of Kings, you command the power of a great bloodline of royal sorcerers that flows through you. At your command, the magma churns, bubbles, and rises. You feel a malignant force from deep within the bowels of the island fighting you with all its will, but its power is weakened by the shackles imprisoning it.*
 
-+++ {.CalloutInformation}
-*and rises. You feel a malignant force from deep within the bowels of the island fighting against you with all its will, but its power is weakened by the shackles which keep it imprisoned.*
-
-*A shimmering barrier of force envelopes you and your companions as the magma surges upward, carrying you to the summit of the Dragon’s Maw and spilling forth over its edge. As the molten lava continues to flow, you harness the power of the scepter to direct its course, and it winds its way down the river that flows from the mountains, crawling inch-by-inch until it cascades into the Great Chasm like a fiery waterfall. More and more the lava piles high, filling the chasm completely, when a horrid cry billows forth from its depths, echoing across the island.*
+*A shimmering barrier of force envelopes you and your companions as the magma surges upward, carrying you to the summit of the Dragon’s Maw and spilling forth over its edge. As the molten lava continues to flow, you harness the power of the scepter to direct its course, and it winds its way down the river that flows from the mountains, crawling inch-by-inch until it cascades into the Great Chasm like a fiery waterfall. Lava flows mightily, filling the chasm completely, when a horrid cry billows forth from its depths, echoing across the island.*
 
 *With the dark power of the fallen star buried far beneath the land, its spell of greed is broken. In the days that come, the natives of this land make peace, and prosper for a good long while. One day, however - centuries from now perhaps - another brave band of heroes will be called upon when the fortune that started this quest comes to its fulfillment.*
 
