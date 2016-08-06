@@ -511,8 +511,7 @@ of Kings.
 
 # Starting the Adventure
 
-## Opening: Mud &
-Monkeys
+## Opening: Mud & Monkeys
 
 To begin the adventure, read or summarize the following flavor text:
 
@@ -534,27 +533,31 @@ kill just as the party arrives.
 
 
 +++ {.CalloutExample}
-##### New Rules Unlocked: Action Rolls & Initiative
-\
+##### New Rules: Action Rolls & Initiative
+\ \
 Throughout this adventure, you’ll find sections like this, which describe new rules to add to your game. As the GM, you should learn these rules and help your players learn them too. Typically, new rules are presented as part of an encounter in which those rules will play an important part.
+\ \
++++
 
++++ {.CalloutExample}
 ##### Action Rolls
-\
+\ \
 Action rolls are used to determine the outcome of important tasks. They are always tied to one specific attribute.
 
 To make an action roll, you roll 1d20 plus any bonus dice granted by your relevant attribute. **Any dice that roll the maximum possible explode**, which means you can roll them again and add the new total to your action roll as well. Continue rerolling dice until none of them explode. Add all of the dice together to find your total action roll.
 
 ##### Advantage & Disadvantage
-\
+\ \
 When you make an action roll within a particularly favorable situation, you have **advantage** on the action roll. For example, in this combat, a character who successfully swings from a vine to attack a monkey bat could gain advantage because of the extra momentum behind the attack. When you have advantage, roll one extra attribute die and remove the *lowest* attribute die before calculating your total.
 
 You have **disadvantage** when you are acting with significant hindrance. For example, a character who gets stuck in the quicksand during this battle might have disadvantage on attacks until escaping. When you have disadvantage, roll one extra attribute die and remove the *highest* attribute die before calculating your total.
 
 ##### Roll for Initiative
-\
+\ \
 When combat starts, each PC and each group of enemies makes an Agility action roll to determine their turn order. You should roll 1d20 + 1d8 for the monkey bats, and have each player make an Agility roll as well. Write all of the totals down in a list from highest to lowest. Characters take turns starting with the highest initiative. Once all combatants have taken their turns, a new round starts at the top of the initiative order.
 
 **Swift Weapons**. Some weapons have the *swift* property. Any characters wielding such weapons at the start of combat gain advantage on their initiative roll.
+\ \
 +++
 
 ## Running the Combat
@@ -579,17 +582,17 @@ swarmed with enemies or rescuing the Wapuny who just went under.
 Don’t feel the need to keep running combat until all of the monkey bats
 are dead, either. They are cowardly creatures - so a large show of force
 or magical power might easily scare them off, and they’ll definitely
-flee if outnumbered 2 to 1.
+flee if outnumbered 2 to 1. \ \
 
 +++ {.CalloutExample}
 ##### New Rules Unlocked: Taking Turns, Damage, Banes & Boons
-\
+\ \
 A combatant’s turn consists of one move action and one normal action.
 
 Your normal action can be used to make a damaging attack, inflict a bane, or invoke a boon. Alternatively, you can trade your normal action for an extra move action.
 
 ##### Make a Damaging Attack
-\
+\ \
 To damage a target, make an action roll. If you are using a weapon with the *precise* property, use your Agility for the roll. If your weapon is *forceful*, use your Might. Supernatural attacks use the relevant supernatural attribute (e.g., Energy to shoot a ray of fire).
 
 Your attack roll is resisted by a specific defense of your target, as explained below:
@@ -603,7 +606,10 @@ Your attack roll is resisted by a specific defense of your target, as explained 
 - Supernatural projectile attacks target Evasion
 
 Your total **damage dealt** equals your **attack roll** minus the **target’s defense**.
++++
 
++++ {.CalloutExample}
+\ \
 Damage is subtracted from the target’s hit points. When HP reach 0, a combatant falls unconscious. If an unconscious creature takes damage, it must make a Fortitude action roll greater than or equal to the damage or else it dies.
 
 **Two-handed Melee Weapons**. If you are using a weapon with the *two-handed* property in melee combat, you have advantage on your attack roll. A weapon with the *versatile* property may be used one or two-handed, and also benefits from this advantage when wielded in two hands.
@@ -611,20 +617,21 @@ Damage is subtracted from the target’s hit points. When HP reach 0, a combatan
 **Reach Weapons**. If you are using a weapon with the *reach* property, you may target foes up to 10’ away from you.
 
 ##### Inflict a Bane
-\
+\ \
 Choose one bane from the bane list for which you have the required attribute score. Make an action roll against your target’s defense indicated in the bane description. If you equal or exceed your target’s defense, you target suffers the bane.
 
 A bane typically remains in effect until the target resists it using a move action (see below). If a target fails three resist rolls against a bane, the bane can no longer be resisted. It persists for an extended duration indicated in the bane description.
 
 ##### Invoke a Boon
-\
+\ \
 Choose one boon from the boon list for which you have the required attribute score. Make an action roll against the Challenge Rating equal to 10 + twice the boon’s power level. If your roll equals or exceeds the CR, designate an ally (or yourself) to receive the boon.
 
 Boons typically remain in effect until you cease sustaining them. You may only sustain one boon at a time. If you invoke a boon while you are already sustaining one, the old boon is immediately dispelled.
 
 ##### Move Actions
-\
+\ \
 You can use your **move action** to move up to your maximum speed (30 feet for most PCs). Alternatively you can use your move action to **resist any banes** from which you are suffering. Roll 1d20 for each bane affecting you. On a 10 or higher, the bane is removed.
+\
 +++
 
 \NextTableColumns{OLT{.37}OLT{.63}}
@@ -759,8 +766,8 @@ only reason they stand a chance against the Wapungo).
 
 +++ {.CalloutExample}
 
-**Slug Juice**
-
+##### Slug Juice
+\ \
 This Wapuny poison isn’t actually made from slugs, but a rare flower found in the deep parts of the jungle. The name comes from the effect of the poison: a debilitating sluggishness.
 
 A weapon coated with a dose of Slug Juice automatically applies the slow bane to the first target it hits for at least one point of damage.
@@ -989,17 +996,17 @@ by 3 for each additional PC beyond the 7th.
 
 +++ {.CalloutExample}
 ##### New Rules Unlocked: Multi-targeting and Complete Advantage/Disadvantage
-
+\ \
 These rules are best introduced to your players during their second combat involving more than one foe. The arachnid combat is a perfect example of when players could make use of multi-targeting.
 
 ##### Advantage & Disadvantage
-
+\ \
 If multiple circumstances are affecting a character trying to make an action roll, or if the situation is exceptionally modified by outside forces, an action can accrue multiple levels of advantage or disadvantage. This is expressed by a number, such as advantage 2 or disadvantage 3.
 
 When making a roll with advantage or disadvantage, you roll an extra number of attribute dice equal to the advantage or disadvantage level. **If the action has advantage**, you then remove the *lowest* X dice, in which X is the advantage level. **If the action has disadvantage**, you remove the *highest* X dice.
 
 ##### Multi-targeting
-
+\ \
 When you make a damaging attack, inflict a bane, or invoke a boon, you may choose to target more than one foe at the cost of suffering disadvantage, as explained below.
 
 For **melee attacks**, you may attack as many foes of your choice that are within your reach. You suffer disadvantage equal to the number of targets.
@@ -1017,7 +1024,11 @@ Note also that area attacks target your foe’s Toughness.
 As the party approaches the Ziggurat of Kings read the following:
 
 +++ {.CalloutInformation}
-*The structure standing before you is formed in three levels, each reaching about 20’ in height and composed of countless blocks of stone. A long staircase extends up one side of the ziggurat to the highest level, which appears to form a small building. Decorating the staircase and the surrounding levels of the temple are dozens upon dozens of lifelike statues. They all take the form of some type of humanoid creature: some are short pygmy lizards, others tall and strong humans, and still others are snakefolk, with the top form of a human and long snake bodies from the waist down. All of the statues share a common trait: they are posed with looks and postures of terror.*
+*The structure standing before you is formed in three levels, each reaching about 20’ in height and composed of countless blocks of stone. A long staircase extends up one side of the ziggurat to the highest level, which appears to form a small building.*
++++
+
++++ {.CalloutInformation}
+*Decorating the staircase and the surrounding levels of the temple are dozens upon dozens of lifelike statues. They all take the form of some type of humanoid creature: some are short pygmy lizards, others tall and strong humans, and still others are snakefolk, with the top form of a human and long snake bodies from the waist down. All of the statues share a common trait: they are posed with looks and postures of terror.*
 
 *A single stone door bars entrance to the building at the top of the stairs. Engraved upon it are more pictograms like those on the city wall. In these scenes, however, you see the serpentine staff being held before a tall mountain spewing with smoke and fire.*
 +++
@@ -1043,7 +1054,9 @@ Whenever you roll a natural 20 on the d20 used in a damaging attack roll, your a
 A creature’s maximum hit points are reduced by the amount of lethal damage it suffers.
 
 Lethal damage is more difficult to heal then regular damage, healing at a rate of 1 hit point per day per Fortitude attribute point (minimum of 1 hit point).  With the full-time attendance of a capable healer, any number of characters who are located in the same area and avoid strenuous activity heal at an additional rate equal to their attendant’s Creation, Presence, or Learning score.  Multiple attendants do not cumulatively improve this accelerated healing rate (the bonus is simply equal to the highest score among attendants).
++++
 
++++ {.CalloutExample}
 For example, a warrior with Fortitude 4 heals 4 lethal damage per day on his own. With the assistance of a physician with a learning score of 8, the same warrior would heal at a rate of 12 lethal damage per day.
 +++
 
@@ -1123,7 +1136,12 @@ In addition to one normal action and one movement action, combatants are also al
 If you have a boon in effect and do not sustain it, the boon ends when your turn is over. Because sustaining a boon is a minor action, you can normally only sustain one boon at a time.
 
 ##### Opportunity Attacks
-An opportunity attack is a special kind of minor action because it does not take place during your turn. If you are wielding a melee weapon, and an enemy moves from a space within your reach to a space that is not within your reach, you may make a free attack against the enemy. (Note that, as a minor action, you may only make one opportunity attack per round).
+An opportunity attack is a special kind of minor action because it does not take place during your turn. If you are wielding a
++++
+
++++ {.CalloutExample}
+
+melee weapon, and an enemy moves from a space within your reach to a space that is not within your reach, you may make a free attack against the enemy. (Note that, as a minor action, you may only make one opportunity attack per round).
 
 ##### Boss Actions
 Some monsters or villains are so formidable in combat that they are able to take multiple actions throughout the round, thereby proving challenging enough to take on an entire party alone. These “boss monsters” gain access to a certain number of boss actions.
@@ -1148,6 +1166,18 @@ party obtains the scepter, the basilisk, which hibernates in a secret
 lair in the roof of the ziggurat, slithers out and secretly enters
 through the door to attack the party.
 
+The basilisk is a serpentine creature about 30’ in length. In combat, it
+strikes quickly, targeting slow, unarmored foes with its fang attacks,
+attempting to poison as many as possible. If anyone is affected by its
+gaze attack, the basilisk will ignore them in favor of more threatening
+foes. The the basilisk can use its mind dredge ability for free on one
+target each round, allowing it to read their minds if successful. It
+will use this ability to learn the party’s strategy and react
+accordingly.
+
+The basilisk is magically bound to the ziggurat, and it will not pursue
+enemies beyond the bottom step.
+
 \NextTableColumns{OLT{.33}OLT{.67}}
 
 | **Basilisk** | 30’ speed, climbing |
@@ -1166,18 +1196,6 @@ through the door to attack the party.
 | | **Petrification Gaze**: Enchantment vs. Resolve, inflicts *incapacitated* bane. **Note**: Unlike the standard *incapacitated* bane, the basilisk’s gaze has a duration of resist ends (fail x 3 = permanent). |
 | | **Special**: At any point in combat, the basilisk can use its gaze attack against any character that is not averting its eyes. This attack is free and does not require the basilisk to spend an action. A combatant can not be targeted by a gaze more than once in any round. Characters who are averting their eyes incur the *blinded* bane. |
 
-The basilisk is a serpentine creature about 30’ in length. In combat, it
-strikes quickly, targeting slow, unarmored foes with its fang attacks,
-attempting to poison as many as possible. If anyone is affected by its
-gaze attack, the basilisk will ignore them in favor of more threatening
-foes. The the basilisk can use its mind dredge ability for free on one
-target each round, allowing it to read their minds if successful. It
-will use this ability to learn the party’s strategy and react
-accordingly.
-
-The basilisk is magically bound to the ziggurat, and it will not pursue
-enemies beyond the bottom step.
-
 ### Adjusting Difficulty
 
 For groups smaller than 5, the basilisk does not receive any boss
@@ -1185,16 +1203,17 @@ actions. For groups larger than 5, the basilisk receives 10 extra hit
 points per extra PC. If the group consists of 8 or more PCs, the
 basilisk has 2 boss actions instead of 1.
 
+\newpage
+
 +++ {.CalloutExample}
 ##### *Betrayal* (dagger)
-
+\ \
 The dagger which the high priest used to murder his king has become imbued with magical power as a result of the twisted nature of its history. It is named *Betrayal* and possesses the following traits:
 - A character possessing *Betrayal* gains advantage 1 on all Deception rolls.
 - When used to attack an unaware target from behind, *Betrayal* grants advantage 2 on the attack roll.
-+++
 
-+++ {.CalloutExample}
 ##### Scepter of Kings
+\ \
 This kingly rod is crafted of gold and bears the shape of a cobra with purple gems set in its eyes. The scepter had been passed from one Izzaru king to the next as a means of ensuring the strength of the royal bloodline at defending the throne. It is heavily imbued with ancient magics and grants the wielder the following powers:
 
 - The wielder gains advantage 2 on all presence and persuasion rolls.
@@ -1280,7 +1299,11 @@ As the party travels through the narrowest region of the peninsula, read
 the following:
 
 +++ {.CalloutInformation}
-*The peninsula narrows here to about 300 feet wide. The sound of flanking waves slowly crashing on the shore combines with the light breeze whispering across your face to almost soothe the nerves that are still on edge from the sight of that ghastly demonic statue. The breeze picks up though, at first just a strong wind and then a gale of hurricane strength. The squall is brief but powerful, kicking sand into the air like a child shaking a snow globe. For a moment, you are completely blinded, and then the wind calms. When you regain your sight, the landscape has transformed. The surface level of the sand having been disturbed,you can see the ground littered in all directions with bones. And they move.*
+*The peninsula narrows here to about 300 feet wide. The sound of flanking waves slowly crashing on the shore combines with the light breeze whispering*
++++
+
++++ {.CalloutInformation}
+*across your face to almost soothe the nerves that are still on edge from the sight of that ghastly demonic statue. The breeze picks up though, at first just a strong wind and then a gale of hurricane strength. The squall is brief but powerful, kicking sand into the air like a child shaking a snow globe. For a moment, you are completely blinded, and then the wind calms. When you regain your sight, the landscape has transformed. The surface level of the sand having been disturbed,you can see the ground littered in all directions with bones. And they move.*
 +++
 
 For about 150 feet in all directions, the party is surrounded by animal
@@ -1316,7 +1339,11 @@ With the skeletons taken care of or evaded, the party can access the end
 of the peninsula:
 
 +++ {.CalloutInformation}
-*Upon reaching the tip of the peninsula you immediately learn that you are not the first unfortunate souls to have been marooned on this accursed island. Scattered about a small patch of shore is the evidence of another shipwreck. Broken crates and barrels litter the sand, and one large chunk of the ship’s helm reveals that it was a vessel of moderate size.*
+*Upon reaching the tip of the peninsula you immediately learn that you are not the first unfortunate souls to have been marooned on this accursed island. Scattered*
++++
+
++++ {.CalloutInformation}
+*about a small patch of shore is the evidence of another shipwreck. Broken crates and barrels litter the sand, and one large chunk of the ship’s helm reveals that it was a vessel of moderate size.*
 
 *Of particular note is what appears to be a small burial mound erected far from the water. A mound of stones, piled low in the shape of a grave, is ornamented with a small bunch of jungle flowers, relatively fresh. Carved on a piece of flotsam used as a grave marker is a single name: Asha. According to the dating, Asha died at the young age of 23 sometime five years ago.*
 
@@ -1426,7 +1453,11 @@ Once you've chosen the dominated characters, read the following text.
 +++ {.CalloutInformation}
 *Upon reaching the floor of the great chasm, the dreams of wealth that danced in your head during the long descent are enflamed by the sight of the largest gem you have ever seen. The size of a small cottage and glowing with an arcane light, this pink jewel could purchase a small kingdom.*
 
-*Your eyes dart among your companions, and you can see the malice in their eyes. They want the wealth for themselves, and they will stop at nothing to get it. You thought they were your allies, but no. See, now, they draw blade and weave spell against you. It is a hard choice, but the only one you have - you must defend yourself.*
+*Your eyes dart among your companions, and you can see the malice in their eyes. They want the wealth for themselves, and they will stop at nothing to get it. You thought they were your allies, but no. See, now, they draw blade and weave spell against you. It is a hard*
++++
+
++++ {.CalloutInformation}
+*choice, but the only one you have - you must defend yourself.*
 +++
 
 Have the party roll initiative and fight one another. The dominated
@@ -1514,6 +1545,8 @@ a single gem to the treacherous Wapuny.
 ### Chief Bloodfist
 
 \NextTableColumns{OLT{.33}OLT{.67}}
+
+\FloatingTable
 
 | **Chief Bloodfist** | 30’ speed |
 | - | - |
@@ -1738,6 +1771,8 @@ evade the PCs.
 
 \NextTableColumns{OLT{.33}OLT{.67}}
 
+\FloatingTable
+
 | **Troglodytes** (6) | 30’ speed, climbing |
 | - | - |
 | Hit Points: 7 | Agility 4 (1d10) |
@@ -1919,7 +1954,11 @@ of the journal for anyone who spends time reading it:
 +++ {.CalloutInformation}
 *This worn leather bound journal looks like it has seen years of abuse. It is water damaged in spots and the pages curl from years of residing in volcanic heat. Reading through the log, you learn the sad tale of its keeper, a man named Eric Thorn. In another life, some ten years ago when the first entry is dated, he was a successful merchant - though from what you can tell, a ruthless and at times dishonest one. The journal tells also of the love between Eric and a woman named Asha, who seems to have tempered his merciless pursuit of coin.*
 
-*About five years ago, the two were married, and struck out on the seas to make a new life in a new town. Eric writes of his excitement of being free of the shackles of old acquaintances and business partners - of the chance to do things the right way from the start. But then his ship is wrecked on this island, and Asha is killed, along with all the other passengers.*
+*About five years ago, the two were married, and struck out on the seas to make a new life in a new town.*
++++
+
++++ {.CalloutInformation}
+*Eric writes of his excitement of being free of the shackles of old acquaintances and business partners - of the chance to do things the right way from the start. But then his ship is wrecked on this island, and Asha is killed, along with all the other passengers.*
 
 *After the death of his wife, the journal skips several days, which is odd because up until this point Thorn has kept to his nightly journaling almost religiously. When it picks back up, the man has changed. He writes hastily and in fragmented thoughts, and it is clear that the ruthlessness that fueled his life for so long has returned.*
 
@@ -1951,7 +1990,11 @@ Wapungo.
 Read or summarize this as a way of wrapping things up:
 
 +++ {.CalloutInformation}
-*Wielding the Scepter of Kings, you can feel the power of a great bloodline of royal sorcerers flowing through you. At your command, the magma churns, bubbles, and rises. You feel a malignant force from deep within the bowels of the island fighting against you with all its will, but its power is weakened by the shackles which keep it imprisoned.*
+*Wielding the Scepter of Kings, you can feel the power of a great bloodline of royal sorcerers flowing through you. At your command, the magma churns, bubbles,*
++++
+
++++ {.CalloutInformation}
+*and rises. You feel a malignant force from deep within the bowels of the island fighting against you with all its will, but its power is weakened by the shackles which keep it imprisoned.*
 
 *A shimmering barrier of force envelopes you and your companions as the magma surges upward, carrying you to the summit of the Dragon’s Maw and spilling forth over its edge. As the molten lava continues to flow, you harness the power of the scepter to direct its course, and it winds its way down the river that flows from the mountains, crawling inch-by-inch until it cascades into the Great Chasm like a fiery waterfall. More and more the lava piles high, filling the chasm completely, when a horrid cry billows forth from its depths, echoing across the island.*
 
