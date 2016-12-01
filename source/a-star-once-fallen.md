@@ -181,7 +181,7 @@ with these dice later on.)
 
 ## Calculate Defenses and Hit Points
 
-You have three defenses - fortitude, evasion, and resolve - which will
+You have three defenses - toughness, evasion, and resolve - which will
 protect you from different types of attacks. Calculate your defenses
 using the formulas below and record them on your character sheet.
 
@@ -191,8 +191,8 @@ using the formulas below and record them on your character sheet.
 
 | |
 | - |
-| **Toughness** = 10 + Fortitude |
-| **Evasion** = 10 + Agility |
+| **Toughness** = 10 + Fortitude + Will |
+| **Evasion** = 10 + Agility + Armor |
 | **Resolve** = 10 + Presence + Will |
 
 Your hit points (or HP) are an abstract measure of how well you can
@@ -253,12 +253,12 @@ Record your equipment and their properties on your character sheet.
 
 | Name | Properties |
 | - | - |
-| **Small Shield** | requires fortitude 1, +1 to evasion and toughness |
-| **Large Shield** | requires fortitude 3, +2 to evasion and toughness |
-| **Leather Armor** | +2 to evasion and toughness |
-| **Scale Shirt** | requires fortitude 2, +4 to evasion and toughness |
-| **Chain Mail** | requires fortitude 3, +5 to evasion and toughness, -5’ speed |
-| **Scale Mail** | requires fortitude 4, +6 to evasion and toughness, -5’ speed |
+| **Small Shield** | requires might 1, +1 to evasion |
+| **Large Shield** | requires might 3, +2 to evasion |
+| **Leather Armor** | +2 to evasion |
+| **Scale Shirt** | requires might 2, +4 to evasion |
+| **Chain Mail** | requires might 3, +5 to evasion, -5’ speed |
+| **Scale Mail** | requires might 4, +6 to evasion, -5’ speed |
 
 ## Describe Your Character
 
@@ -595,13 +595,9 @@ To damage a target, make an action roll. If you are using a weapon with the *pre
 
 Your attack roll is resisted by a specific defense of your target, as explained below:
 
-- Precise weapons target Evasion
+- Weapon attacks target Evasion
 
-- Forceful weapons target Toughness
-
-- Supernatural melee attacks target Toughness
-
-- Supernatural projectile attacks target Evasion
+- Supernatural attacks target the most logical defense, either Evasion or Toughness
 
 Your total **damage dealt** equals your **attack roll** minus the **target’s defense**.
 +++
@@ -642,9 +638,9 @@ You can use your **move action** to move up to your maximum speed (30 feet for m
 | Toughness: 12 | Perception 2 (1d6) |
 | Evasion: 14 | |
 | Resolve: 10 | **FAVORED ATTACKS** |
-| | **Claws**: Might vs. Toughness, damaging attack |
-| | **Push**: Might vs. Toughness, inflicts knockdown bane |
-| | **Grapple**: Might vs. Toughness, inflicts immobile bane |
+| | **Claws**: Might vs. Evasion, damaging attack |
+| | **Push**: Might vs. Evasion, inflicts knockdown bane |
+| | **Grapple**: Might vs. Evasion, inflicts immobile bane |
 
 ## Adjusting Difficulty
 
@@ -741,11 +737,11 @@ between the PCs and the Wapuny.
 | | Presence 4 (1d10) |
 | | **FAVORED ATTACKS** |
 | | **Blowgun** (range 30’): Agility vs. Evasion, damaging attack \ If target takes at least one damage, also inflicts slow. |
-| | **Wooden spear**: Might vs. Toughness, damaging attack |
+| | **Wooden spear**: Might vs. Evasion, damaging attack |
 
 The Wapuny chief is a tall(er) warrior named Bik’Bik (or Big Big, so
 named for his massive 2’3” stature). He wears a fancy hat crafted from
-the fur and flesh of a monkey bat, and he frequently tosses the tail
+the fur and flesh of a monkey bat, and he frequently tosses his tail
 from one shoulder to the next in a grand gesture (This is to constantly
 remind his people  \  \
 \ \ \
@@ -911,10 +907,10 @@ requires an Agility test against CR 20.
 | Hit Points: 50 | Agility 3 (1d8) |
 | | Fortitude 7 (2d10) |
 | **DEFENSES** | Might 6 (2d8) |
-| Toughness: 24 | Perception 3 (1d8) |
-| Evasion: 20 | |
+| Toughness: 21 | Perception 3 (1d8) |
+| Evasion: 24 | |
 | Resolve: 15 | **FAVORED ATTACKS** |
-| **Special**: Attacks from precise weapons deal half damage to stone golem. | **Slam**: Might vs. Toughness, damaging attack <br /> If attack deals 1+ damage, it also inflicts forced move 15’ |
+| **Special**: Attacks from precise weapons deal half damage to stone golem. | **Slam**: Might vs. Evasion, damaging attack <br /> If attack deals 1+ damage, it also inflicts forced move 15’ |
 | | **Hurl Rock** (range 45’): Agility vs. Evasion, damaging attack <br /> If attacks deals 1+ damage, it also inflicts knockdown |
 
 
@@ -979,9 +975,9 @@ attack would send them hurtling to their doom (so use with restraint).
 | Evasion: 14 | |
 | Resolve: 12 | **FAVORED ATTACKS** |
 | | **Blades**: Agility vs. Evasion, damaging attack |
-| | **Fangs**: Might vs. Toughness, damaging attack  |
+| | **Fangs**: Might vs. Evasion, damaging attack  |
 | | **Poison**: If the fang attack deals at least 5 damage, the target also suffers the stun bane. |
-| | **Trip**: Might vs. Toughness, inflict knockdown. |
+| | **Trip**: Might vs. Evasion, inflict knockdown. |
 
 ### Adjusting Difficulty
 
@@ -1320,7 +1316,7 @@ cease to form.
 | Toughness: 11 | Perception 1 (1d4) |
 | Evasion: 11 | Entropy: 3 (1d8) |
 | Resolve: 10 | **FAVORED ATTACKS** |
-| | **Claws, bite, etc**: Might vs. Toughness, damaging attack |
+| | **Claws, bite, etc**: Might vs. Evasion, damaging attack |
 | | **Horde Intimidation**: Entropy vs. Resolve = demoralized bane |
 
 
@@ -1535,12 +1531,12 @@ a single gem to the treacherous Wapuny.
 | Hit Points: 40 | Agility 4 (1d10) |
 | | Fortitude 5 (2d6) |
 | **DEFENSES** | Might 6 (2d8) |
-| Toughness: 15 | Perception 3 (1d8) |
-| Evasion: 14 | Will 3 (1d6) |
+| Toughness: 14 | Perception 3 (1d8) |
+| Evasion: 15 | Will 3 (1d6) |
 | Resolve: 16 | Presence 3 (1d6) |
 | | |
 | | **FAVORED ATTACKS** |
-| | Fists: Might vs. Toughness, damaging attack <br /> If attack deals at least 1 damage, target also suffers knockdown or forced move 15’. |
+| | Fists: Might vs. Evasion, damaging attack <br /> If attack deals at least 1 damage, target also suffers knockdown or forced move 15’. |
 | | Stone Tomahawk (range 25’): Might vs. Evasion, damaging attack |
 
 Leadership of the Wapungo is determined by force of arms. At any time, a
@@ -1764,7 +1760,7 @@ evade the PCs.
 | Evasion: 14 | Presence 4 (1d10) |
 | Resolve: 14 | |
 | | **FAVORED ATTACKS** |
-| | **Bone Tomahawk**: Might vs. Toughness, damaging attack |
+| | **Bone Tomahawk**: Might vs. Evasion, damaging attack |
 | | **Howl** (targets 15’ square): Presence vs. Resolve - disadvantage 2, inflicts stun |
 
 
@@ -1885,9 +1881,9 @@ when things come to blows.
 | | Fortitude 2 (1d6) |
 | **DEFENSES** | Might 4 (1d10) |
 | Toughness: 12 | Perception 1 (1d4) |
-| Evasion: 11 | Presence 4 (1d10) |
+| Evasion: 12 | Presence 4 (1d10) |
 | Resolve: 10 | **FAVORED ATTACKS - reach 10'** |
-| | **Slam**: Might vs. Toughness \ If attack deals 5+ damage, it also inflicts forced move 10’ or knockdown |
+| | **Slam**: Might vs. Evasion \ If attack deals 5+ damage, it also inflicts forced move 10’ or knockdown |
 | | **Special**: A skeletal brute can use its normal action to move Thorn to any space within its reach without provoking opportunity attacks. |
 
 
@@ -2023,7 +2019,7 @@ enemies depending on the outcome.
 | Resolve: 11 | |
 | | **FAVORED ATTACKS** |
 | | Blowgun (range 30’): Agility vs. Evasion, damaging attack \ If target takes at least one damage, also inflicts slow |
-| | Wooden spear: Might vs. Toughness, damaging attack |
+| | Wooden spear: Might vs. Evasion, damaging attack |
 
 
  \ \
@@ -2036,12 +2032,12 @@ enemies depending on the outcome.
 | Hit Points: 12 | Agility 1 (1d4) |
 | | Fortitude 3 (1d8) |
 | **DEFENSES** | Might 4 (1d10) |
-| Toughness: 13 | Perception 2 (1d6) |
-| Evasion: 11 | Will 1 (1d4) |
+| Toughness: 12 | Perception 2 (1d6) |
+| Evasion: 13 | Will 1 (1d4) |
 | Resolve: 11 | Presence 2 (1d6) |
 | | |
 | | **FAVORED ATTACKS** |
-| | Stone Tomahawk (melee): Might vs. Toughness \ If target takes at least 5 damage, also inflicts knockdown. |
+| | Stone Tomahawk (melee): Might vs. Evasion \ If target takes at least 5 damage, also inflicts knockdown. |
 | | Stone Tomahawk (range 25’): Might vs. Evasion |
 
 ## Event 2: Mining Expedition
